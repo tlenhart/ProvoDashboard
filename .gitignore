@@ -54,7 +54,7 @@ docs/_build/
 target/
 
 # Keep database from being submitted to source control
-.sqlite3
+*.sqlite3
 
 # Other files
 bin/
