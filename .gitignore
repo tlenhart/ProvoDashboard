@@ -60,3 +60,5 @@ target/
 bin/
 src/*.egg-info
 .idea/
+# Used for nginx configuration
+config-files/
