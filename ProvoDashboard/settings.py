@@ -86,7 +86,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR, '../../templates'),
+    os.path.join(BASE_DIR, 'templates'),
 )
 
 # Loads production settings on the server. If specific settings are needed locally,
