@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <title>Provo City Dashboard</title>
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
     </head>
     <!-- I think we may want to use Tastypie for the API.
         https://django-tastypie.readthedocs.org/en/latest/
@@ -15,9 +16,18 @@
     <!-- Place all static files in the /static/ directory
          This is the base template file.
          Anything that needs to go on all pages should go here. -->
+        <div id="provo-city-header" >
+            <!-- Place the code for the header from Provo City here.
+            Do we need to recreate this to make it easier to work with or do we just copy/paste and hope? -->
+        </div>
+
+        <div id="graph-view">
+            <!-- Put the main work/graph area here... Maybe this will be in dashboard/graph.html -->
+        </div>
     </body>
 
     <!-- Load js -->
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <script src="{% static 'js/dashboard.js' %}"></script>
 </html>
