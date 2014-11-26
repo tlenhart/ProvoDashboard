@@ -8,5 +8,5 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', 'Dashboard.views.index', name='index'),
-    #url(r'^admin/', include(admin.site.urls)),
+    # url(r'^admin/$', include(admin.site.urls)), # Doesn't seem to be working right now. Don't know what broke it...
 )

@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
         <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">
-        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+        <link href="{% static 'css/style.css' %}" rel="stylesheet"> <!-- Needs to be minimized in production -->
+        <!-- <link href="{% static 'css/style.min.css' %}" rel="stylesheet"> -->
+
         <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
         <title>{% block title %}Provo City Dashboard{% endblock %}</title>
     </head>
@@ -34,7 +36,18 @@
     </body>
 
     <!-- Load js -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+    <!-- We will want to use cdn's for as much of this as we can, but for right now, this will suffice. -->
+    <!-- Switch to minnified versions on the server. (Or hosted.) Full versions used for debugging. -->
+    <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/raphael.js' %}"></script>
+    <script src="{% static 'js/morris.js' %}"></script>
     <script src="{% static 'js/dashboard.js' %}"></script>
+
+    <!-- CDN script sources. Left commented out for now. -->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+    <script src="{% static 'js/dashboard.min.js' %}"></script>-->
 </html>
