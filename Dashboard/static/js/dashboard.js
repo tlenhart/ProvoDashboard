@@ -4,6 +4,7 @@
 new Morris.Line({
     element: 'testgraph',
     data: [
+        {year: '2007', value: '1000'},
         {year: '2008', value: '200'},
         {year: '2009', value: '200'},
         {year: '2010', value: '175'},
