@@ -22,7 +22,8 @@ new Morris.Line({
         {year: '2008', value: '200'},
         {year: '2009', value: '200'},
         {year: '2010', value: '175'},
-        {year: '2011', value: '250'}
+        {year: '2011', value: '250'},
+        {year: '2012', value: '455'}
     ],
     xkey: 'year',
     ykeys: ['value'],
