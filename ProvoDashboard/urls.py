@@ -18,6 +18,7 @@ urlpatterns = patterns('',
     # Will need more urls for detailed graph pages. These need to be generated...
 
     url(r'^$', 'Dashboard.views.index', name='index'),
+    url(r'^index', 'Dashboard.views.index'),
     url(r'^community', 'Dashboard.views.community', name='community'),
     url(r'^economic', 'Dashboard.views.economic', name='economic'),
     url(r'^environment', 'Dashboard.views.environment', name='environment'),
