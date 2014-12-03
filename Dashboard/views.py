@@ -28,3 +28,6 @@ def safety(request):
 
 def transportation(request):
     return render_to_response('dashboard/transportation.html')
+
+def inputpage(request):
+    return render_to_response('dashboard/inputpage.html')

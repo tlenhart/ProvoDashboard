@@ -26,5 +26,6 @@ urlpatterns = patterns('',
     url(r'^cultural', 'Dashboard.views.cultural', name='cultural'), # cultural and recreation go to the same page.
     url(r'^safety', 'Dashboard.views.safety', name='safety'),
     url(r'^transportation', 'Dashboard.views.transportation', name='transportation'),
+    url(r'^inputpage', 'Dashboard.views.inputpage', name='inputpage'),
     url(r'^admin/', include(admin.site.urls)),
-)
+    )
