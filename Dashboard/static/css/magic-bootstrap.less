@@ -3,6 +3,8 @@
 *  
 **/
 
+// Comment these import statements out when using on the generator
+@import "../../../../less/bootstrap.less";
 
 // Grays
 @gray-darker: #222222;
@@ -18,6 +20,7 @@
 @brand-warning: #ffae13;
 @brand-danger: #d9534f;
 @brand-info: #33b3e3;
+
 
 
 // Scaffolding
@@ -44,7 +47,7 @@
 @font-family-serif: PT Serif;
 @font-family-monospace: Monaco;
 @font-family-base: @font-family-sans-serif;
-@font-size-base: 12px;
+@font-size-base: 13px;
 @font-size-large: ceil(@font-size-base * 1.25);
 @font-size-small: ceil(@font-size-base * 0.85);
 @font-size-h1: floor((@font-size-base * 2.6));
@@ -127,15 +130,15 @@
 
 
 // Navbar
-@navbar-height: 30px;
+@navbar-height: 45px;
 @navbar-margin-bottom: @line-height-computed;
-@navbar-default-color: @brand-primary;
-@navbar-default-bg: @brand-primary;
+@navbar-default-color: #000;
+@navbar-default-bg: #fff;
 @navbar-default-border: darken(@navbar-default-bg, 0%);
 @navbar-border-radius: @border-radius-base;
 @navbar-padding-horizontal: floor(@grid-gutter-width / 2);
 @navbar-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
-@navbar-default-link-color: #ffffff;
+@navbar-default-link-color: @gray-darker;
 @navbar-default-link-hover-color: #ffffff;
 @navbar-default-link-hover-bg: @brand-primary;
 @navbar-default-link-active-color: #555;

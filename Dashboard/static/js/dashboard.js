@@ -1,5 +1,4 @@
 // Base javascript file.
-// Testing minification.
 
 new Morris.Line({
     element: 'testgraph',
