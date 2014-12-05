@@ -20,6 +20,7 @@
     <!-- Place all static files in the /static/ directory
          This is the base template file.
          Anything that needs to go on all pages should go here. -->
+    <div class="container-fluid">
         <div id="provo-city-header" >
             <!-- Place the code for the header from Provo City here.
             Do we need to recreate this to make it easier to work with or do we just copy/paste and hope? -->
@@ -40,19 +41,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index">Brand</a>
+                        <a class="navbar-brand" href="{% url 'index' %}">Dashboard</a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-left">
-                            <li class="active"><a href="index">Home</a></li>
                             <!-- The hrefs below do NOT require .html. They use the regex in urls.py to resolve the page to go to.
                             I don't know if this is the best way to do it though. -->
-                            <li><a href="community">Community, Neighborhood, Livability</a></li>
-                            <li><a href="cultural">Cultural & Recreation</a></li>
-                            <li><a href="economic">Economic Health</a></li>
-                            <li><a href="environment">Environmental Health</a></li>
-                            <li><a href="safety">Safety</a></li>
-                            <li><a href="transportation">Transportation</a></li>
+                            <li><a href="{% url 'community' %}" id="community-nav-link">Community, Neighborhood, Livability</a></li>
+                            <li><a href="{% url 'cultural' %}" id="cultural-nav-link">Cultural & Recreation</a></li>
+                            <li><a href="{% url 'economic' %}" id="economic-nav-link">Economic Health</a></li>
+                            <li><a href="{% url 'environment' %}" id="environment-nav-link">Environmental Health</a></li>
+                            <li><a href="{% url 'safety' %}" id="safety-nav-link">Safety</a></li>
+                            <li><a href="{% url 'transportation' %}" id="transportation-nav-link">Transportation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -66,7 +66,8 @@
             <!-- Put the main work/graph area here... Maybe this will be in dashboard/graph.html -->
             {% endblock %}
         </div>
-    </body>
+    </div>
+</body>
 
     <!-- Load js -->
     <!-- We will want to use cdn's for as much of this as we can, but for right now, this will suffice. -->
