@@ -105,7 +105,7 @@ class Community(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.CharField(choices=COMMUNITY_CATEGORIES, max_length=100)
     value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.IntegerField(choices=MONTHS)
+    month = models.CharField(choices=MONTHS, max_length=20)
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
@@ -123,7 +123,7 @@ class RecreationCultural(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.CharField(choices=RECREATION_CATEGORIES, max_length=100)
     value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.IntegerField(choices=MONTHS)
+    month = models.CharField(choices=MONTHS, max_length=20)
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
@@ -140,7 +140,7 @@ class Economic(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.CharField(choices=ECONOMIC_CATEGORIES, max_length=100)
     value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.IntegerField(choices=MONTHS)
+    month = models.CharField(choices=MONTHS, max_length=20)
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
@@ -162,7 +162,7 @@ class Environment(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.CharField(choices=ENVIRONMENT_CATEGORIES, max_length=100)
     value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.IntegerField(choices=MONTHS)
+    month = models.CharField(choices=MONTHS, max_length=20)
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
@@ -179,7 +179,7 @@ class Safety(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.CharField(choices=SAFETY_CATEGORIES, max_length=100)
     value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.IntegerField(choices=MONTHS)
+    month = models.CharField(choices=MONTHS, max_length=20)
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
@@ -196,13 +196,8 @@ class Transportation(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.CharField(choices=TRANSPORTATION_CATEGORIES, max_length=100)
     value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.IntegerField(choices=MONTHS)
+    month = models.CharField(choices=MONTHS, max_length=20)
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
         return "Database table for Transportation."
-
-
-
-
-
