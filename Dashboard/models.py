@@ -35,6 +35,17 @@ MONTHS = (
     ("November", "November"),
     ("December", "December")
 )
+
+class Dashboard_Data(models.Model):
+    id = models.IntegerField()
+    department = models.CharField()
+    category = models.CharField()
+    value = models.DecimalField()
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
+    def __str__(self):
+        return "Database Data."
+
 class Community(models.Model):
     pets_rescued_at_shelter = models.IntegerField('Pets rescued at shelters', default=0)
     calls_911 = models.IntegerField('Number of 911 calls', default=0)
