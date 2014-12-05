@@ -15,6 +15,26 @@ from django.contrib.auth.models import User
 ##
 
 # Create your models here.
+
+YEARS = (
+    (2014, 2014),
+    (2015, 2015)
+)
+
+MONTHS = (
+    ("January", "January"),
+    ("February", "February"),
+    ("March", "March"),
+    ("April", "April"),
+    ("May", "May"),
+    ("June", "June"),
+    ("July", "July"),
+    ("August", "August"),
+    ("September", "September"),
+    ("October", "October"),
+    ("November", "November"),
+    ("December", "December")
+)
 class Community(models.Model):
     pets_rescued_at_shelter = models.IntegerField('Pets rescued at shelters', default=0)
     calls_911 = models.IntegerField('Number of 911 calls', default=0)
@@ -84,28 +104,11 @@ class Transportation(models.Model):
     month = models.IntegerField(choices=MONTHS)
     year = models.IntegerField(choices=YEARS)
 
+
     def __str__(self):
         return "Database table for Transportation."
 
-YEARS = (
-    (2014, 2014),
-    (2015, 2015)
-)
 
-MONTHS = (
-    ("January", "January"),
-    ("February", "February"),
-    ("March", "March"),
-    ("April", "April"),
-    ("May", "May"),
-    ("June", "June"),
-    ("July", "July"),
-    ("August", "August"),
-    ("September", "September"),
-    ("October", "October"),
-    ("November", "November"),
-    ("December", "December")
-)
 
 
 
