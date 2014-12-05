@@ -16,11 +16,11 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Community(models.Model):
-    pets_rescued_at_shelter = models.IntegerField('Pets rescued at shelters',default=0)
-    calls_911 = models.IntegerField('Number of 911 calls',default=0)
-    response_time_911_calls = models.IntegerField('Response time for 911 calls in seconds.',default=0) # might want to change to models.TimeField
-    noise_complaints = models.IntegerField('Number of noise complaints in a month.',default=0)
-    code_violations = models.IntegerField('Number of code violations in a month.',default=0)
+    pets_rescued_at_shelter = models.IntegerField('Pets rescued at shelters', default=0)
+    calls_911 = models.IntegerField('Number of 911 calls', default=0)
+    response_time_911_calls = models.IntegerField('Response time for 911 calls in seconds.', default=0) # might want to change to models.TimeField
+    noise_complaints = models.IntegerField('Number of noise complaints in a month.', default=0)
+    code_violations = models.IntegerField('Number of code violations in a month.', default=0)
 
     def __str__(self):
         return "Database table for Community, Neighborhood, and Livability."
@@ -39,7 +39,7 @@ class Economic(models.Model):
     active_business_licenses = models.IntegerField('Active number of business licenses.',default=0)
     building_permits_given = models.IntegerField('Number of building permits distributed.',default=0)
     unemployment_rate = models.DecimalField('Unemployment rate as a percentage.',default=0.0,max_digits=5,decimal_places=5) # Need to decide how this is going to be stored. 0.33 or 33 for 33%.
-    houses_sold = models.IntegerField('Number of houses sold.',default=0)
+    houses_sold = models.IntegerField('Number of houses sold.', default=0)
 
     def __str__(self):
         return "Database table for Economic Health."
