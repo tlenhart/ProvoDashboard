@@ -72,11 +72,17 @@ class Transportation(models.Model):
     public_ridership = models.DecimalField('Ridership of public transportation in thousands.',default=0.0,max_digits=7,decimal_places=3) # In thousands. Multiply by 1000 if necessary. Storing 19.1 would equal 19,100.
     potholes_filed_YTD = models.IntegerField('Potholes filled YTD.', default=0)
 
+YEARS = (
+    (2014, 2014),
+    (2015, 2015)
+
 
 class SampleData(models.Model):
     emergency_calls = models.IntegerField()
     month = models.IntegerField()
-    year = models.IntegerField()
+    year = models.IntegerField(choices=YEARS)
+
+
 
 
     def __str__(self):
