@@ -2,9 +2,10 @@
 <html>
     <head lang="en">
         <meta charset="UTF-8">
+        <!-- css and js files are automatically being minimized on the server. (Not perfect minimization right now,
+              but it should work for the time being. -->
 {#        <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">#}
         <link href="{% static 'css/magic-bootstrap.css' %}" rel="stylesheet">
-        {#        <link href="{% static 'css/bootstrap-theme.min.css' %}" rel="stylesheet">#}
         <link href="{% static 'css/style.css' %}" rel="stylesheet"> <!-- Needs to be minimized in production -->
         <!-- <link href="{% static 'css/style.min.css' %}" rel="stylesheet"> -->
 
@@ -71,6 +72,8 @@
     <!-- Load js -->
     <!-- We will want to use cdn's for as much of this as we can, but for right now, this will suffice. -->
     <!-- Switch to minnified versions on the server. (Or hosted.) Full versions used for debugging. -->
+    <!-- Files are being minimized on the server. We should still switch to a cdn where the files are better minified
+          and hosted externally at some point. -->
     <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
     <script src="{% static 'js/raphael.js' %}"></script>
