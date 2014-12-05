@@ -75,7 +75,7 @@ class Transportation(models.Model):
 YEARS = (
     (2014, 2014),
     (2015, 2015)
-
+)
 
 class SampleData(models.Model):
     emergency_calls = models.IntegerField()
