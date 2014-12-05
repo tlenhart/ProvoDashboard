@@ -36,11 +36,15 @@ MONTHS = (
     ("December", "December")
 )
 
+DEPARTMENT = (
+    ("Community_Neighborhood_Livablity" "Community Neighborhood Livablity")
+)
+
 class Dashboard_Data(models.Model):
-    id = models.IntegerField()
-    department = models.CharField()
-    category = models.CharField()
-    value = models.DecimalField()
+    id = models.IntegerField(primary_key=True)
+    department = models.CharField(max_length=100)
+    category = models.CharField(max_length=100)
+    value = models.DecimalField(decimal_places=4, max_digits=15)
     month = models.IntegerField(choices=MONTHS)
     year = models.IntegerField(choices=YEARS)
     def __str__(self):
