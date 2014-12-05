@@ -1,3 +1,6 @@
+
+# Important! If you change something, let Todd know so that he can publish the changes on the server.
+
 """
 Django settings for ProvoDashboard project.
 
@@ -89,6 +92,8 @@ STATIC_ROOT = '/srv/ProvoDashboard/static/'
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
+
+# Important! If you change something, let Todd know so that he can publish the changes on the server.
 
 # Loads production settings on the server. If specific settings are needed locally,
 # put them in settings/local_settings.py and remove it from source control.
