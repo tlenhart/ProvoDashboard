@@ -65,11 +65,18 @@ class Safety(models.Model):
         return "Database table for Public Safety."
 
 class Transportation(models.Model):
-    transportation_injuries = models.IntegerField('Transportation injuries.',default=0)
-    ontime_percent = models.DecimalField('Percentage of services on time.',default=0.0,max_digits=5,decimal_places=5)
-    auto_accidents = models.IntegerField('Number of auto accidents.',default=0)
+    transportation_injuries = models.IntegerField('Transportation injuries.', default=0)
+    ontime_percent = models.DecimalField('Percentage of services on time.', default=0.0,max_digits=5,decimal_places=5)
+    auto_accidents = models.IntegerField('Number of auto accidents.', default=0)
     public_ridership = models.DecimalField('Ridership of public transportation in thousands.',default=0.0,max_digits=7,decimal_places=3) # In thousands. Multiply by 1000 if necessary. Storing 19.1 would equal 19,100.
-    potholes_filed_YTD = models.IntegerField('Potholes filled YTD.',default=0)
+    potholes_filed_YTD = models.IntegerField('Potholes filled YTD.', default=0)
+
+
+class SampleData(models.Model):
+    emergency_calls = models.IntegerField()
+    month = models.IntegerField()
+    year = models.IntegerField()
+
 
     def __str__(self):
         return "Database table for Transportation."
