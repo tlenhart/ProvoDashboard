@@ -21,6 +21,8 @@ class Community(models.Model):
     response_time_911_calls = models.IntegerField('Response time for 911 calls in seconds.', default=0) # might want to change to models.TimeField
     noise_complaints = models.IntegerField('Number of noise complaints in a month.', default=0)
     code_violations = models.IntegerField('Number of code violations in a month.', default=0)
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
         return "Database table for Community, Neighborhood, and Livability."
@@ -31,6 +33,8 @@ class RecreationCultural(models.Model):
     recreation_center_patrons = models.IntegerField('Number of patrons utilizing the recreation center.',default=0)
     golf_course_attendees = models.IntegerField('Number of attendees at the golf course.',default=0)
     ice_arena_participants = models.IntegerField('Participants at the ice arena.',default=0)
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
         return "Database table for Recreation and Cultural."
@@ -40,6 +44,8 @@ class Economic(models.Model):
     building_permits_given = models.IntegerField('Number of building permits distributed.',default=0)
     unemployment_rate = models.DecimalField('Unemployment rate as a percentage.',default=0.0,max_digits=5,decimal_places=5) # Need to decide how this is going to be stored. 0.33 or 33 for 33%.
     houses_sold = models.IntegerField('Number of houses sold.', default=0)
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
         return "Database table for Economic Health."
@@ -51,6 +57,8 @@ class Environment(models.Model):
     gallons_water_treated = models.DecimalField('Gallons of water treated.',default=0.0,max_digits=14,decimal_places=2) # Could maybe change to an integer. max_digits=14 and decimal_places=2 allows up to 999,999,999,999.99 gallons of water to be stored. (Unless I'm mistaken...)
     home_inspections = models.IntegerField('Number of home inspections.',default=0)
     business_inspections = models.IntegerField('Number of business inspections.',default=0)
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
         return "Database table for Environmental Health."
@@ -61,6 +69,8 @@ class Safety(models.Model):
     police_response_time = models.DecimalField('Police response time (high priority) in ...',default=0.0,max_digits=10,decimal_places=2) # Might need to change to police_response_time_high_priority
     fires_responded = models.IntegerField('Number of fires responded to.',default=0)
     fire_response_time = models.DecimalField('Fire department response time in ...',default=0.0,max_digits=10,decimal_places=2)
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
         return "Database table for Public Safety."
@@ -71,20 +81,31 @@ class Transportation(models.Model):
     auto_accidents = models.IntegerField('Number of auto accidents.', default=0)
     public_ridership = models.DecimalField('Ridership of public transportation in thousands.',default=0.0,max_digits=7,decimal_places=3) # In thousands. Multiply by 1000 if necessary. Storing 19.1 would equal 19,100.
     potholes_filed_YTD = models.IntegerField('Potholes filled YTD.', default=0)
+    month = models.IntegerField(choices=MONTHS)
+    year = models.IntegerField(choices=YEARS)
+
+    def __str__(self):
+        return "Database table for Transportation."
 
 YEARS = (
     (2014, 2014),
     (2015, 2015)
 )
 
-class SampleData(models.Model):
-    emergency_calls = models.IntegerField()
-    month = models.IntegerField()
-    year = models.IntegerField(choices=YEARS)
+MONTHS = (
+    ("January", "January"),
+    ("February", "February"),
+    ("March", "March"),
+    ("April", "April"),
+    ("May", "May"),
+    ("June", "June"),
+    ("July", "July"),
+    ("August", "August"),
+    ("September", "September"),
+    ("October", "October"),
+    ("November", "November"),
+    ("December", "December")
+)
 
 
-
-
-    def __str__(self):
-        return "Database table for Transportation."
 
