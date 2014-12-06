@@ -99,6 +99,9 @@ TEMPLATE_DIRS = (
 # put them in settings/local_settings.py and remove it from source control.
 # All other general settings that belong to both production and development should go in this file.
 try:
-    from local_settings import *
-except ImportError as exp:
-    pass
+    LOCAL_SETTINGS
+except NameError:
+    try:
+        from local_settings import *
+    except ImportError:
+        pass
