@@ -98,9 +98,3 @@ TEMPLATE_DIRS = (
 # Loads production settings on the server. If specific settings are needed locally,
 # put them in settings/local_settings.py and remove it from source control.
 # All other general settings that belong to both production and development should go in this file.
-try:
-    # This will throw an error on local development. Just ignore it.
-    exec(open('local_settings.conf') in globals())
-except:
-    print("ImportError")
-    pass
