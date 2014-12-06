@@ -104,4 +104,5 @@ except NameError:
     try:
         from local_settings import *
     except ImportError:
+        print("ImportError")
         pass
