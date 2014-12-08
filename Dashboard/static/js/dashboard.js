@@ -44,8 +44,8 @@ $.get("api/transportation/?format=json&limit=100", function(data) {
     test = data.objects;
     //$('#testarea').html(test[0].category.toString());
 
-    for (var i = 0; i < 10; i++) {
-        if (test[i].category === "Transportation Injuries")
+    for (var i = 0; i < test.length; i++) {
+        if (test[i].category === "Transportation Injuries" || test[i].category === "Transportation_Injuries")
             testdata.push({month: generateDate(test[i].month, test[i].year), value: test[i].value});
     }
 
