@@ -1,6 +1,9 @@
 from django.conf.urls import patterns, include, url
 from Dashboard import *
 from django.contrib import admin
+from Dashboard.api import TransportationResource
+
+transportation_resource = TransportationResource()
 
 # If the admin interface isn't working for you, delete the database, run manage.py syncdb, and set up the superuser.
 # Then run:
@@ -26,5 +29,6 @@ urlpatterns = patterns('',
     url(r'^cultural', 'Dashboard.views.cultural', name='cultural'), # cultural and recreation go to the same page.
     url(r'^safety', 'Dashboard.views.safety', name='safety'),
     url(r'^transportation', 'Dashboard.views.transportation', name='transportation'),
+    (r'^api/', include(transportation_resource.urls)),
     url(r'^admin/', include(admin.site.urls)),
 )
