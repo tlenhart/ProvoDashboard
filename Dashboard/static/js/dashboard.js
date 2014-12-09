@@ -1,6 +1,10 @@
 // Base javascript file.
-var test;
-var testdata = [];
+var objects;
+var transportation_injuries = [];
+var percent_ontime = [];
+var auto_accidents = [];
+var public_ridership = [];
+var potholes_filled = [];
 
 //new Morris.Line({
 //    element: 'testgraph',
@@ -31,7 +35,7 @@ var testdata = [];
 //$('#testgraph').addClass("col-md-6");
 //$('#testgraph2').addClass("col-md-4");
 
-var graph = new Morris.Line({
+var transportation_injuries_graph = new Morris.Line({
     element: 'testarea',
     data: [],
     xkey: 'month',
@@ -39,21 +43,62 @@ var graph = new Morris.Line({
     labels: ['Injuries']
 });
 
-$.get("api/transportation/?format=json&limit=100", function(data) {
-    //console.log(data);
-    test = data.objects;
-    //$('#testarea').html(test[0].category.toString());
+var transportation_ontime_graph = new Morris.Line({
+    element: 'testarea2',
+    data: [],
+    xkey: 'month',
+    ykeys: ['value'],
+    labels: ['% on time']
+});
 
-    for (var i = 0; i < test.length; i++) {
-        if (test[i].category === "Transportation Injuries" || test[i].category === "Transportation_Injuries")
-            testdata.push({month: generateDate(test[i].month, test[i].year), value: test[i].value});
+var transportation_autoaccidents_graph = new Morris.Line({
+    element: 'testarea3',
+    data: [],
+    xkey: 'month',
+    ykeys: ['value'],
+    labels: ['Auto Accidents'],
+    lineColors: ['#3ebf33'],
+    pointFillColors: ['#7bc143']
+});
+
+var transportation_publicridership_graph = new Morris.Bar({
+    element: 'testarea4',
+    data: [],
+    xkey: 'month',
+    ykeys: ['value'],
+    labels: ['Public Ridership']
+});
+
+var transportation_potholes_graph = new Morris.Area({
+    element: 'testarea5',
+    data: [],
+    xkey: 'month',
+    ykeys: ['value'],
+    labels: ['Potholes Filled']
+});
+
+$.get("api/transportation/?format=json&limit=100", function(data) {
+    objects = data.objects;
+
+    for (var i = 0; i < objects.length; i++) {
+        if (objects[i].category === "Transportation Injuries" || objects[i].category === "Transportation_Injuries")
+            transportation_injuries.push({month: generateDate(objects[i].month, objects[i].year), value: objects[i].value});
+        else if (objects[i].category === "% ontime" || objects[i].category === "On time Rate")
+            percent_ontime.push({month: generateDate(objects[i].month, objects[i].year), value: objects[i].value});
+        else if (objects[i].category === "Auto Accidents")
+            auto_accidents.push({month: generateDate(objects[i].month, objects[i].year), value: objects[i].value});
+        else if (objects[i].category === "Public Ridership (in thousands)" || objects[i].category === "Ridership")
+            public_ridership.push({month: generateDate(objects[i].month, objects[i].year), value: objects[i].value});
+        else if (objects[i].category === "Potholes Filled (YTD)" || objects[i].category === "Pot holes Filled" || objects[i].category === "Pot Holes Filled (YTD)")
+            potholes_filled.push({month: generateDate(objects[i].month, objects[i].year), value: objects[i].value});
     }
 
-    //alert(testdata);
-    console.log(testdata);
-    graph.setData(testdata);
-    //console.log(graphnew.data);
-    //console.log(graph.data);
+    console.log(transportation_injuries);
+    transportation_injuries_graph.setData(transportation_injuries);
+    transportation_ontime_graph.setData(percent_ontime);
+    transportation_autoaccidents_graph.setData(auto_accidents);
+    transportation_publicridership_graph.setData(public_ridership);
+    transportation_potholes_graph.setData(potholes_filled);
 });
 
 function generateDate (month, year) {
