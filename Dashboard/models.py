@@ -46,52 +46,52 @@ DEPARTMENT = (
 )
 
 COMMUNITY_CATEGORIES = (
-    ("Pets_Rescued", "Pets Rescued at Shelter"),
-    ("911_Calls", "911 Calls"),
-    ("911_Response", "911 Phone Response Time (seconds)"),
-    ("Noise_Complaints", "Noise Complaints"),
-    ("Code_Violations", "Code Violations")
+    ("Pets Rescued", "Pets Rescued at Shelter"),
+    ("911 Calls", "911 Calls"),
+    ("911 Response", "911 Phone Response Time (seconds)"),
+    ("Noise Complaints", "Noise Complaints"),
+    ("Code Violations", "Code Violations")
 
 )
 
 RECREATION_CATEGORIES = (
-    ("Major_Attractions", "Major Attractions Attended (# of attendees"),
-    ("Community_Involvement", "Community Program Involvement (# of patrons"),
-    ("Rec_Center_Patrons", "Recreation Center Patrons"),
-    ("Golf_Course_Patrons", "Golf Course Patrons"),
-    ("Ice_Arena_Participants", "Ice Arena Participants")
+    ("Major Attractions", "Major Attractions Attended (# of attendees"),
+    ("Community Involvement", "Community Program Involvement (# of patrons"),
+    ("Rec Center Patrons", "Recreation Center Patrons"),
+    ("Golf Course Patrons", "Golf Course Patrons"),
+    ("Ice Arena Participants", "Ice Arena Participants")
 )
 
 ECONOMIC_CATEGORIES = (
-    ("Active_Licenses", "Active Number of Business Licenses"),
-    ("Building_Permits", "Building Permits Issued"),
-    ("Unemployment_Rate", "Unemployment Rate"),
-    ("Houses_Sold", "Houses Sold")
+    ("Active Licenses", "Active Number of Business Licenses"),
+    ("Building Permits", "Building Permits Issued"),
+    ("Unemployment Rate", "Unemployment Rate"),
+    ("Houses Sold", "Houses Sold")
 )
 
 ENVIRONMENT_CATEGORIES = (
-    ("Waste_Collected", "Waste Collected (Truck Loads)"),
-    ("Recyclables_Collected", "Recyclables Collected (Truck Loads"),
-    ("Water_Level", "Level of Reserve Water Tanks (% of capacity)"),
-    ("Water_Treated", "Gallons of Water Treated"),
-    ("Home_Inspections", "Home Inspections"),
-    ("Business_Inspections", "Business Inspections")
+    ("Waste Collected", "Waste Collected (Truck Loads)"),
+    ("Recyclables Collected", "Recyclables Collected (Truck Loads"),
+    ("Water Level", "Level of Reserve Water Tanks (% of capacity)"),
+    ("Water Treated", "Gallons of Water Treated"),
+    ("Home Inspections", "Home Inspections"),
+    ("Business Inspections", "Business Inspections")
 )
 
 SAFETY_CATEGORIES = (
-    ("Nonviolent_Crimes", "Nonviolent Crimes Reported"),
-    ("Violent_Crimes", "Violent Crimes Reported"),
-    ("Police_Response_Time", "Police Response Time (High Priority)"),
-    ("Fires_Responded", "Fires Responded"),
-    ("Fire_Response_Time", "Fire_Response_Time")
+    ("Nonviolent Crimes", "Nonviolent Crimes Reported"),
+    ("Violent Crimes", "Violent Crimes Reported"),
+    ("Police Response Time", "Police Response Time (High Priority)"),
+    ("Fires Responded", "Fires Responded"),
+    ("Fire Response Time", "Fire Response Time")
 )
 
 TRANSPORTATION_CATEGORIES = (
-    ("Transportation_Injuries", "Transportation Injuries"),
-    ("On_time_Rate", "Percentage On Time"),
-    ("Auto_Accidents", "Auto Accidents"),
+    ("Transportation Injuries", "Transportation Injuries"),
+    ("On time Rate", "Percentage On Time"),
+    ("Auto Accidents", "Auto Accidents"),
     ("Ridership", "Public Ridership (In thousands)"),
-    ("Pot_holes_Filled", "Pot Holes Filled (YTD)")
+    ("Pot holes Filled", "Pot Holes Filled (YTD)")
 )
 
 
