@@ -79,10 +79,13 @@
     {% else %}
         <!-- I think it might be faster to serve everything ourselves instead of through cdns.
              At least for right now. -->
-        <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/raphael.min.js' %}"></script>
-        <script src="{% static 'js/morris.min.js' %}"></script>
+        <!-- Combined for potential better network utilization into libs.js
+            <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+            <script src="{% static 'js/bootstrap.min.js' %}"></script>
+            <script src="{% static 'js/raphael.min.js' %}"></script>
+            <script src="{% static 'js/morris.min.js' %}"></script>
+        -->
+        <script src="{% static 'js/libs.js' %}"></script>
         <script src="{% static 'js/dashboard.min.js' %}"></script>
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
