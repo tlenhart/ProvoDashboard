@@ -70,7 +70,7 @@
 
     <!-- Load js -->
     <!-- Load different scripts in debug mode. -->
-    {% if debug %}
+    {% if not debug %}
         <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
         <script src="{% static 'js/bootstrap.js' %}"></script>
         <script src="{% static 'js/raphael.js' %}"></script>
