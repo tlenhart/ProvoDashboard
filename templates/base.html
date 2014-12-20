@@ -69,20 +69,22 @@
 </body>
 
     <!-- Load js -->
-    <!-- We will want to use cdn's for as much of this as we can, but for right now, this will suffice. -->
-    <!-- Switch to minnified versions on the server. (Or hosted.) Full versions used for debugging. -->
-    <!-- Files are being minimized on the server. We should still switch to a cdn where the files are better minified
-          and hosted externally at some point. -->
-    <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
-    <script src="{% static 'js/bootstrap.js' %}"></script>
-    <script src="{% static 'js/raphael.js' %}"></script>
-    <script src="{% static 'js/morris.js' %}"></script>
-    <script src="{% static 'js/dashboard.js' %}"></script>
+    <!-- Load different scripts in debug mode. -->
+    {% if debug %}
+        <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
+        <script src="{% static 'js/bootstrap.js' %}"></script>
+        <script src="{% static 'js/raphael.js' %}"></script>
+        <script src="{% static 'js/morris.js' %}"></script>
+        <script src="{% static 'js/dashboard.js' %}"></script>
+    {% else %}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+        <script src="{% static 'js/dashboard.min.js' %}"></script>
+    {% endif %}
+
 
     <!-- CDN script sources. Left commented out for now. -->
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-    <script src="{% static 'js/dashboard.min.js' %}"></script>-->
+
 </html>

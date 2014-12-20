@@ -98,6 +98,10 @@ TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates'),
 )
 
+INTERNAL_IPS = (
+    '127.0.0.1',
+)
+
 # Important! If you change something, let Todd know so that he can publish the changes on the server.
 
 # Loads production settings on the server. If specific settings are needed locally,
