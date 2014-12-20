@@ -70,18 +70,25 @@
 
     <!-- Load js -->
     <!-- Load different scripts in debug mode. -->
-    {% if not debug %}
+    {% if debug %}
         <script src="{% static 'js/jquery-1.11.1.js' %}"></script>
         <script src="{% static 'js/bootstrap.js' %}"></script>
         <script src="{% static 'js/raphael.js' %}"></script>
         <script src="{% static 'js/morris.js' %}"></script>
         <script src="{% static 'js/dashboard.js' %}"></script>
     {% else %}
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- I think it might be faster to serve everything ourselves instead of through cdns.
+             At least for right now. -->
+        <script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/raphael.min.js' %}"></script>
+        <script src="{% static 'js/morris.min.js' %}"></script>
+        <script src="{% static 'js/dashboard.min.js' %}"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
         <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
-        <script src="{% static 'js/dashboard.min.js' %}"></script>
+        <script src="{% static 'js/dashboard.min.js' %}"></script>-->
     {% endif %}
 
 <!-- -->
