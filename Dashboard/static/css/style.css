@@ -18,6 +18,12 @@ body {
 }
 /* end minimit */
 
+.graph-container {
+    border: 2px solid lightgray;
+    margin-right: 4px;
+    margin-bottom: 6px;
+}
+
 #testgraph {
 
 }

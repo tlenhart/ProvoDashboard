@@ -6292,11 +6292,6 @@ button.close {
 body {
   font-family: 'Century Gothic', CenturyGothic, "Muli", AppleGothic, Helvetica, sans-serif !important;
 }
-.contentblock {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 .morris-hover {
   position: absolute;
   z-index: 1000;
