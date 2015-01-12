@@ -4,7 +4,6 @@
 {% block title %} Transportation {% endblock %}
 
 {% block content %}
-<h2>Transportation Metrics</h2>
 
     <!-- To display the various number of graphs we will want to use either
     angularjs or django's template system.
@@ -13,32 +12,37 @@
 
     <!-- Graphs are overlapping right now. Not sure why -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
+        <div class="row row-centered">
+            <div class="col-md-5 col-centered col-min">
                 <h3>Public Transportation Injuries</h3>
                 <div id="testarea"></div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5 col-centered col-min">
                 <h3>Public Transportation Percent On Time</h3>
                 <div id="testarea2"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
+        <div class="row row-centered">
+            <div class="col-md-5 col-centered col-min">
                 <h3>Auto Accidents</h3>
                 <div id="testarea3"></div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5 col-centered col-min">
                 <h3>Public Ridership (in Thousands)</h3>
                 <div id="testarea4"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Potholes Filld (YTD)</h3>
+        <div class="row row-centered">
+            <div class="col-md-5 col-centered col-min">
+                <h3>Potholes Filled (YTD)</h3>
                 <div id="testarea5"></div>
+            </div>
+            <div class="col-md-5 col-centered col-min">
+                <h3>Potholes Filled (YTD)</h3>
+                <div id="testarea6"></div>
             </div>
         </div>
     </div>
 
 {% endblock %}
+

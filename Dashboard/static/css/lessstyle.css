@@ -6289,6 +6289,14 @@ button.close {
     display: none !important;
   }
 }
+body {
+  font-family: 'Century Gothic', CenturyGothic, "Muli", AppleGothic, Helvetica, sans-serif !important;
+}
+.contentblock {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .morris-hover {
   position: absolute;
   z-index: 1000;
@@ -6310,7 +6318,4 @@ button.close {
 .morris-hover.morris-default-style .morris-hover-point {
   white-space: nowrap;
   margin: 0.1em 0;
-}
-body {
-  font-family: 'Century Gothic', CenturyGothic, "Muli", AppleGothic, Helvetica, sans-serif !important;
 }
