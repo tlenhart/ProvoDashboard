@@ -17,7 +17,7 @@ def safety(request):
     return render(request,'dashboard/safety.html')
 
 def government(request):
-    return render(request,'dashboard/governemnt.html')
+    return render(request,'dashboard/government.html')
 
 def DataEntryForm(request):
     return render(request,'DataEntry/DataEntryForm.html')
