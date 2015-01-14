@@ -12,10 +12,6 @@
 {#        <link rel="shortcut icon" href="{% static 'favicon.ico' %}">#}
         <title>{% block title %}Provo City Dashboard{% endblock %}</title>
     </head>
-    <!-- I think we may want to use Tastypie for the API.
-        https://django-tastypie.readthedocs.org/en/latest/
-    or maybe Django REST framework
-        http://www.django-rest-framework.org/ -->
     <body>
     <!-- Place all static files in the /static/ directory
          This is the base template file.
@@ -25,7 +21,7 @@
             <!-- Place the code for the header from Provo City here.
             Do we need to recreate this to make it easier to work with or do we just copy/paste and hope? -->
             <div class="page-header">
-                <h1> <img src="{% static 'logo.gif' %}"> <small>Dashboard</small></h1>
+                <h1><a href="{% url 'index' %}"><img src="{% static 'logo.gif' %}"> <small>Dashboard</small></a></h1>
             </div>
         </div>
 
@@ -41,18 +37,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="{% url 'index' %}">Dashboard</a>
+{#                        <a class="navbar-brand" href="{% url 'index' %}">Dashboard</a>#}
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-left">
+                        <ul class="nav navbar-nav navbar-right">
                             <!-- The hrefs below do NOT require .html. They use the regex in urls.py to resolve the page to go to.
                             I don't know if this is the best way to do it though. -->
-                            <li><a href="{% url 'community' %}" id="community-nav-link">Community </a></li>
-                            <li><a href="{% url 'cultural' %}" id="cultural-nav-link">Cultural & Recreation</a></li>
-                            <li><a href="{% url 'economic' %}" id="economic-nav-link">Economic Health</a></li>
-                            <li><a href="{% url 'environment' %}" id="environment-nav-link">Environmental Health</a></li>
-                            <li><a href="{% url 'safety' %}" id="safety-nav-link">Safety</a></li>
-                            <li><a href="{% url 'transportation' %}" id="transportation-nav-link">Transportation</a></li>
+
+                            <!-- These url names need to change to the new categories. -->
+                            <li class="nav-link"><a href="{% url 'community' %}" id="public-safety-nav-link"><img src="{% static 'images/categories/public-safety-transparent-small.png' %}"><br>Public Safety</a></li>
+                            <li class="nav-link"><a href="{% url 'economic' %}" id="economic-health-nav-link"><img src="{% static 'images/categories/economic-selected-transparent-small.png' %}"><br>Economic Health</a></li>
+                            <li class="nav-link"><a href="{% url 'environment' %}" id="civic-health-nav-link"><img src="{% static 'images/categories/civic-health-transparent-small.png' %}"><br>Civic Health</a></li>
+                            <li class="nav-link"><a href="{% url 'transportation' %}" id="government-performance-nav-link"><img src="{% static 'images/categories/government-transparent-small.png' %}"><br>Government<br>Performance</a></li>
                         </ul>
                     </div>
                 </div>

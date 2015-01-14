@@ -4,6 +4,10 @@ body {
     font-family: 'Century Gothic', CenturyGothic, "Muli", AppleGothic, Helvetica, sans-serif !important;
 }
 
+.nav-link {
+    text-align: center;
+}
+
 /* http://www.minimit.com/articles/solutions-tutorials/bootstrap-3-responsive-centered-columns */
 .row-centered {
     text-align:center;
