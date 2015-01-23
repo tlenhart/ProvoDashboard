@@ -1,1 +1,17 @@
 <!-- 404 page -->
+{% extends "base.html" %}
+
+{% block title %} Page Not Found 404 | Provo City Dashboard {% endblock %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <div class="row row-centered">
+            <div class="col-md-5 col-centered col-min graph-container">
+                <h3 class="text-center alert-danger">Page not found.</h3>
+                <span class="text-center center-block">Please click on one of the navigation links above.</span>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
