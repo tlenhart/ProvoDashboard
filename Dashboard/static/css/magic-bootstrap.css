@@ -259,8 +259,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../app/fonts/glyphicons-halflings-regular.eot');
-  src: url('../app/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../app/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../app/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../app/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../fontsglyphicons-halflings-regular.eot');
+  src: url('../fontsglyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fontsglyphicons-halflings-regular.woff') format('woff'), url('../fontsglyphicons-halflings-regular.ttf') format('truetype'), url('../fontsglyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -4180,10 +4180,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #7bc143;
+  background-color: #b1da90;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #7bc143;
+  background-color: #33b3e3;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {

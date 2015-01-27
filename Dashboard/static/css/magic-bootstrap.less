@@ -4,6 +4,7 @@
 **/
 
 // Adjust the default bootstrap styles here.
+// At some point we will want to remove all of the unused bootstrap less data from boostrap.less and this file.
 @import "../less/bootstrap.less";
 
 // Grays
@@ -20,7 +21,6 @@
 @brand-warning: #ffae13;
 @brand-danger: #d9534f;
 @brand-info: #33b3e3;
-
 
 
 // Scaffolding
@@ -148,8 +148,8 @@
 @navbar-default-brand-color: @navbar-default-link-color;
 @navbar-default-brand-hover-color: darken(@navbar-default-link-color, 10%)fff;
 @navbar-default-brand-hover-bg: transparent;
-@navbar-default-toggle-hover-bg: @brand-primary;
-@navbar-default-toggle-icon-bar-bg: @brand-primary;
+@navbar-default-toggle-hover-bg: lighten(@brand-primary, 20%);
+@navbar-default-toggle-icon-bar-bg: @brand-info;
 @navbar-default-toggle-border-color: @brand-primary;
 
 
@@ -250,7 +250,7 @@
 
 
 // Sprites
-@icon-font-path: '../app/fonts/';
+@icon-font-path: '../fonts';
 @icon-font-name: glyphicons-halflings-regular;
 
 

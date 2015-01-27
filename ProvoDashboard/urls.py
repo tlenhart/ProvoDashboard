@@ -27,13 +27,10 @@ urlpatterns = patterns('',
 
     url(r'^$', 'Dashboard.views.index', name='index'),
     url(r'^index', 'Dashboard.views.index'),
-    url(r'^community', 'Dashboard.views.community', name='community'),
+    url(r'^civic', 'Dashboard.views.civic', name='civic'),
     url(r'^economic', 'Dashboard.views.economic', name='economic'),
-    url(r'^environment', 'Dashboard.views.environment', name='environment'),
-    url(r'^recreation', 'Dashboard.views.recreation', name='recreation'),
-    url(r'^cultural', 'Dashboard.views.cultural', name='cultural'), # cultural and recreation go to the same page.
+    url(r'^government', 'Dashboard.views.government', name='government'), # cultural and recreation go to the same page.
     url(r'^safety', 'Dashboard.views.safety', name='safety'),
-    url(r'^transportation', 'Dashboard.views.transportation', name='transportation'),
     (r'^api/', include(community_resource.urls)),
     (r'^api/', include(recreationcultural_resource.urls)),
     (r'^api/', include(economic_resource.urls)),
