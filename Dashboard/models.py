@@ -169,6 +169,23 @@ class Environment(models.Model):
         return "Database table for Environmental Health."
 
 
+class Safety(models.Model):
+    # nonviolent_crimes_reported = models.IntegerField('Number of nonviolent crimes reported.',default=0)
+    # violent_crimes_reported = models.IntegerField('Number of violent crimes reported.',default=0)
+    # Might need to change to police_response_time_high_priority
+    # police_response_time = models.DecimalField('Police response time',default=0.0,max_digits=10,decimal_places=2)
+    # fires_responded = models.IntegerField('Number of fires responded to.',default=0)
+    # fire_response_time = models.DecimalField('Fire department response time,default=0.0,max_digits=9,decimal_places=2)
+    id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
+    category = models.CharField(choices=SAFETY_CATEGORIES, max_length=100)
+    value = models.DecimalField(decimal_places=2, max_digits=11)
+    month = models.CharField(choices=MONTHS, max_length=20)
+    year = models.IntegerField(choices=YEARS)
+
+    def __str__(self):
+        return "Database table for Public Safety."
+
+
 class Transportation(models.Model):
     # transportation_injuries = models.IntegerField('Transportation injuries.', default=0)
     # ontime_percent = models.DecimalField('Percentage of services on time.', default=0.0,max_digits=5,decimal_places=5)
