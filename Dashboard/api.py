@@ -1,5 +1,5 @@
 from tastypie.resources import ModelResource
-from Dashboard.models import Community, RecreationCultural, Economic, Environment, Transportation
+from Dashboard.models import Community, RecreationCultural, Economic, Environment, Transportation, Safety
 
 
 class CommunityResource(ModelResource):
