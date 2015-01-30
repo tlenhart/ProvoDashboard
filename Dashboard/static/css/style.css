@@ -71,12 +71,8 @@ body {
   width: 65px
 }
 
-.civic-health-default-sm:hover {
-    background-position: -0px -130px;
-}
-
 #civic-health-nav-link:hover > .civic-health-default-sm {
-    background-position: -65px -65px;
+    background-position: -0px -130px;
 }
 
 .economic-health-selected-sm {
@@ -91,7 +87,7 @@ body {
   width: 65px
 }
 
-.economic-health-default-sm:hover {
+#economic-health-nav-link:hover > .economic-health-default-sm {
     background-position: -130px -65px;
 }
 
@@ -107,8 +103,8 @@ body {
   width: 65px
 }
 
-.public-safety-default-sm:hover {
-    background-position: -195px -65px;
+#public-safety-nav-link:hover > .public-safety-default-sm {
+    background-position: -130px -65px;
 }
 
 
