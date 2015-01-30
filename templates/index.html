@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block title %} Provo City Dashboard {% endblock %}
 
@@ -14,11 +15,13 @@
             <div class="col-md-5 col-centered col-min graph-container">
                 <h3 class="text-center">Public Transportation Injuries</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
                 <div id="testarea"></div>
             </div>
             <div class="col-md-5 col-centered col-min graph-container">
                 <h3 class="text-center">Public Transportation Percent On Time</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
                 <div id="testarea2"></div>
             </div>
         </div>
@@ -26,11 +29,13 @@
             <div class="col-md-5 col-centered col-min graph-container">
                 <h3 class="text-center">Auto Accidents</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
                 <div id="testarea3"></div>
             </div>
             <div class="col-md-5 col-centered col-min graph-container">
                 <h3 class="text-center">Public Ridership (in Thousands)</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
                 <div id="testarea4"></div>
             </div>
         </div>
@@ -38,6 +43,7 @@
             <div class="col-md-5 col-centered col-min graph-container">
                 <h3 class="text-center">Potholes Filled (YTD)</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
                 <div id="testarea5"></div>
             </div>
         </div>

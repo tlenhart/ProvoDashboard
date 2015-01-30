@@ -93,6 +93,8 @@ $.get("api/transportation/?format=json&limit=100", function(data) {
             potholes_filled.push({month: generateDate(objects[i].month, objects[i].year), value: objects[i].value});
     }
 
+    $('.loadergif').hide();
+
     console.log(transportation_injuries);
     transportation_injuries_graph.setData(transportation_injuries);
     transportation_ontime_graph.setData(percent_ontime);
