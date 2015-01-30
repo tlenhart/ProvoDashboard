@@ -55,10 +55,6 @@ body {
   width: 65px
 }
 
-.government-performance-default-sm:hover {
-    background-position: -65px -65px;
-}
-
 .government-performance-default-sm:hover, #government-performance-nav-link:hover > .government-performance-default-sm {
     background-position: -65px -65px;
 }
@@ -77,6 +73,10 @@ body {
 
 .civic-health-default-sm:hover {
     background-position: -0px -130px;
+}
+
+#civic-health-nav-link:hover > .civic-health-default-sm {
+    background-position: -65px -65px;
 }
 
 .economic-health-selected-sm {
