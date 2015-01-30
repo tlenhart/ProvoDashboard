@@ -38,3 +38,74 @@ body {
 .morris-hover{position:absolute;z-index:1000}.morris-hover.morris-default-style{border-radius:10px;padding:6px;color:#666;background:rgba(255,255,255,0.8);border:solid 2px rgba(230,230,230,0.8);font-family:sans-serif;font-size:12px;text-align:center}.morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0}
 .morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0}
 
+.government-performance-default-sm, .civic-health-default-sm, .civic-health-selected-sm, .economic-health-hover-sm, .economic-health-selected-sm, .economic-health-default-sm, .civic-health-hover-sm, .government-performance-hover-sm, .government-performance-selected-sm, .public-safety-default-sm, .public-safety-hover-sm, .public-safety-selected-sm {
+  display: inline-block;
+    background: url(../images/navigation-sprite.png) no-repeat;
+}
+
+.government-performance-default-sm {
+  background-position: -65px -0px;
+  height: 65px;
+  width: 65px
+}
+
+.government-performance-selected-sm {
+  background-position: -65px -130px;
+  height: 65px;
+  width: 65px
+}
+
+.government-performance-default-sm:hover {
+    background-position: -65px -65px;
+}
+
+.civic-health-default-sm {
+  background-position: -0px -0px;
+  height: 65px;
+  width: 65px
+}
+
+.civic-health-selected-sm {
+  background-position: -0px -65px;
+  height: 65px;
+  width: 65px
+}
+
+.civic-health-default-sm:hover {
+    background-position: -0px -130px;
+}
+
+.economic-health-selected-sm {
+  background-position: -130px -130px;
+  height: 65px;
+  width: 65px
+}
+
+.economic-health-default-sm {
+  background-position: -130px -0px;
+  height: 65px;
+  width: 65px
+}
+
+.economic-health-default-sm:hover {
+    background-position: -130px -65px;
+}
+
+.public-safety-default-sm {
+  background-position: -195px -0px;
+  height: 65px;
+  width: 65px
+}
+
+.public-safety-selected-sm {
+  background-position: -195px -130px;
+  height: 65px;
+  width: 65px
+}
+
+.public-safety-default-sm:hover {
+    background-position: -195px -65px;
+}
+
+
+
