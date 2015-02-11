@@ -23,7 +23,7 @@
 {% endif %}
 
 {% block jquery %}
-  <script type="text/javascript" src="{% static "js/libs.js" %}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script type="text/javascript" src="{% static "admin/js/jquery.init.js" %}"></script>
 {% endblock jquery %}
   <script>
@@ -168,7 +168,6 @@
 
 {% block bootstrap_admin_js %}
 {#  <script src="{% static 'bootstrap_admin/js/bootstrap.min.js' %}"></script>#}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="{% static 'bootstrap_admin/js/base.js' %}"></script>
 {% endblock bootstrap_admin_js %}
