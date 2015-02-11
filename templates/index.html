@@ -12,39 +12,39 @@
     <!-- Graphs might slightly overlap on page resize -->
     <div class="container-fluid">
         <div class="row row-centered">
-            <div class="col-md-5 col-centered col-min graph-container">
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="LineCtrl" ng-init="initLine()">
                 <h3 class="text-center">Public Transportation Injuries</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <div id="testarea"></div>
+                <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick" options="options"></canvas>
             </div>
-            <div class="col-md-5 col-centered col-min graph-container">
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="PieCtrl">
                 <h3 class="text-center">Public Transportation Percent On Time</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <div id="testarea2"></div>
+                <canvas id="pie" class="chart chart-pie" data="data" labels="labels" legend="true" series="series"></canvas>
             </div>
         </div>
         <div class="row row-centered">
-            <div class="col-md-5 col-centered col-min graph-container">
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="DoughnutCtrl" ng-init="initDough()">
                 <h3 class="text-center">Auto Accidents</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <div id="testarea3"></div>
+                <canvas id="doughnut" class="chart chart-doughnut" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
             </div>
-            <div class="col-md-5 col-centered col-min graph-container">
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="PolarAreaCtrl">
                 <h3 class="text-center">Public Ridership (in Thousands)</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <div id="testarea4"></div>
+                <canvas id="polar-area" class="chart chart-polar-area" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
             </div>
         </div>
         <div class="row row-centered">
-            <div class="col-md-5 col-centered col-min graph-container">
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="BarCtrl" ng-init="initBar()">
                 <h3 class="text-center">Potholes Filled (YTD)</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <div id="testarea5"></div>
+                <canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
             </div>
         </div>
     </div>

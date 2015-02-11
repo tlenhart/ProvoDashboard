@@ -1,13 +1,15 @@
-// Adjust the default bootstrap styles here.
+// Adjust the default bootstrap styles in this file.
 // At some point we will want to remove all of the unused bootstrap less data from boostrap.less and this file.
+
+// Import the default bootstrap files.
 @import "../less/bootstrap.less";
 
 // http://bootswatchr.com/create#!/edit/c0ede397
 
+// Overwrite default bootstrap properties
 //
 // Variables
 // --------------------------------------------------
-
 
 //== Colors
 //
@@ -345,7 +347,7 @@
 
 // Basics of a navbar
 @navbar-height:                    45px;
-@navbar-margin-bottom:             @line-height-computed;
+@navbar-margin-bottom:             @line-height-computed * 0.2;
 @navbar-border-radius:             0px;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
@@ -844,7 +846,11 @@
 //** Horizontal line color.
 @hr-border:                   @gray-lighter;
 
-
+.page-header {
+  padding-bottom: ((@line-height-computed / 2) - 1);
+  margin: (@line-height-computed * 1.2) 0 (@line-height-computed * 0.5);
+  border-bottom: 1px solid @page-header-border-color;
+}
 
 
 // My Variables

@@ -4030,7 +4030,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 45px;
-  margin-bottom: 18px;
+  margin-bottom: 3.6px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -6528,4 +6528,9 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.page-header {
+  padding-bottom: 8px;
+  margin: 21.6px 0 9px;
+  border-bottom: 1px solid #eeeeee;
 }

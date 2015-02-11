@@ -3,5 +3,13 @@
 
 {% block title %} Data Entry {% endblock %}
 {% block content %}
-    <h2>Data entry page.</h2>
+    <h2>Data entry page.</h2><br>
+    <div class="container-fluid">
+        <span>Please choose a CSV file</span><br><br>
+        <div>
+                <span><input type="file" accept='.csv' id="fileinput" onchange="readSingleFile(event)"/></span>
+        </div><br>
+        <div id="output"></div>
+		<div id="download"></div>
+	</div>
 {% endblock %}

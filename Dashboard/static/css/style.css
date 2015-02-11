@@ -1,4 +1,5 @@
 /* Default styles go here */
+/* All styles should go in this file or in magic-bootstrap.less (the less file is compiled on the server) */
 body {
     /* Fonts to match Provo.org */
     font-family: 'Century Gothic', CenturyGothic, "Muli", AppleGothic, Helvetica, sans-serif !important;
@@ -35,8 +36,9 @@ body {
 #testgraph {
 
 }
-.morris-hover{position:absolute;z-index:1000}.morris-hover.morris-default-style{border-radius:10px;padding:6px;color:#666;background:rgba(255,255,255,0.8);border:solid 2px rgba(230,230,230,0.8);font-family:sans-serif;font-size:12px;text-align:center}.morris-hover.morris-default-style .morris-hover-row-label{font-weight:bold;margin:0.25em 0}
-.morris-hover.morris-default-style .morris-hover-point{white-space:nowrap;margin:0.1em 0}
+
+/* Angular Chart CSS */
+.chart-legend,.bar-legend,.line-legend,.pie-legend,.radar-legend,.polararea-legend,.doughnut-legend{list-style-type:none;margin-top:5px;text-align:center}.chart-legend li,.bar-legend li,.line-legend li,.pie-legend li,.radar-legend li,.polararea-legend li,.doughnut-legend li{display:inline-block;white-space:nowrap;position:relative;margin-bottom:4px;border-radius:5px;padding:2px 8px 2px 28px;font-size:smaller;cursor:default}.chart-legend li span,.bar-legend li span,.line-legend li span,.pie-legend li span,.radar-legend li span,.polararea-legend li span,.doughnut-legend li span{display:block;position:absolute;left:0;top:0;width:20px;height:20px;border-radius:5px}
 
 .government-performance-default-sm, .civic-health-default-sm, .civic-health-selected-sm, .economic-health-hover-sm, .economic-health-selected-sm, .economic-health-default-sm, .civic-health-hover-sm, .government-performance-hover-sm, .government-performance-selected-sm, .public-safety-default-sm, .public-safety-hover-sm, .public-safety-selected-sm {
   display: inline-block;
@@ -106,6 +108,3 @@ body {
 #public-safety-nav-link:hover > .public-safety-default-sm {
     background-position: -195px -65px;
 }
-
-
-
