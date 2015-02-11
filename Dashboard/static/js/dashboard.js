@@ -35,6 +35,7 @@ var potholes_filled = [];
 //$('#testgraph').addClass("col-md-6");
 //$('#testgraph2').addClass("col-md-4");
 
+//
 var transportation_injuries_graph = new Morris.Line({
     element: 'testarea',
     data: [],
