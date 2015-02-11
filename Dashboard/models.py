@@ -200,4 +200,4 @@ class Transportation(models.Model):
     year = models.IntegerField(choices=YEARS)
 
     def __str__(self):
-        return "Database table for Transportation."
+        return "{0} - {1}, {2}".format(self.category, self.month, self.year)
