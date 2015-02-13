@@ -16,13 +16,13 @@ class EconomicResource(ModelResource):
 
 class CivicResource(ModelResource):
     class Meta:
-        queryset = Community.objects.all()
+        queryset = Community.objects.all()  # Needs to change to Civic when the models are updated.
         resource_name = 'civic'
 
 
 class GovernmentResource(ModelResource):
     class Meta:
-        queryset = RecreationCultural.objects.all()
+        queryset = RecreationCultural.objects.all()  # Needs to change to Government when the models are updated.
         resource_name = 'government'
 
 
