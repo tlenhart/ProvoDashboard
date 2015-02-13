@@ -1,4 +1,5 @@
 // Base javascript file.
+// Checking deployment
 
 // Override chart colors
 Chart.defaults.global.colours = [
