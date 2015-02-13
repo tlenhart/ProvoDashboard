@@ -14,9 +14,9 @@
             };
 
             $scope.initLine = function() {
-                $scope.category = 'transportation';
+                $scope.category = 'economic';
                 $scope.limit = 10;
-                $scope.dataCollection = Object.create(transportationData.prototype);
+                $scope.dataCollection = Object.create(economicData.prototype);
                 $scope.dataCollection.load($scope.category, $scope.limit ,function () {
                     $scope.labels = $scope.dataCollection.getMonth();
                     $scope.data[0] = $scope.dataCollection.getValue();
@@ -58,9 +58,9 @@
             };
 
             $scope.initDough = function() {
-                $scope.category = 'transportation';
+                $scope.category = 'civic';
                 $scope.limit = 3;
-                $scope.dataCollection = Object.create(communityData.prototype);
+                $scope.dataCollection = Object.create(civicData.prototype);
                 $scope.dataCollection.load($scope.category, $scope.limit ,function () {
                     $scope.labels = $scope.dataCollection.getMonth();
                     var i = 0;
