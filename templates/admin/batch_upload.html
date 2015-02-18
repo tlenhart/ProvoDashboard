@@ -1,0 +1,22 @@
+{# Trying to create a file and have it extend some of the admin stuff. #}
+{#    Feel free to ignore/delete this file. #}
+{#  I had a problem with the urls though, and there might be some other problems.#}
+{#  I don't think this file is currently being used by anything. #}
+
+{% extends "admin/change_list.html" %}
+{% load i18n admin_urls admin_static admin_list %}
+
+{% block breadcrumbs %}
+    <ol class="breadcrumb">
+      <li class="home">
+        <a href="{% url 'admin:index' %}" title="{% trans 'Home' %}"><span class="glyphicon glyphicon-home"></span></a>
+      </li>
+      <li>
+        <a href="{% url 'admin:app_list' app_label=cl.opts.app_label %}">{{ cl.opts.app_config.verbose_name }}</a>
+      </li>
+      <li class="active">{{ cl.opts.verbose_name_plural|capfirst }}</li>
+    </ol>
+  {% endblock %}
+{% block content %}
+<h1>Test</h1>
+{% endblock %}

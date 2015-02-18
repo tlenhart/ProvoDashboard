@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'tastypie',
     'Dashboard',
+    # 'debug_toolbar',
 )
 
 MIDDLEWARE_CLASSES = (
