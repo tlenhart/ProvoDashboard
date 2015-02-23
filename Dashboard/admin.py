@@ -1,11 +1,12 @@
 from django.contrib import admin
 # Register your models here.
-from .models import Community, RecreationCultural, Economic, Environment, Safety, Transportation
+from .models import CivicHealth, EconomicHealth, GovernmentPerformance, SubCategories, PublicSafety
 
 # The models need to change to Safety, Economic, Civic, and Government
-admin.site.register(Community)
-admin.site.register(RecreationCultural)
-admin.site.register(Economic)
-admin.site.register(Environment)
-admin.site.register(Safety)
-admin.site.register(Transportation)
+admin.site.register(CivicHealth)
+admin.site.register(EconomicHealth)
+admin.site.register(GovernmentPerformance)
+admin.site.register(SubCategories)
+admin.site.register(PublicSafety)
+
+
