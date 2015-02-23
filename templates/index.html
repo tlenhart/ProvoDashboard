@@ -12,12 +12,12 @@
     <!-- Graphs might slightly overlap on page resize -->
     <div class="container-fluid">
         <div class="row row-centered">
-{#            <div class="col-md-5 col-centered col-min graph-container" ng-controller="LineCtrl" ng-init="initLine()">#}
-{#                <h3 class="text-center">Public Transportation Injuries</h3>#}
-{#                <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>#}
-{#                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />#}
-{#                <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick" options="options"></canvas>#}
-{#            </div>#}
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="LineCtrl" ng-init="initLine()">
+                <h3 class="text-center">Public Transportation Injuries</h3>
+                <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick" options="options"></canvas>
+            </div>
             <div class="col-md-5 col-centered col-min graph-container" ng-controller="PieCtrl">
                 <h3 class="text-center">Public Transportation Percent On Time</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
