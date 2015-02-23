@@ -1,13 +1,53 @@
 from tastypie.resources import ModelResource, ALL, ALL_WITH_RELATIONS
-from Dashboard.models import Safety  # ,Civic, Government
+from Dashboard.models import CivicHealth, EconomicHealth, GovernmentPerformance, SubCategories, PublicSafety
 
 # See https://django-tastypie.readthedocs.org/en/latest/interacting.html for info about interacting with the api.
 
+class CivicResource(ModelResource):
+    class Meta:
+        queryset = CivicHealth.objects.all()
+        resource_name = 'civic'
+        filtering = {
+            'category': ALL,
+            'month': ALL,
+            'year': ALL,
+        }
+
+class EconomicResource(ModelResource):
+    class Meta:
+        queryset = EconomicHealth.objects.all()
+        resource_name = 'economic'
+        filtering = {
+            'category': ALL,
+            'month': ALL,
+            'year': ALL,
+        }
+
+class GovernmentResource(ModelResource):
+    class Meta:
+        queryset = GovernmentPerformance.objects.all()
+        resource_name = 'government'
+        filtering = {
+            'category': ALL,
+            'month': ALL,
+            'year': ALL,
+        }
 
 class SafetyResource(ModelResource):
     class Meta:
-        queryset = Safety.objects.all()
+        queryset = PublicSafety.objects.all()
         resource_name = 'safety'
+        filtering = {
+            'category': ALL,
+            'month': ALL,
+            'year': ALL,
+        }
+
+
+# class SafetyResource(ModelResource):
+#     class Meta:
+#         queryset = Safety.objects.all()
+#         resource_name = 'safety'
 
 """
 class EconomicResource(ModelResource):

@@ -91,12 +91,12 @@ class GovernmentPerformance(models.Model):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
 
 
-class Safety(models.Model):
-    id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
-    category = models.ForeignKey(SubCategories)
-    value = models.DecimalField(decimal_places=2, max_digits=11)
-    month = models.CharField(choices=MONTHS, max_length=20)
-    year = models.IntegerField(choices=YEARS)
-
-    def __str__(self):
-        return "{0} - {1}, {2}".format(self.category, self.month, self.year)
+# class Safety(models.Model):
+#     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
+#     category = models.ForeignKey(SubCategories)
+#     value = models.DecimalField(decimal_places=2, max_digits=11)
+#     month = models.CharField(choices=MONTHS, max_length=20)
+#     year = models.IntegerField(choices=YEARS)
+#
+#     def __str__(self):
+#         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
