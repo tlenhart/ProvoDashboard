@@ -5,5 +5,5 @@
 var app = angular.module("graphapp", ["chart.js"]);
 
 app.controller('SafetyController', ['$scope', function($scope) {
-
+//
 }]);
