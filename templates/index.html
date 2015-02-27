@@ -16,13 +16,17 @@
                 <h3 class="text-center">Public Transportation Injuries</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                <a href="#modal1"  data-toggle="modal">
                 <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick" options="options"></canvas>
+                </a>
             </div>
             <div class="col-md-5 col-centered col-min graph-container" ng-controller="PieCtrl">
                 <h3 class="text-center">Public Transportation Percent On Time</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <canvas id="pie" class="chart chart-pie" data="data" labels="labels" legend="true" series="series"></canvas>
+                <a href="#modal2"  data-toggle="modal">
+                    <canvas id="pie" class="chart chart-pie" data="data" labels="labels" legend="true" series="series"></canvas>
+                </a>
             </div>
         </div>
         <div class="row row-centered">
@@ -30,13 +34,17 @@
                 <h3 class="text-center">Auto Accidents</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                <a href="#modal3"  data-toggle="modal">
                 <canvas id="doughnut" class="chart chart-doughnut" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
+                </a>
             </div>
             <div class="col-md-5 col-centered col-min graph-container" ng-controller="PolarAreaCtrl">
                 <h3 class="text-center">Public Ridership (in Thousands)</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <canvas id="polar-area" class="chart chart-polar-area" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
+                <a href="#modal4"  data-toggle="modal">
+                    <canvas id="polar-area" class="chart chart-polar-area" data="data" labels="labels" legend="true" series="series" ></canvas>
+                </a>
             </div>
         </div>
         <div class="row row-centered">
@@ -44,9 +52,107 @@
                 <h3 class="text-center">Potholes Filled (YTD)</h3>
                 <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
                 <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
-                <canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series" click="onClick"></canvas>
+                <a href="#modal5"  data-toggle="modal">
+                    <canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series" ></canvas>
+                </a>
             </div>
         </div>
     </div>
+
+
+    <!-- MODAL SECTION -->
+    <div class="bs-example">
+        <div id="modal1" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Public Transportation Injuries</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h1>MODAL 1</h1>
+                        <p>Charts will go here and have more things to do to change views for charts</p>
+                        <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal2" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Public Transportation Percent On Time<</h4>
+                    </div>
+                    <div class="modal-body">
+                        <h1>MODAL 2</h1>
+                        <p>Another chart will go here with stuff to change it.</p>
+                        <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal3" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Auto Accidents</h4>
+                </div>
+                <div class="modal-body">
+                    <h1>MODAL 3</h1>
+                    <p>Charts will go here and have more things to do to change views for charts</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal4" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Public Ridership (in Thousands)</h4>
+                </div>
+                <div class="modal-body">
+                    <h1>MODAL 4</h1>
+                    <p>Charts will go here and have more things to do to change views for charts</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal5" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Potholes Filled (YTD)</h4>
+                </div>
+                <div class="modal-body">
+                    <h1>MODAL 5</h1>
+                    <p>Charts will go here and have more things to do to change views for charts</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}
