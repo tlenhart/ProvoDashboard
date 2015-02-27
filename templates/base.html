@@ -91,4 +91,8 @@
         <script src="{% static 'js/parsefile.js' %}"></script>
         <script src="{% static 'js/dashboard.min.js' %}"></script>
     {% endif %}
+
+    <!-- Put any additional js libraries needed on an individual page basis in this block on those pages. -->
+    {% block extrajs %}
+    {% endblock %}
 </html>

@@ -1,28 +1,36 @@
 <!-- Community, Neighborhood, Livability -->
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block title %} Public Safety {% endblock %}
 
 {% block nav-safety %}<span class="public-safety-selected-sm"></span>{% endblock %}
 
 {% block content %}
-<h2>Public Safety</h2>
-
     <!-- To display the various number of graphs we will want to use either
     angularjs or django's template system.
     They both have their advantages (Django's is built in and won't require additional js libraries)
     (Angular is client-side and keeps more stuff away from the server. But it would require an api on the server I think.) -->
 
-    <!-- Graphs are overlapping right now. Not sure why -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div id="testgraph"></div>
+    <div class="container-fluid" ng-controller="SafetyController">
+        <div class="row row-centered">
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="LineCtrl" ng-init="initLine()">
+                <h3 class="text-center">Public Transportation Injuries</h3>
+                <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                <canvas id="line" class="chart chart-line" data="data" labels="labels" legend="true" series="series" click="onClick" options="options"></canvas>
             </div>
-            <div class="col-md-6">
-                <div id="testgraph2"></div>
+            <div class="col-md-5 col-centered col-min graph-container" ng-controller="PieCtrl">
+                <h3 class="text-center">Public Transportation Percent On Time</h3>
+                <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>
+                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                <canvas id="pie" class="chart chart-pie" data="data" labels="labels" legend="true" series="series"></canvas>
             </div>
         </div>
     </div>
 
+{% endblock %}
+
+{% block extrajs %}
+    <script src="{% static 'js/safety.js' %}"></script>
 {% endblock %}
