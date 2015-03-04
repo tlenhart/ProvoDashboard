@@ -1,3 +1,4 @@
+from tastypie import fields
 from tastypie.resources import ModelResource, ALL, ALL_WITH_RELATIONS
 from Dashboard.models import CivicHealth, EconomicHealth, GovernmentPerformance, SubCategories, PublicSafety
 
@@ -33,15 +34,31 @@ class GovernmentResource(ModelResource):
             'year': ALL,
         }
 
+# Not callable directly with a url as it is not in urls.py
+class CategoryResource(ModelResource):
+    class Meta:
+        queryset = SubCategories.objects.all()
+        resource_name = 'category'
+        filtering = {
+            'description': ALL,
+            'sub_category': ALL,
+        }
+
 class SafetyResource(ModelResource):
+    category = fields.ForeignKey(CategoryResource, 'category', full=True)
+
     class Meta:
         queryset = PublicSafety.objects.all()
         resource_name = 'safety'
+        allowed_methods = ['get']
         filtering = {
-            'category': ALL,
+            'category': ALL_WITH_RELATIONS,
             'month': ALL,
             'year': ALL,
         }
+
+        # To filter on an individual subcategory call (For example Violent Crimes):
+        #   /api/safety/?category__sub_category=Violent%20Crimes
 
 
 # class SafetyResource(ModelResource):

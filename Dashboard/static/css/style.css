@@ -29,6 +29,10 @@ body {
     margin-bottom: 6px;
 }
 
+.label-size {
+    height: 60px;
+}
+
 .loadergif {
     margin-top: 40px;
 }

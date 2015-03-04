@@ -113,6 +113,8 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
           }
         }
 
+        // Order of setting "watch" matter
+
         scope.$watch('data', function (newVal, oldVal) {
           if (! newVal || ! newVal.length || (Array.isArray(newVal[0]) && ! newVal[0].length)) return;
           var chartType = type || scope.chartType;
@@ -131,8 +133,9 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
         scope.$watch('options', resetChart, true);
         scope.$watch('colours', resetChart, true);
 
-        scope.$watch('chartType', function (newVal/*, oldVal */) {
-          if (! newVal) return;
+        scope.$watch('chartType', function (newVal, oldVal) {
+          if (isEmpty(newVal)) return;
+          if (angular.equals(newVal, oldVal)) return;
           if (chart) chart.destroy();
           chart = createChart(newVal, scope, elem);
         });
@@ -141,8 +144,9 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
           if (chart) chart.destroy();
         });
 
-        function resetChart (newVal/*, oldVal*/) {
+        function resetChart (newVal, oldVal) {
           if (isEmpty(newVal)) return;
+          if (angular.equals(newVal, oldVal)) return;
           var chartType = type || scope.chartType;
           if (! chartType) return;
 
@@ -179,6 +183,7 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
       getData(scope.labels, scope.data, scope.colours);
     var chart = new Chart(ctx)[type](data, scope.options || {});
     scope.$emit('create', chart);
+
     if (scope.click) {
       cvs.onclick = function (evt) {
         var click = chart.getPointsAtEvent || chart.getBarsAtEvent || chart.getSegmentsAtEvent;
@@ -195,7 +200,7 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
   }
 
   function getColours (scope) {
-    var colours = scope.colours || angular.copy(Chart.defaults.global.colours);
+    var colours = angular.copy(scope.colours) || angular.copy(Chart.defaults.global.colours);
     while (colours.length < scope.data.length) {
       colours.push(scope.getColour());
     }
@@ -230,6 +235,16 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
 
   function rgba(colour, alpha) {
     return 'rgba(' + colour.concat(alpha).join(',') + ')';
+  }
+
+  // Credit: http://stackoverflow.com/a/11508164/1190235
+  function hexToRgb (hex) {
+    var bigint = parseInt(hex, 16),
+      r = (bigint >> 16) & 255,
+      g = (bigint >> 8) & 255,
+      b = bigint & 255;
+
+    return [r, g, b];
   }
 
   function getDataSets (labels, data, series, colours) {
@@ -283,16 +298,6 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
     return ! value ||
       (Array.isArray(value) && ! value.length) ||
       (typeof value === 'object' && ! Object.keys(value).length);
-  }
-
-  // Credit: http://stackoverflow.com/a/11508164/1190235
-  function hexToRgb (hex) {
-    var bigint = parseInt(hex, 16),
-        r = (bigint >> 16) & 255,
-        g = (bigint >> 8) & 255,
-        b = bigint & 255;
-
-    return [r, g, b];
   }
 
 })();
