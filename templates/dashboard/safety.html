@@ -21,8 +21,9 @@
                 <div ng-controller="GraphController" ng-init="init(subcategory)">
                     <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
                     {% verbatim %}
-                            <canvas id="{{ $index }}" class="chart chart-line" data="::data" labels="::labels" legend="true" series="series">
-                            </canvas>
+                        <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
+                        <!-- Consider this instead. Might have side effects. Needs research on ::.
+                          <canvas class="chart chart-base" chart-type="type" data="::data" labels="::labels"></canvas>-->
                     {% endverbatim %}
                 </div>
                 <span class="label-info text-center center-block label-size">{% verbatim %}{{ subcategory.description }}{% endverbatim %}</span>

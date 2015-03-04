@@ -55,7 +55,7 @@ app.controller('GraphController', function($scope) {
     $scope.series = ['2014'];
     $scope.data = [];
     $scope.values = [];
-    //$scope.chartType = '';
+    $scope.type = '';
     $scope.options = {};
     $scope.onClick = function (points, evt) {
         alert();
@@ -77,15 +77,39 @@ app.controller('GraphController', function($scope) {
             $scope.values.push(datum.value);
         });
 
-        //if ($scope.chartType === "chart-line") {
+        $scope.charts = ['Line', 'Bar', 'Doughnut', 'Pie', 'Polar Area', 'Radar', 'Base'];
+        if ($scope.chartType === "chart-line") {
+            $scope.type = 'Line';
             $scope.data[0] = $scope.values;
-        //}
-        //else {
-        //    $scope.values.forEach(function(dp) {
-        //       $scope.data.push(parseInt(dp));
-        //    });
-        //    //$scope.data.push($scope.value);
-        //}
+        }
+        else if ($scope.chartType === "chart-bar") {
+            $scope.type = 'Bar';
+            $scope.data[0] = $scope.values;
+        }
+        else if ($scope.chartType === "chart-doughnut") {
+            $scope.type = 'Doughnut';
+            $scope.data = $scope.values;
+        }
+        else if ($scope.chartType === "chart-pie") {
+            $scope.type = 'Pie';
+            $scope.data = $scope.values;
+        }
+        else if ($scope.chartType === "chart-polar") {
+            $scope.type = 'PolarArea';
+            $scope.data = $scope.values;
+        }
+        else if ($scope.chartType === "chart-radar") {
+            $scope.type = 'Radar';
+            $scope.data[0] = $scope.values;
+        }
+        else {
+            $scope.data = $scope.values;
+            console.log("Invalid chart type" + $scope.chartType);
+            //$scope.values.forEach(function(dp) {
+            //   $scope.data.push(parseInt(dp));
+            //});
+            //$scope.data.push($scope.value);
+        }
 
         //console.log($scope.chartType);
 
