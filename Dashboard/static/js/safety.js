@@ -4,33 +4,9 @@
 
 var app = angular.module("graphapp", ["chart.js"]);
 
-app.factory('safetyFactory', function($http) {
-    //var service = {};
-    //
-    //var labels = [];
-    //var series = ['2014'];
-    //var data = [];
-    //var options = {};
-    //
-    //var category = 'safety';
-    //var limit = 0;
-    //var dataCollection = Object.create(safetyData.prototype);
-    //dataCollection.load(category, limit ,function () {
-    //    labels = dataCollection.getMonth();
-    //    data[0] = dataCollection.getValue();
-    //    //$apply();
-    //});
-    //
-    //service.getData = function() {
-    //    return category;
-    //};
-    //
-    //return service;
-});
-var test = {};
-app.controller('SafetyController', function($scope/*, safetyFactory*/) {
+app.controller('SafetyController', function($scope) {
     $scope.category = 'safety';
-    $scope.safetyLoaded = false;
+    //$scope.safetyLoaded = false;
     $scope.limit = 0;
     $scope.dataCollection = {};
 
@@ -38,15 +14,13 @@ app.controller('SafetyController', function($scope/*, safetyFactory*/) {
         $scope.dataCollection = Object.create(safetyData.prototype);
 
         $scope.dataCollection.load($scope.category, $scope.limit ,function () {
-            //$scope.labels = $scope.dataCollection.getMonth();
-            //$scope.data[0] = $scope.dataCollection.getValue();
             $scope.$apply();
-            $scope.safetyLoaded = true;
+            //$scope.safetyLoaded = true;
         });
     };
 });
 
-// Data might be duplicated here. (Copies of stuff in SafetyController).
+// Data might be duplicated here. (Copies of stuff in SafetyController). Might be better to store stuff in a factory and pass in a pointer.
 app.controller('GraphController', function($scope) {
     $scope.loaded = false;
     $scope.title = "";
@@ -64,8 +38,6 @@ app.controller('GraphController', function($scope) {
     // This might not be the best approach to doing this.
     //  See here: https://stackoverflow.com/questions/14523679/can-you-pass-parameters-to-an-angularjs-controller-on-creation
     $scope.init = function(data) {
-        //console.log(data);
-
         $scope.title = data.title;
         $scope.description = data.description;
         //$scope.chartType = 'pie';
@@ -73,7 +45,7 @@ app.controller('GraphController', function($scope) {
         //console.log(data.dataPoints);
         data.dataPoints.forEach(function(datum){
             $scope.labels.push(datum.month);
-            //$scope.series = ['2014'];
+            //$scope.series = ['2014']; // Should be set to something dynamic/adjustable. Going to have to decide how to do this.
             $scope.values.push(datum.value);
         });
 
@@ -103,12 +75,8 @@ app.controller('GraphController', function($scope) {
             $scope.data[0] = $scope.values;
         }
         else {
-            $scope.data = $scope.values;
+            //$scope.data = $scope.values;
             console.log("Invalid chart type" + $scope.chartType);
-            //$scope.values.forEach(function(dp) {
-            //   $scope.data.push(parseInt(dp));
-            //});
-            //$scope.data.push($scope.value);
         }
 
         //console.log($scope.chartType);
@@ -118,6 +86,6 @@ app.controller('GraphController', function($scope) {
         //console.log($scope.labels);
         //$scope.$apply();
 
-        $('.loadergif').hide();
+        $('.loadergif').hide(); // Might not want or maybe even need this if we end up using ng-cloak.
     };
 });

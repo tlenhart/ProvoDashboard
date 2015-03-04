@@ -9,19 +9,11 @@ function safetyData(){
 
 safetyData.prototype = {
     subcategories: {},
-    //collections: [],
-    //category: [],
-    //month: [],
-    //value: [],
-    //year: [],
-    //pk: [],
 
     load: function(department, limit, callback){
         var url = "api/"+department+"/?format=json&limit=" + limit;
         var that = this;
         $.getJSON(url).done(function(data){
-//            console.log(data.objects);
-            //that.collections = data.objects;
             data.objects.forEach(function(datum){
                 if (that.subcategories[datum.category.sub_category] === undefined) {
                     // Create a new subcategory container.
@@ -40,25 +32,8 @@ safetyData.prototype = {
                     pk: datum.pk
                 });
             });
-            //console.log(that.subcategories);
             callback();
         });
-    },
-
-    getCategory: function(){
-        return this.category;
-    },
-
-    getMonth: function(){
-        return this.month;
-    },
-
-    getValue: function(){
-        return this.value;
-    },
-
-    getYear: function(){
-        return this.year;
     }
 };
 

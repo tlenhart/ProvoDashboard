@@ -7,15 +7,10 @@
 {% block nav-safety %}<span class="public-safety-selected-sm"></span>{% endblock %}
 
 {% block content %}
-    <!-- To display the various number of graphs we will want to use either
-    angularjs or django's template system.
-    They both have their advantages (Django's is built in and won't require additional js libraries)
-    (Angular is client-side and keeps more stuff away from the server. But it would require an api on the server I think.) -->
 
     <!-- If stuff is reloading or refreshing properly, try removing the :: from the elements below -->
     <div class="container-fluid" ng-controller="SafetyController" ng-init="loadData()" ng-cloak{% comment %}ng-show="safetyLoaded"{% endcomment %}>
         <div class="row row-centered">
-{#            <span>{% verbatim %}{{ subcategory }}{% endverbatim %}</span><br>#}
             <div class="col-md-5 col-centered col-min graph-container" ng-repeat="subcategory in dataCollection.subcategories">
                 <h3 class="text-center" {% comment %}ng-bind="subcategory.title"{% endcomment %}>{% verbatim %}{{ ::subcategory.title }}{% endverbatim %}</h3>
                 <div ng-controller="GraphController" ng-init="init(subcategory)">
@@ -28,12 +23,6 @@
                 </div>
                 <span class="label-info text-center center-block label-size">{% verbatim %}{{ subcategory.description }}{% endverbatim %}</span>
             </div>
-{#            <div class="col-md-5 col-centered col-min graph-container" ng-controller="PieCtrl">#}
-{#                <h3 class="text-center">Public Transportation Percent On Time</h3>#}
-{#                <span class="label-info text-center center-block">Example Data. Needs actual data/change to correct subcategory.</span>#}
-{#                <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />#}
-{#                <canvas id="pie" class="chart chart-pie" data="data" labels="labels" legend="true" series="series"></canvas>#}
-{#            </div>#}
         </div>
     </div>
 
