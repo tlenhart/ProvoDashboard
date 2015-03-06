@@ -4,14 +4,15 @@
 
 var app = angular.module("graphapp", ["chart.js"]);
 
-app.controller('SafetyController', function($scope) {
-    $scope.category = 'safety';
+app.controller('BaseGraphController', function($scope) {
+    $scope.category = '';
     //$scope.safetyLoaded = false;
     $scope.limit = 0;
     $scope.dataCollection = {};
 
-    $scope.loadData = function() {
-        $scope.dataCollection = Object.create(safetyData.prototype);
+    $scope.loadData = function(pageCategory) {
+        $scope.category = pageCategory;
+        $scope.dataCollection = Object.create(graphData.prototype);
 
         $scope.dataCollection.load($scope.category, $scope.limit ,function () {
             $scope.$apply();

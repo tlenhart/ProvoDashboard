@@ -3,11 +3,11 @@
  */
 
 // Only safety has been updated so far for the changes in displaying the graphs.
-function safetyData(){
+function graphData(){
 
 }
 
-safetyData.prototype = {
+graphData.prototype = {
     subcategories: {},
 
     load: function(department, limit, callback){

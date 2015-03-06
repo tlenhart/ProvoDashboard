@@ -9,7 +9,8 @@
 {% block content %}
 
     <!-- If stuff is reloading or refreshing properly, try removing the :: from the elements below -->
-    <div class="container-fluid" ng-controller="SafetyController" ng-init="loadData()" ng-cloak{% comment %}ng-show="safetyLoaded"{% endcomment %}>
+    <div class="container-fluid" ng-controller="BaseGraphController" ng-init="loadData('safety')" ng-cloak{% comment %}ng-show="safetyLoaded"{% endcomment %}>
+
         <div class="row row-centered">
             <div class="col-md-5 col-centered col-min graph-container" ng-repeat="subcategory in dataCollection.subcategories">
                 <h3 class="text-center" {% comment %}ng-bind="subcategory.title"{% endcomment %}>{% verbatim %}{{ ::subcategory.title }}{% endverbatim %}</h3>
