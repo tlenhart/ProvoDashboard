@@ -2,7 +2,7 @@
  * Created by Todd on 2/26/2015.
  */
 
-var app = angular.module("graphapp", ["chart.js"]);
+var app = angular.module("graphapp", ["chart.js", "ui.bootstrap"]);
 
 app.controller('BaseGraphController', function($scope) {
     $scope.category = '';
@@ -22,7 +22,7 @@ app.controller('BaseGraphController', function($scope) {
 });
 
 // Data might be duplicated here. (Copies of stuff in SafetyController). Might be better to store stuff in a factory and pass in a pointer.
-app.controller('GraphController', function($scope) {
+app.controller('GraphController', function($scope, $modal) {
     $scope.loaded = false;
     $scope.title = "";
     $scope.description = "";
@@ -32,8 +32,36 @@ app.controller('GraphController', function($scope) {
     $scope.values = [];
     $scope.type = '';
     $scope.options = {};
-    $scope.onClick = function (points, evt) {
-        alert();
+    $scope.open = function (size) {
+        var modalInstance = $modal.open({
+            templateUrl: 'modalContent.html',
+            controller: 'ModalInstanceCtrl',
+            size: size,
+            resolve: {
+                data: function () {
+                    return $scope.data;
+                },
+                labels: function () {
+                    return $scope.labels;
+                },
+                series: function () {
+                    return $scope.series;
+                },
+                type: function () {
+                    return $scope.type;
+                },
+                title: function () {
+                    return $scope.title;
+                },
+                description: function () {
+                    return $scope.description;
+                }
+            }
+        });
+
+        modalInstance.result.then(function (){
+
+        });
     };
 
     // This might not be the best approach to doing this.
@@ -89,4 +117,22 @@ app.controller('GraphController', function($scope) {
 
         $('.loadergif').hide(); // Might not want or maybe even need this if we end up using ng-cloak.
     };
+});
+
+app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, data, labels, series, type, title, description) {
+    // This will need to be switched where it grabs new data from the api. (All data perhaps.)
+    $scope.data = data;
+    $scope.labels = labels;
+    $scope.series = series;
+    $scope.type = type;
+    $scope.title = title;
+    $scope.description = description;
+
+    $scope.ok = function () {
+        $modalInstance.close();
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    }
 });

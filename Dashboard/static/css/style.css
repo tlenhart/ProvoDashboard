@@ -33,6 +33,12 @@ body {
     height: 60px;
 }
 
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+.modal-backdrop {
+  bottom: 0;
+  position: fixed;
+}
+
 .loadergif {
     margin-top: 40px;
 }
