@@ -178,6 +178,16 @@ var t=e.extend({height:this.chart.height,width:this.chart.width});this.scale.upd
     scope.getColour = typeof scope.getColour === 'function' ? scope.getColour : getRandomColour;
     scope.colours = getColours(scope);
     var cvs = elem[0], ctx = cvs.getContext('2d');
+      var dpr = window.devicePixelRatio || 1;
+      var bsr = ctx.webkitBackingStorePixelRatio ||
+              ctx.mozBackingStorePixelRatio ||
+              ctx.msBackingStorePixelRatio ||
+              ctx.oBackingStorePixelRatio ||
+              ctx.backingStorePixelRatio || 1;
+      var ratio = dpr / bsr;
+      ctx.canvas.width = ctx.canvas.width * ratio;
+      ctx.canvas.height = ctx.canvas.height * ratio;
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
     var data = Array.isArray(scope.data[0]) ?
       getDataSets(scope.labels, scope.data, scope.series || [], scope.colours) :
       getData(scope.labels, scope.data, scope.colours);
