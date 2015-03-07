@@ -10,8 +10,8 @@ function graphData(){
 graphData.prototype = {
     subcategories: {},
 
-    load: function(department, limit, callback){
-        var url = "api/"+department+"/?format=json&limit=" + limit;
+    load: function(pageCategory, limit, callback){
+        var url = "api/"+pageCategory+"/?format=json&limit=" + limit;
         var that = this;
         $.getJSON(url).done(function(data){
             data.objects.forEach(function(datum){
@@ -21,7 +21,8 @@ graphData.prototype = {
                         title: datum.category.sub_category,
                         description: datum.category.description,
                         dataPoints: [],
-                        chartType: datum.category.chart_type
+                        chartType: datum.category.chart_type,
+                        category: pageCategory
                     };
                 }
                 // Add the data points for the subcategory.
@@ -31,6 +32,46 @@ graphData.prototype = {
                     value: parseInt(datum.value),
                     pk: datum.pk
                 });
+            });
+            callback();
+        });
+    }
+};
+
+function detailedGraphData() {
+
+}
+
+detailedGraphData.prototype = {
+
+    // 127.0.0.1:8001/api/safety/?category__sub_category=Violent%20Crimes
+
+    load: function(pageCategory, subcategory, limit, callback){
+        subcategory = encodeURI(subcategory);
+        var url = "api/"+pageCategory+"/?category__sub_category="+subcategory+"&format=json&limit=" + limit;
+        var that = this;
+        $.getJSON(url).done(function(data){
+            data.objects.forEach(function(datum){
+
+                // Needs implementation
+
+                //if (that.subcategories[datum.category.sub_category] === undefined) {
+                //    // Create a new subcategory container.
+                //    that.subcategories[datum.category.sub_category] = {
+                //        title: datum.category.sub_category,
+                //        description: datum.category.description,
+                //        dataPoints: [],
+                //        chartType: datum.category.chart_type,
+                //        category: pageCategory
+                //    };
+                //}
+                // Add the data points for the subcategory.
+                //that.subcategories[datum.category.sub_category].dataPoints.push({
+                //    month: datum.month,
+                //    year: datum.year,
+                //    value: parseInt(datum.value),
+                //    pk: datum.pk
+                //});
             });
             callback();
         });

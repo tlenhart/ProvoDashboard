@@ -47,6 +47,9 @@ app.controller('GraphController', function($scope, $modal) {
                 series: function () {
                     return $scope.series;
                 },
+                category: function () {
+                    return $scope.category;
+                },
                 type: function () {
                     return $scope.type;
                 },
@@ -69,9 +72,9 @@ app.controller('GraphController', function($scope, $modal) {
     $scope.init = function(data) {
         $scope.title = data.title;
         $scope.description = data.description;
-        //$scope.chartType = 'pie';
+        $scope.category = data.category;
         $scope.chartType = data.chartType;
-        //console.log(data.dataPoints);
+
         data.dataPoints.forEach(function(datum){
             $scope.labels.push(datum.month);
             //$scope.series = ['2014']; // Should be set to something dynamic/adjustable. Going to have to decide how to do this.
@@ -121,12 +124,23 @@ app.controller('GraphController', function($scope, $modal) {
 
 app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, data, labels, series, type, title, description) {
     // This will need to be switched where it grabs new data from the api. (All data perhaps.)
+    $scope.dataCollection = {};
     $scope.data = data;
     $scope.labels = labels;
     $scope.series = series;
     $scope.type = type;
     $scope.title = title;
     $scope.description = description;
+
+    $scope.$apply();
+
+    $scope.requestData = function() {
+        $scope.dataCollection = Object.create(detailedGraphData.prototype);
+        $scope.dataCollection.load($scope.category, $scope.limit ,function () {
+            //$scope.$apply();
+        });
+        //$scope.dataCollection.forEach
+    };
 
     $scope.ok = function () {
         $modalInstance.close();
