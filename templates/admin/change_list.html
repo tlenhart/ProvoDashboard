@@ -93,12 +93,12 @@
                       <span class="glyphicon glyphicon-plus"></span>
                     </a>
                   </li>
-                  <li>
-                    {% url cl.opts|admin_urlname:'add' as batch_upload %}
-                    <a href="{% add_preserved_filters batch_upload is_popup to_field %}" class="addlink btn btn-primary btn-xs" title="{% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}" data-placement="left" data-toggle="tooltip" role="button">
-                        <span style="margin-right: 8px;">Batch upload</span><span class="glyphicon glyphicon-plus"></span>
-                    </a>
-                  </li>
+{#                  <li>#}
+{#                    {% url cl.opts|admin_urlname:'add' as batch_upload %}#}
+{#                    <a href="{% add_preserved_filters batch_upload is_popup to_field %}" class="addlink btn btn-primary btn-xs" title="{% blocktrans with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktrans %}" data-placement="left" data-toggle="tooltip" role="button">#}
+{#                        <span style="margin-right: 8px;">Batch upload</span><span class="glyphicon glyphicon-plus"></span>#}
+{#                    </a>#}
+{#                  </li>#}
                 {% endblock %}
               </ul>
             {% endif %}

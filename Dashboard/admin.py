@@ -27,12 +27,15 @@ class CivicAdmin(ImportExportModelAdmin):
 
 class EconomicAdmin(ImportExportModelAdmin):
     resource_class = EconomicResource
+    list_display = ('category', 'month', 'year')
 
 class GovernmentAdmin(ImportExportModelAdmin):
     resource_class = GovernmentResource
+    list_display = ('category', 'month', 'year')
 
 class PublicAdmin(ImportExportModelAdmin):
     resource_class = PublicResource
+    list_display = ('category', 'month', 'year')
 
 # The models need to change to Safety, Economic, Civic, and Government
 admin.site.register(CivicHealth, CivicAdmin)
