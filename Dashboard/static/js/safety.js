@@ -127,6 +127,7 @@ app.controller('GraphController', function($scope, $modal) {
 
 app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, data, labels, series, type, title, description) {
     // This will need to be switched where it grabs new data from the api. (All data perhaps.)
+    Chart.defaults.global.animation = true;
     $scope.dataCollection = {};
     $scope.data = data;
     $scope.labels = labels;

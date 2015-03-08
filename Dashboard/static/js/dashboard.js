@@ -61,6 +61,8 @@ Chart.defaults.global.colours = [
     }
 ];
 
+Chart.defaults.global.animation = false;
+
 function generateDate (month, year) {
     var rval = year.toString() + "-";
     switch (month) {
