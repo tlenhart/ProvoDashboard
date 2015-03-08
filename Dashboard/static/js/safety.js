@@ -81,7 +81,7 @@ app.controller('GraphController', function($scope, $modal) {
             $scope.values.push(datum.value);
         });
 
-        $scope.charts = ['Line', 'Bar', 'Doughnut', 'Pie', 'Polar Area', 'Radar', 'Base'];
+        $scope.charts = ['Line', 'Bar', 'Radar', 'Doughnut', 'Pie', 'PolarArea', 'Base'];
         if ($scope.chartType === "chart-line") {
             $scope.type = 'Line';
             $scope.data[0] = $scope.values;
@@ -108,6 +108,9 @@ app.controller('GraphController', function($scope, $modal) {
         }
         else {
             //$scope.data = $scope.values;
+            index = Math.floor((Math.random() * 3));
+            $scope.type = $scope.charts[index];
+            $scope.data[0] = $scope.values;
             console.log("Invalid chart type" + $scope.chartType);
         }
 
