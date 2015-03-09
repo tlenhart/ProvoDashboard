@@ -68,6 +68,7 @@ class PublicSafety(models.Model):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
 
 
+
 class CivicHealth(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     category = models.ForeignKey(SubCategories)

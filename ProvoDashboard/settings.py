@@ -49,6 +49,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'tastypie',
     'Dashboard',
+    'import_export'
     # 'debug_toolbar',
 )
 
