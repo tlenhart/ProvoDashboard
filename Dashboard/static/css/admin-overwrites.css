@@ -2,3 +2,7 @@
 .sidebar-menu .django-admin-logo {
     background: #ffffff;
 }
+
+.object-tools {
+    float: right;
+}
