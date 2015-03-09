@@ -1,5 +1,6 @@
 <!-- Community, Neighborhood, Livability -->
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block title %} Transportation {% endblock %}
 
@@ -7,39 +8,38 @@
 
 {% block content %}
 
-    <!-- To display the various number of graphs we will want to use either
-    angularjs or django's template system.
-    They both have their advantages (Django's is built in and won't require additional js libraries)
-    (Angular is client-side and keeps more stuff away from the server. But it would require an api on the server I think.) -->
+    <!-- If stuff is reloading or refreshing properly, try removing the :: from the elements below -->
+    <div class="container-fluid" ng-controller="BaseGraphController" ng-init="loadData('government')" ng-cloak{% comment %}ng-show="safetyLoaded"{% endcomment %}>
 
-    <!-- Graphs might slightly overlap on page resize -->
-    <div class="container-fluid">
         <div class="row row-centered">
-            <div class="col-md-5 col-centered col-min graph-container">
-                <h3 class="text-center">Public Transportation Injuries</h3>
-                <div id="testarea"></div>
-            </div>
-            <div class="col-md-5 col-centered col-min graph-container">
-                <h3 class="text-center">Public Transportation Percent On Time</h3>
-                <div id="testarea2"></div>
+            <div class="col-md-5 col-centered col-min graph-container" ng-repeat="subcategory in dataCollection.subcategories">
+                <h3 class="text-center" {% comment %}ng-bind="subcategory.title"{% endcomment %}>{% verbatim %}{{ ::subcategory.title }}{% endverbatim %}</h3>
+                <div ng-controller="GraphController" ng-init="init(subcategory)" ng-click="open()">
+                    <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                    {% verbatim %}
+                        <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
+                        <!-- Consider this instead. Might have side effects. Needs research on ::.
+                          <canvas class="chart chart-base" chart-type="type" data="::data" labels="::labels"></canvas>-->
+                    {% endverbatim %}
+                </div>
+                <span class="label-info text-center center-block label-size">{% verbatim %}{{ subcategory.description }}{% endverbatim %}</span>
             </div>
         </div>
-        <div class="row row-centered">
-            <div class="col-md-5 col-centered col-min graph-container">
-                <h3 class="text-center">Auto Accidents</h3>
-                <div id="testarea3"></div>
+        {% verbatim %}
+        <!-- See: https://angular-ui.github.io/bootstrap/ -->
+        <script type="text/ng-template" id="modalContent.html">
+            <div class="modal-header">
+                <h3 class="modal-title">{{ title }}</h3>
             </div>
-            <div class="col-md-5 col-centered col-min graph-container">
-                <h3 class="text-center">Public Ridership (in Thousands)</h3>
-                <div id="testarea4"></div>
+            <div class="modal-body">
+                <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
             </div>
-        </div>
-        <div class="row row-centered">
-            <div class="col-md-5 col-centered col-min graph-container">
-                <h3 class="text-center">Potholes Filled (YTD)</h3>
-                <div id="testarea5"></div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="ok()">OK</button>
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
             </div>
-        </div>
+        </script>
+        {% endverbatim %}
     </div>
 
 {% endblock %}

@@ -4,36 +4,6 @@ from Dashboard.models import CivicHealth, EconomicHealth, GovernmentPerformance,
 
 # See https://django-tastypie.readthedocs.org/en/latest/interacting.html for info about interacting with the api.
 
-class CivicResource(ModelResource):
-    class Meta:
-        queryset = CivicHealth.objects.all()
-        resource_name = 'civic'
-        filtering = {
-            'category': ALL,
-            'month': ALL,
-            'year': ALL,
-        }
-
-class EconomicResource(ModelResource):
-    class Meta:
-        queryset = EconomicHealth.objects.all()
-        resource_name = 'economic'
-        filtering = {
-            'category': ALL,
-            'month': ALL,
-            'year': ALL,
-        }
-
-class GovernmentResource(ModelResource):
-    class Meta:
-        queryset = GovernmentPerformance.objects.all()
-        resource_name = 'government'
-        filtering = {
-            'category': ALL,
-            'month': ALL,
-            'year': ALL,
-        }
-
 # Not callable directly with a url as it is not in urls.py
 class CategoryResource(ModelResource):
     class Meta:
@@ -43,6 +13,46 @@ class CategoryResource(ModelResource):
             'description': ALL,
             'sub_category': ALL,
         }
+
+class CivicResource(ModelResource):
+    category = fields.ForeignKey(CategoryResource, 'category', full=True)
+
+    class Meta:
+        queryset = CivicHealth.objects.all()
+        resource_name = 'civic'
+        allowed_methods = ['get']
+        filtering = {
+            'category': ALL_WITH_RELATIONS,
+            'month': ALL,
+            'year': ALL,
+        }
+
+class EconomicResource(ModelResource):
+    category = fields.ForeignKey(CategoryResource, 'category', full=True)
+
+    class Meta:
+        queryset = EconomicHealth.objects.all()
+        resource_name = 'economic'
+        allowed_methods = ['get']
+        filtering = {
+            'category': ALL_WITH_RELATIONS,
+            'month': ALL,
+            'year': ALL,
+        }
+
+class GovernmentResource(ModelResource):
+    category = fields.ForeignKey(CategoryResource, 'category', full=True)
+
+    class Meta:
+        queryset = GovernmentPerformance.objects.all()
+        resource_name = 'government'
+        allowed_methods = ['get']
+        filtering = {
+            'category': ALL_WITH_RELATIONS,
+            'month': ALL,
+            'year': ALL,
+        }
+
 
 class SafetyResource(ModelResource):
     category = fields.ForeignKey(CategoryResource, 'category', full=True)

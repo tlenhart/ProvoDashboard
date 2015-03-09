@@ -1,28 +1,45 @@
 <!-- Community, Neighborhood, Livability -->
 {% extends "base.html" %}
+{% load staticfiles %}
 
 {% block title %} Economic Health {% endblock %}
 
 {% block nav-economic %}<span class="economic-health-selected-sm"></span>{% endblock %}
 
 {% block content %}
-<h2>Section for Economic Health</h2>
 
-    <!-- To display the various number of graphs we will want to use either
-    angularjs or django's template system.
-    They both have their advantages (Django's is built in and won't require additional js libraries)
-    (Angular is client-side and keeps more stuff away from the server. But it would require an api on the server I think.) -->
+    <!-- If stuff is reloading or refreshing properly, try removing the :: from the elements below -->
+    <div class="container-fluid" ng-controller="BaseGraphController" ng-init="loadData('economic')" ng-cloak{% comment %}ng-show="safetyLoaded"{% endcomment %}>
 
-    <!-- Graphs are overlapping right now. Not sure why -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <div id="testgraph"></div>
-            </div>
-            <div class="col-md-6">
-                <div id="testgraph2"></div>
+        <div class="row row-centered">
+            <div class="col-md-5 col-centered col-min graph-container" ng-repeat="subcategory in dataCollection.subcategories">
+                <h3 class="text-center" {% comment %}ng-bind="subcategory.title"{% endcomment %}>{% verbatim %}{{ ::subcategory.title }}{% endverbatim %}</h3>
+                <div ng-controller="GraphController" ng-init="init(subcategory)" ng-click="open()">
+                    <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                    {% verbatim %}
+                        <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
+                        <!-- Consider this instead. Might have side effects. Needs research on ::.
+                          <canvas class="chart chart-base" chart-type="type" data="::data" labels="::labels"></canvas>-->
+                    {% endverbatim %}
+                </div>
+                <span class="label-info text-center center-block label-size">{% verbatim %}{{ subcategory.description }}{% endverbatim %}</span>
             </div>
         </div>
+        {% verbatim %}
+        <!-- See: https://angular-ui.github.io/bootstrap/ -->
+        <script type="text/ng-template" id="modalContent.html">
+            <div class="modal-header">
+                <h3 class="modal-title">{{ title }}</h3>
+            </div>
+            <div class="modal-body">
+                <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" ng-click="ok()">OK</button>
+                <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+            </div>
+        </script>
+        {% endverbatim %}
     </div>
 
 {% endblock %}
