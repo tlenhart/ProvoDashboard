@@ -39,7 +39,7 @@ GRAPHCHOICE = (
     ("chart-polar", "Polar"),
     ("chart-bar", "Bar"),
     ("chart-line", "Line"),
-    ("chart-base", "Base"),
+    ("chart-noe", "None"),
     ("chart-doughnut", "Doughnut"),
     ("chart-pie", "Pie"),
     ("chart-radar", "Radar")
