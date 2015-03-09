@@ -12,7 +12,7 @@
             <div class="col-md-5 col-centered col-min graph-container" ng-repeat="subcategory in dataCollection.subcategories">
                 <h3 class="text-center" {% comment %}ng-bind="subcategory.title"{% endcomment %}>{% verbatim %}{{ ::subcategory.title }}{% endverbatim %}</h3>
                 <div ng-controller="GraphController" ng-init="init(subcategory)" ng-click="open()">
-                    <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" />
+                    <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" width="32" height="32" />
                     {% verbatim %}
                         <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
                         <!-- Consider this instead. Might have side effects. Needs research on ::.
