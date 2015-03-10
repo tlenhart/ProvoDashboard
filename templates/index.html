@@ -14,7 +14,7 @@
                 <div ng-controller="GraphController" ng-init="init(subcategory)" ng-click="open()">
                     <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" width="32" height="32" />
                     {% verbatim %}
-                        <canvas class="chart chart-base" chart-type="type" data="data" labels="labels"></canvas>
+                        <canvas class="chart chart-base" chart-type="type" data="data" labels="labels" colours="colours"></canvas>
                         <!-- Consider this instead. Might have side effects. Needs research on ::.
                           <canvas class="chart chart-base" chart-type="type" data="::data" labels="::labels"></canvas>-->
                     {% endverbatim %}
@@ -26,6 +26,7 @@
         <!-- See: https://angular-ui.github.io/bootstrap/ -->
         <script type="text/ng-template" id="modalContent.html">
             <div class="modal-header">
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="close()">&times;</button>-->
                 <h3 class="modal-title">{{ title }}</h3>
             </div>
             <div class="modal-body">

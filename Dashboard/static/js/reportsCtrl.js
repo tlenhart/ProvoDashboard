@@ -26,7 +26,7 @@ app.controller('BaseGraphController', function($scope) {
     };
 });
 
-// Data might be duplicated here. (Copies of stuff in SafetyController). Might be better to store stuff in a factory and pass in a pointer.
+// Data might be duplicated here. (Copies of stuff in BaseGraphController). Might be better to store stuff in a factory and pass in a pointer.
 app.controller('GraphController', function($scope, $modal) {
     $scope.loaded = false;
     $scope.title = "";
@@ -37,6 +37,8 @@ app.controller('GraphController', function($scope, $modal) {
     $scope.values = [];
     $scope.type = '';
     $scope.options = {};
+    $scope.colours = Chart.defaults.global.colours;
+
     $scope.open = function (size) {
         var modalInstance = $modal.open({
             templateUrl: 'modalContent.html',
@@ -79,6 +81,7 @@ app.controller('GraphController', function($scope, $modal) {
         $scope.description = data.description;
         $scope.category = data.category;
         $scope.chartType = data.chartType;
+        //$scope.colours = ;
 
         data.dataPoints.forEach(function(datum){
             $scope.labels.push(datum.month);
@@ -152,6 +155,10 @@ app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, data, labe
     };
 
     $scope.ok = function () {
+        $modalInstance.close();
+    };
+
+    $scope.close = function() {
         $modalInstance.close();
     };
 
