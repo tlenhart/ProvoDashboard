@@ -38,14 +38,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.6058966"
      inkscape:cx="309.18189"
-     inkscape:cy="382.51456"
+     inkscape:cy="833.47692"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1920"
-     inkscape:window-height="962"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true">
@@ -116,9 +116,9 @@
     <g
        id="g4042"
        transform="matrix(1.004559,0,0,1.0090504,-2.9203127,-1.443256)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/economic-health-hover-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\economic-health-hover-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
@@ -145,9 +145,9 @@
     <g
        id="g3820"
        transform="translate(463.77027,-55.285917)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/civic-health-hover-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\civic-health-hover-sm.png"
+       inkscape:export-xdpi="50.939999"
+       inkscape:export-ydpi="50.939999">
       <path
          style="fill:#3ebf33;fill-opacity:1"
          d="M 136.07112,540.09724 C 74.206783,530.46441 31.376543,471.69826 40.775172,409.34441 51.064014,341.08456 119.77053,297.04548 186.02263,316.24459 c 67.87757,19.67015 102.18628,95.28992 72.23297,159.2086 -21.65719,46.21525 -71.42777,72.54733 -122.18448,64.64405 z M 124.2857,474.0953 c 0,-22.08375 -8.01747,-35.44741 -21.26652,-35.44741 -9.700693,0 -16.256428,5.4401 -19.562102,16.23308 -2.221209,7.25222 -3.638611,20.36315 -2.675491,24.7482 l 0.663022,3.01872 21.420541,0 21.42055,0 z m 55.71587,-3.69741 c -1.30715,-27.84269 -11.87699,-42.69792 -28.64477,-40.25838 -14.78541,2.15112 -21.85652,14.31583 -22.82012,39.25838 l -0.51188,13.25 26.27594,0 26.27593,0 z m 47.8586,2.72 c -1.21252,-16.51824 -5.06627,-26.83154 -11.82833,-31.65465 -4.52209,-3.22543 -16.20208,-3.35189 -20.42281,-0.22111 -7.63797,5.66554 -11.32333,15.95544 -11.32333,31.61586 l 0,9.7899 22.13701,0 22.13701,0 z m -114.5834,-43.80048 c 6.1028,-3.09692 10.25289,-9.82724 10.78908,-17.49695 0.33406,-4.77855 -0.0577,-6.53696 -2.48602,-11.15713 -7.68836,-14.62832 -27.908319,-15.62217 -37.041716,-1.82068 -3.915972,5.91743 -4.357645,15.52396 -1.002527,21.80524 5.785411,10.83114 18.295393,14.47778 29.741183,8.66952 z m 103.78132,-0.30313 c 2.34982,-1.36232 5.49982,-4.3317 7,-6.59864 2.37295,-3.58576 3.23269,-5.11588 3.23269,-11.76775 0,-6.65187 -0.85974,-8.18199 -3.23269,-11.76775 -8.72084,-13.17808 -28.58573,-12.93876 -36.42552,0.43884 -4.02082,6.861 -4.3243,13.81082 -0.90802,20.79346 5.65889,11.56635 18.98972,15.47849 30.33354,8.90184 z m -52.27239,-8.71924 c 6.80713,-3.17663 12.02421,-9.20268 14.07515,-16.25768 2.05031,-7.05281 1.38659,-12.85178 -2.23187,-19.50009 -4.64083,-8.52672 -12.29524,-12.88938 -22.61482,-12.88938 -23.0919,0 -34.24303,27.73703 -17.56609,43.69342 7.70084,7.36812 18.94998,9.33459 28.33763,4.95373 z"
@@ -158,9 +158,9 @@
     <g
        id="g4110"
        transform="matrix(1.0014347,0,0,1.0010331,-0.37417994,0.12042569)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/civic-health-default-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\civic-health-default-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(1.0819113,0,0,1.1160714,-38.867001,-53.123431)"
          d="m 474.50129,387.93582 c 0,38.51798 -40.8434,69.74297 -91.2263,69.74297 -50.38289,0 -91.22629,-31.22499 -91.22629,-69.74297 0,-38.51798 40.8434,-69.74297 91.22629,-69.74297 50.3829,0 91.2263,31.22499 91.2263,69.74297 z"
@@ -185,9 +185,9 @@
     <g
        id="g4103"
        transform="matrix(1.0014347,0,0,1.0010331,-0.64037657,0.12042569)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/civic-health-selected-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\civic-health-selected-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(1.9401197,0,0,1.7417218,229.11819,-217.95626)"
          d="m -0.62270355,345.90323 c 0,25.96524 -23.27934645,47.01424 -51.99587645,47.01424 -28.716529,0 -51.99588,-21.049 -51.99588,-47.01424 0,-25.96525 23.279351,-47.01424 51.99588,-47.01424 28.71653,0 51.99587645,21.04899 51.99587645,47.01424 z"
@@ -212,9 +212,9 @@
     <g
        id="g3975"
        transform="translate(115.0739,-104.56057)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/government-performance-default-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\government-performance-default-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(0.9787234,0,0,0.9787234,-224.89734,101.20656)"
          d="m 613.57141,631.29077 c 0,64.89346 -52.60654,117.5 -117.5,117.5 -64.89346,0 -117.5,-52.60654 -117.5,-117.5 0,-64.89346 52.60654,-117.5 117.5,-117.5 64.89346,0 117.5,52.60654 117.5,117.5 z"
@@ -235,9 +235,9 @@
     <g
        id="g3975-4"
        transform="translate(-133.4765,-104.56057)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/government-performance-selected-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\government-performance-selected-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(0.9787234,0,0,0.9787234,-224.89734,101.20656)"
          d="m 613.57141,631.29077 c 0,64.89346 -52.60654,117.5 -117.5,117.5 -64.89346,0 -117.5,-52.60654 -117.5,-117.5 0,-64.89346 52.60654,-117.5 117.5,-117.5 64.89346,0 117.5,52.60654 117.5,117.5 z"
@@ -258,9 +258,9 @@
     <g
        id="g3975-48"
        transform="translate(357.43661,-104.56057)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/government-performance-hover-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\government-performance-hover-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(0.9787234,0,0,0.9787234,-224.89734,101.20656)"
          d="m 613.57141,631.29077 c 0,64.89346 -52.60654,117.5 -117.5,117.5 -64.89346,0 -117.5,-52.60654 -117.5,-117.5 0,-64.89346 52.60654,-117.5 117.5,-117.5 64.89346,0 117.5,52.60654 117.5,117.5 z"
@@ -281,9 +281,9 @@
     <g
        id="g3928"
        transform="matrix(1.0040115,0,0,1.0040115,-0.55559434,-3.3909888)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/public-safety-selected-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\public-safety-selected-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(0.91894975,0,0,0.91894975,-170.5401,33.047314)"
          d="m 448.57142,896.29077 c 0,68.83835 -55.80451,124.64283 -124.64286,124.64283 -68.83835,0 -124.64286,-55.80448 -124.64286,-124.64283 0,-68.83835 55.80451,-124.64286 124.64286,-124.64286 68.83835,0 124.64286,55.80451 124.64286,124.64286 z"
@@ -314,9 +314,9 @@
     <g
        id="g3928-2"
        transform="matrix(1.0040115,0,0,1.0040115,248.07032,-3.482223)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/public-safety-default-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\public-safety-default-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(0.91894975,0,0,0.91894975,-170.5401,33.047314)"
          d="m 448.57142,896.29077 c 0,68.83835 -55.80451,124.64283 -124.64286,124.64283 -68.83835,0 -124.64286,-55.80448 -124.64286,-124.64283 0,-68.83835 55.80451,-124.64286 124.64286,-124.64286 68.83835,0 124.64286,55.80451 124.64286,124.64286 z"
@@ -347,9 +347,9 @@
     <g
        id="g3928-7"
        transform="matrix(1.0040115,0,0,1.0040115,490.42238,-3.482223)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/public-safety-hover-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\public-safety-hover-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          transform="matrix(0.91894975,0,0,0.91894975,-170.5401,33.047314)"
          d="m 448.57142,896.29077 c 0,68.83835 -55.80451,124.64283 -124.64286,124.64283 -68.83835,0 -124.64286,-55.80448 -124.64286,-124.64283 0,-68.83835 55.80451,-124.64286 124.64286,-124.64286 68.83835,0 124.64286,55.80451 124.64286,124.64286 z"
@@ -380,9 +380,9 @@
     <g
        id="g4042-6"
        transform="matrix(1.004559,0,0,1.0090504,-245.14767,-1.6573467)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/economic-health-default-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\economic-health-default-sm.png"
+       inkscape:export-xdpi="50.869564"
+       inkscape:export-ydpi="50.869564">
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
@@ -409,9 +409,9 @@
     <g
        id="g4042-3"
        transform="matrix(1.004559,0,0,1.0090504,-494.34365,-1.6015706)"
-       inkscape:export-filename="/Users/ba202/Desktop/ProvoDashboard/Dashboard/static/images/svg/economic-health-sm.png"
-       inkscape:export-xdpi="25.43"
-       inkscape:export-ydpi="25.43">
+       inkscape:export-filename="C:\Users\todd\Desktop\ProvoDashboard\Dashboard\static\images\svg\exports\economic-health-sm.png"
+       inkscape:export-xdpi="50.869999"
+       inkscape:export-ydpi="50.869999">
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"

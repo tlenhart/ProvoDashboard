@@ -15,6 +15,7 @@
                     <img src="{% static 'images/loader.gif' %}" alt="Loading..." class="loadergif center-block" width="32" height="32" />
                     {% verbatim %}
                         <canvas class="chart chart-base" chart-type="type" data="data" labels="labels" colours="colours"></canvas>
+                        <!--<span class="message" ng-hide="error"></span>-->
                         <!-- Consider this instead. Might have side effects. Needs research on ::.
                           <canvas class="chart chart-base" chart-type="type" data="::data" labels="::labels"></canvas>-->
                     {% endverbatim %}

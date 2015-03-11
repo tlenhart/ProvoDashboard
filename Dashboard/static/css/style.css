@@ -27,6 +27,7 @@ body {
     border: 2px solid lightgray;
     margin-right: 4px;
     margin-bottom: 6px;
+    /*padding: 10px;*/
 }
 
 .label-size {
@@ -50,71 +51,101 @@ body {
 /* Angular Chart CSS */
 .chart-legend,.bar-legend,.line-legend,.pie-legend,.radar-legend,.polararea-legend,.doughnut-legend{list-style-type:none;margin-top:5px;text-align:center}.chart-legend li,.bar-legend li,.line-legend li,.pie-legend li,.radar-legend li,.polararea-legend li,.doughnut-legend li{display:inline-block;white-space:nowrap;position:relative;margin-bottom:4px;border-radius:5px;padding:2px 8px 2px 28px;font-size:smaller;cursor:default}.chart-legend li span,.bar-legend li span,.line-legend li span,.pie-legend li span,.radar-legend li span,.polararea-legend li span,.doughnut-legend li span{display:block;position:absolute;left:0;top:0;width:20px;height:20px;border-radius:5px}
 
-.government-performance-default-sm, .civic-health-default-sm, .civic-health-selected-sm, .economic-health-hover-sm, .economic-health-selected-sm, .economic-health-default-sm, .civic-health-hover-sm, .government-performance-hover-sm, .government-performance-selected-sm, .public-safety-default-sm, .public-safety-hover-sm, .public-safety-selected-sm {
+/*.sprite {*/
+    /*background-image: url(../images/spritesheet-normal.png);*/
+    /*background-repeat: no-repeat;*/
+    /*display: inline-block;*/
+    /*background-size: 65px;*/
+/*}*/
+
+
+.government-performance-default, .civic-health-default, .civic-health-selected, .economic-health-hover, .economic-health-selected, .economic-health-default, .civic-health-hover, .government-performance-hover, .government-performance-selected, .public-safety-default, .public-safety-hover, .public-safety-selected {
   display: inline-block;
-    background: url(../images/navigation-sprite.png) no-repeat;
+    background: url(../images/spritesheet-normal.png) no-repeat;
+    background-size: 260px;
 }
 
-.government-performance-default-sm {
-  background-position: -65px -0px;
-  height: 65px;
-  width: 65px
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 240dpi) {
+.government-performance-default, .civic-health-default, .civic-health-selected, .economic-health-hover, .economic-health-selected, .economic-health-default, .civic-health-hover, .government-performance-hover, .government-performance-selected, .public-safety-default, .public-safety-hover, .public-safety-selected {
+    background-image: url(../images/spritesheet-retina.png);
+  }
 }
 
-.government-performance-selected-sm {
-  background-position: -65px -130px;
-  height: 65px;
-  width: 65px
-}
-
-.government-performance-default-sm:hover, #government-performance-nav-link:hover > .government-performance-default-sm {
-    background-position: -65px -65px;
-}
-
-.civic-health-default-sm {
-  background-position: -0px -0px;
-  height: 65px;
-  width: 65px
-}
-
-.civic-health-selected-sm {
-  background-position: -0px -65px;
-  height: 65px;
-  width: 65px
-}
-
-#civic-health-nav-link:hover > .civic-health-default-sm {
-    background-position: -0px -130px;
-}
-
-.economic-health-selected-sm {
+.government-performance-default {
+  /*background-position: 0 -130px;*/
   background-position: -130px -130px;
   height: 65px;
   width: 65px
 }
 
-.economic-health-default-sm {
-  background-position: -130px -0px;
+.government-performance-selected, #government-performance-nav-link:hover > .government-performance-default {
+    background-position: -65px -130px;
+    height: 65px;
+    width: 65px
+}
+
+.civic-health-default {
+  /*background-position: 0 0;*/
+  background-position: -130px 0;
   height: 65px;
   width: 65px
 }
 
-#economic-health-nav-link:hover > .economic-health-default-sm {
-    background-position: -130px -65px;
+.civic-health-selected, #civic-health-nav-link:hover > .civic-health-default {
+    background-position: -65px 0;
+    height: 65px;
+    width: 65px
 }
 
-.public-safety-default-sm {
-  background-position: -195px -0px;
+.economic-health-default {
+  /*background-position: 0 -65px;*/
+  background-position: -130px -65px;
   height: 65px;
   width: 65px
 }
 
-.public-safety-selected-sm {
+.economic-health-selected, #economic-health-nav-link:hover > .economic-health-default {
+    background-position: -65px -65px;
+    height: 65px;
+    width: 65px
+}
+
+.public-safety-default {
+  /*background-position: -195px 0;*/
   background-position: -195px -130px;
   height: 65px;
   width: 65px
 }
 
-#public-safety-nav-link:hover > .public-safety-default-sm {
+.public-safety-selected, #public-safety-nav-link:hover > .public-safety-default {
     background-position: -195px -65px;
+    height: 65px;
+    width: 65px
 }
+
+/*.public-safety-selected {*/
+  /*background-position: -195px -130px;*/
+  /*background-position: -195px -65px;*/
+  /*height: 65px;*/
+  /*width: 65px*/
+/*}*/
+
+/*.economic-health-selected {*/
+  /*background-position: -130px -65px;*/
+  /*height: 65px;*/
+  /*width: 65px*/
+/*}*/
+
+/*.government-performance-selected {*/
+  /*background-position: -130px -130px;*/
+  /*height: 65px;*/
+  /*width: 65px*/
+/*}*/
+
+/*.civic-health-selected {*/
+  /*background-position: -130px 0;*/
+  /*height: 65px;*/
+  /*width: 65px*/
+/*}*/
