@@ -58,7 +58,8 @@ body {
     /*background-size: 65px;*/
 /*}*/
 
-
+/* http://www.andreasnorman.com/how-to-easily-create-image-sprites-for-retina-displays/ */
+/* http://spritegen.website-performance.org/ */
 .government-performance-default, .civic-health-default, .civic-health-selected, .economic-health-hover, .economic-health-selected, .economic-health-default, .civic-health-hover, .government-performance-hover, .government-performance-selected, .public-safety-default, .public-safety-hover, .public-safety-selected {
   display: inline-block;
     background: url(../images/spritesheet-normal.png) no-repeat;
