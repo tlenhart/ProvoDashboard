@@ -38,12 +38,24 @@ MONTHS = (
     ("December", "December")
 )
 
+# These might need to change based on what we get working on the front-end with Angular.
+GRAPHCHOICE = (
+    ("chart-polar", "Polar"),
+    ("chart-bar", "Bar"),
+    ("chart-line", "Line"),
+    ("chart-none", "None"),
+    ("chart-doughnut", "Doughnut"),
+    ("chart-pie", "Pie"),
+    ("chart-radar", "Radar")
+)
+
 
 class SubCategories(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     sub_category = models.CharField(max_length=300, default="Please Add A Category")
     description = models.CharField(max_length=1000, null=False)
     main_category = models.CharField(max_length=300, null=True)
+    chart_type = models.CharField(max_length=25, null=True, default="Base", choices=GRAPHCHOICE)
     visible = models.BooleanField(default=True)
 
     def __str__(self):

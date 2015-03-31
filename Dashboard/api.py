@@ -7,12 +7,11 @@ from Dashboard.models import CivicHealth, EconomicHealth, GovernmentPerformance,
 # Not callable directly with a url as it is not in urls.py
 class CategoryResource(ModelResource):
     class Meta:
-        queryset = SubCategories.objects.all()
+        queryset = SubCategories.objects.filter(visible=True)
         resource_name = 'category'
         filtering = {
             'description': ALL,
             'sub_category': ALL,
-            'visible': ALL,
         }
 
 class CivicResource(ModelResource):
