@@ -44,6 +44,7 @@ class SubCategories(models.Model):
     sub_category = models.CharField(max_length=300, default="Please Add A Category")
     description = models.CharField(max_length=1000, null=False)
     main_category = models.CharField(max_length=300, null=True)
+    visible = models.BooleanField(null=True, default=True)
 
     def __str__(self):
         return "{0} **{1}** ".format(self.sub_category, self.main_category)
