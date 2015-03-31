@@ -12,6 +12,7 @@ class CategoryResource(ModelResource):
         filtering = {
             'description': ALL,
             'sub_category': ALL,
+            'visible': ALL,
         }
 
 class CivicResource(ModelResource):
