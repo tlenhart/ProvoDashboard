@@ -116,9 +116,9 @@ app.controller('GraphController', function($scope, $modal) {
         }
         else {
             //$scope.data = $scope.values;
-            index = Math.floor((Math.random() * 3));
-            $scope.type = $scope.charts[index];
-            $scope.data[0] = $scope.values;
+            //index = Math.floor((Math.random() * 3));
+            //$scope.type = $scope.charts[index];
+            //$scope.data[0] = $scope.values;
             console.log("Invalid chart type" + $scope.chartType);
         }
 

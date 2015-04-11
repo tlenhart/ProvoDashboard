@@ -1,4519 +1,3302 @@
 [
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "admin",
-    "name": "log entry",
-    "model": "logentry"
+    "model": "logentry",
+    "name": "log entry"
   },
-  "pk": 1,
-  "model": "contenttypes.contenttype"
+  "pk": 1
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "auth",
-    "name": "permission",
-    "model": "permission"
+    "model": "permission",
+    "name": "permission"
   },
-  "pk": 2,
-  "model": "contenttypes.contenttype"
+  "pk": 2
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "auth",
-    "name": "group",
-    "model": "group"
+    "model": "group",
+    "name": "group"
   },
-  "pk": 3,
-  "model": "contenttypes.contenttype"
+  "pk": 3
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "auth",
-    "name": "user",
-    "model": "user"
+    "model": "user",
+    "name": "user"
   },
-  "pk": 4,
-  "model": "contenttypes.contenttype"
+  "pk": 4
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "contenttypes",
-    "name": "content type",
-    "model": "contenttype"
+    "model": "contenttype",
+    "name": "content type"
   },
-  "pk": 5,
-  "model": "contenttypes.contenttype"
+  "pk": 5
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "sessions",
-    "name": "session",
-    "model": "session"
+    "model": "session",
+    "name": "session"
   },
-  "pk": 6,
-  "model": "contenttypes.contenttype"
+  "pk": 6
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "tastypie",
-    "name": "api access",
-    "model": "apiaccess"
+    "model": "apiaccess",
+    "name": "api access"
   },
-  "pk": 7,
-  "model": "contenttypes.contenttype"
+  "pk": 7
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "tastypie",
-    "name": "api key",
-    "model": "apikey"
+    "model": "apikey",
+    "name": "api key"
   },
-  "pk": 8,
-  "model": "contenttypes.contenttype"
+  "pk": 8
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "Dashboard",
-    "name": "sub categories",
-    "model": "subcategories"
+    "model": "subcategories",
+    "name": "sub categories"
   },
-  "pk": 9,
-  "model": "contenttypes.contenttype"
+  "pk": 9
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "Dashboard",
-    "name": "public safety",
-    "model": "publicsafety"
+    "model": "publicsafety",
+    "name": "public safety"
   },
-  "pk": 10,
-  "model": "contenttypes.contenttype"
+  "pk": 10
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "Dashboard",
-    "name": "civic health",
-    "model": "civichealth"
+    "model": "civichealth",
+    "name": "civic health"
   },
-  "pk": 11,
-  "model": "contenttypes.contenttype"
+  "pk": 11
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "Dashboard",
-    "name": "economic health",
-    "model": "economichealth"
+    "model": "economichealth",
+    "name": "economic health"
   },
-  "pk": 12,
-  "model": "contenttypes.contenttype"
+  "pk": 12
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "Dashboard",
-    "name": "government performance",
-    "model": "governmentperformance"
+    "model": "governmentperformance",
+    "name": "government performance"
   },
-  "pk": 13,
-  "model": "contenttypes.contenttype"
+  "pk": 13
 },
 {
+  "model": "contenttypes.contenttype",
   "fields": {
     "app_label": "Dashboard",
-    "name": "safety",
-    "model": "safety"
+    "model": "safety",
+    "name": "safety"
   },
-  "pk": 14,
-  "model": "contenttypes.contenttype"
+  "pk": 14
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
-    "session_data": "MzhkZjg4NGU5YmFmZjcwMWNmMjgxZWU4YmY5OTQ2M2U5YzJjNDAwZDp7fQ==",
-    "expire_date": "2015-03-11T23:24:10.794Z"
-  },
-  "pk": "0m4w3h6n1r23fc3sqykvawio40cw07m9",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "OTQyNjViYTU1MDQ0OTAzZjQ1ZmE4Y2QzMmQ5YTJmOWQyN2E2MWFjMDp7Il9hdXRoX3VzZXJfaWQiOjMsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMGZkNDBhNTVjZDlkMzk5YjA0YjNhNzcwMDY5M2NhM2MyZGQ0NDk4OCJ9",
-    "expire_date": "2015-03-10T18:41:01.370Z"
-  },
-  "pk": "48evi8ej4v0yzr3u9vq98nzrswk3yqb6",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "OWZhNWIzMzI1NDhlYmIzZDMxNmNhMDkzMzY0Y2Q4MThmMmNiODQ0YTp7Il9hdXRoX3VzZXJfaGFzaCI6IjBmZDQwYTU1Y2Q5ZDM5OWIwNGIzYTc3MDA2OTNjYTNjMmRkNDQ5ODgiLCJfYXV0aF91c2VyX2lkIjozLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCJ9",
-    "expire_date": "2015-03-23T19:35:57.836Z"
-  },
-  "pk": "5z081d60y9ie9gzdq0cykybliij13g0v",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "MzMxNWU5YTk2Mjc4NWI0ZmQzNTliNDU1MWVmNjJmMjMyMGY5Y2UzNjp7Il9hdXRoX3VzZXJfaGFzaCI6Ijc2MDc3YWI2YzVlM2QzZTczNjQxODNjMzYzNmI3YzU3MTc0NGZmNWMiLCJfYXV0aF91c2VyX2lkIjo0LCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCJ9",
-    "expire_date": "2015-03-17T20:00:02.040Z"
-  },
-  "pk": "742gqf4bh3r8cvyptmbtvlgpk9g8aim7",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "MTY5NjE2YzdjODkyYTg3MTY0MmJhYTk0ZWJhNWZmYWI2MTM0NDI0Zjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTRmNTY5ZWJjYTk4MjgzYzNhMTY5YjQxZWMzYWI5ZDI5NDhkYjY1YyIsIl9hdXRoX3VzZXJfaWQiOjR9",
-    "expire_date": "2015-04-14T17:58:09.817Z"
-  },
-  "pk": "7kwktvnxlhbcb5p2niobzs70ntow7cpm",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "ZDhiYzY5M2M2MGYwNThkYWY5NzM3OWRkYzg1NWQyNGViNTBmMGExNDp7Il9hdXRoX3VzZXJfaGFzaCI6ImUxOGI5MzFmZWU2ZmJkMmM3MjgxYzM3NWFjMmIwNTMyNDU2ZjkwNjkiLCJfYXV0aF91c2VyX2lkIjo1LCJfYXV0aF91c2VyX2JhY2tlbmQiOiJkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZCJ9",
-    "expire_date": "2015-03-17T20:01:02.430Z"
-  },
-  "pk": "bco8j4q5salclbs4s4clbui48zz749ce",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "MzhkZjg4NGU5YmFmZjcwMWNmMjgxZWU4YmY5OTQ2M2U5YzJjNDAwZDp7fQ==",
-    "expire_date": "2015-03-09T20:13:55.313Z"
-  },
-  "pk": "dw6rrx80bh67o050a640ccx3oakm2kxt",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "NjYxMThiNDhkYThiZjdiMTk5OGJkNzhjYmM1Y2MwZWYzYTQwZDZmMzp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNTk4NWExZDkzOTM2ZGY5OGI3MmI4ZmE2NWExZjMxZWM5ZDAyNDVhMiIsIl9hdXRoX3VzZXJfaWQiOjJ9",
-    "expire_date": "2015-03-18T20:43:10.796Z"
-  },
-  "pk": "fpa0ru8iopw5yx2dckdrjjkuq8wv8crz",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "MTY5NjE2YzdjODkyYTg3MTY0MmJhYTk0ZWJhNWZmYWI2MTM0NDI0Zjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTRmNTY5ZWJjYTk4MjgzYzNhMTY5YjQxZWMzYWI5ZDI5NDhkYjY1YyIsIl9hdXRoX3VzZXJfaWQiOjR9",
-    "expire_date": "2015-04-14T03:07:27.532Z"
-  },
-  "pk": "gh2tuxfopyegkc5nxl4hkfffy4664ymi",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "OTQyNjViYTU1MDQ0OTAzZjQ1ZmE4Y2QzMmQ5YTJmOWQyN2E2MWFjMDp7Il9hdXRoX3VzZXJfaWQiOjMsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMGZkNDBhNTVjZDlkMzk5YjA0YjNhNzcwMDY5M2NhM2MyZGQ0NDk4OCJ9",
-    "expire_date": "2015-03-24T17:52:43.547Z"
-  },
-  "pk": "lrvdfvg0eph5d3prmry8fcnklafnqp03",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "NjBiNjg0NmYxOGU4ZGJkYWJjNWZmM2VkMjVmNjI2YTEzYjI4OTQ1Zjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNDJiMzgwZDU3N2ZhOTVkNzg2ZjRjZGI5MDFjODlhODY1Mzk4NWZlNiIsIl9hdXRoX3VzZXJfaWQiOjJ9",
-    "expire_date": "2015-04-14T21:01:23.922Z"
-  },
-  "pk": "oi9yvnh5ur3lq4cih944hpgxcdctk66c",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "MTY5NjE2YzdjODkyYTg3MTY0MmJhYTk0ZWJhNWZmYWI2MTM0NDI0Zjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTRmNTY5ZWJjYTk4MjgzYzNhMTY5YjQxZWMzYWI5ZDI5NDhkYjY1YyIsIl9hdXRoX3VzZXJfaWQiOjR9",
-    "expire_date": "2015-04-13T04:38:59.725Z"
-  },
-  "pk": "qpx0nexnv2698m5mze85j9sotlfc0foj",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "YzQyZjIwYTczNGJjODIwZTI1ZDE5ZDEwNWJlOTA4OTBkODNjZjI2Zjp7Il9hdXRoX3VzZXJfaWQiOjUsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTE4YjkzMWZlZTZmYmQyYzcyODFjMzc1YWMyYjA1MzI0NTZmOTA2OSJ9",
-    "expire_date": "2015-03-19T14:03:52.261Z"
-  },
-  "pk": "qzr8m9h8q8yfpr83ewzmpyeeydv8y6uf",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "OTQyNjViYTU1MDQ0OTAzZjQ1ZmE4Y2QzMmQ5YTJmOWQyN2E2MWFjMDp7Il9hdXRoX3VzZXJfaWQiOjMsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiMGZkNDBhNTVjZDlkMzk5YjA0YjNhNzcwMDY5M2NhM2MyZGQ0NDk4OCJ9",
-    "expire_date": "2015-03-12T00:48:23.265Z"
-  },
-  "pk": "tcotaek2brfz0hr7mok7o5sotghlmb4y",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "OGFlOGU0ODJiMThmNjQ1MjMyOWJhYzc2OTA2ZWY3YWRiNTIxMjdmYjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZDAxNWU5ZmMxZmIxNGU2ZjJhM2JiMDIyYjBmZmY1ODNiNWY2MzkxZiIsIl9hdXRoX3VzZXJfaWQiOjN9",
-    "expire_date": "2015-04-07T00:51:44.049Z"
-  },
-  "pk": "uoafbmnh68wjmrvow7b3xvv4gwjx9tdx",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "session_data": "YThmODVmYTAyMGFmM2IxYzU3NTRmYTA2MjY5NDBmNzM2YzY1YWVjZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiNzYwNzdhYjZjNWUzZDNlNzM2NDE4M2MzNjM2YjdjNTcxNzQ0ZmY1YyIsIl9hdXRoX3VzZXJfaWQiOjR9",
-    "expire_date": "2015-03-26T20:29:33.365Z"
-  },
-  "pk": "y1d3jho5hspbov88n7ru77fys7voxtdd",
-  "model": "sessions.session"
-},
-{
-  "fields": {
-    "sub_category": "Violent Crimes",
+    "visible": true,
+    "chart_type": "chart-line",
     "description": "This represents information gathered which include armed robberies, homicides, battery, assaults",
-    "visible": true,
+    "sub_category": "Violent Crimes",
     "main_category": "Public Safety"
   },
-  "pk": 1,
-  "model": "Dashboard.subcategories"
+  "pk": 1
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
-    "sub_category": "Non-Violent Crimes",
+    "visible": true,
+    "chart_type": "chart-line",
     "description": "This is a major test",
-    "visible": true,
+    "sub_category": "Non-Violent Crimes",
     "main_category": "Public Safety"
   },
-  "pk": 3,
-  "model": "Dashboard.subcategories"
+  "pk": 3
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Traffic Violations by Category",
-    "description": "Null",
-    "visible": true,
     "main_category": "Public Safety"
   },
-  "pk": 4,
-  "model": "Dashboard.subcategories"
+  "pk": 4
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Emergency Response Times by Category",
-    "description": "Null",
-    "visible": true,
     "main_category": "Public Safety"
   },
-  "pk": 5,
-  "model": "Dashboard.subcategories"
+  "pk": 5
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Number of Fire/EMS Calls",
-    "description": "Null",
-    "visible": true,
     "main_category": "Public Safety"
   },
-  "pk": 6,
-  "model": "Dashboard.subcategories"
+  "pk": 6
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Road Miles Improved",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 7,
-  "model": "Dashboard.subcategories"
+  "pk": 7
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-radar",
+    "description": "Null",
     "sub_category": "Potholes Filled",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 8,
-  "model": "Dashboard.subcategories"
+  "pk": 8
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "Sanitation: Pounds of Trash Collected",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 9,
-  "model": "Dashboard.subcategories"
+  "pk": 9
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Sanitation: Recycling Numbers",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 10,
-  "model": "Dashboard.subcategories"
+  "pk": 10
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "ComDev:  Occupancy and Junk Cases Closed",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 11,
-  "model": "Dashboard.subcategories"
+  "pk": 11
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-radar",
+    "description": "Null",
     "sub_category": "Legal Statistics",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 12,
-  "model": "Dashboard.subcategories"
+  "pk": 12
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "Number of Building Permits Issued",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 13,
-  "model": "Dashboard.subcategories"
+  "pk": 13
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Energy Consumption Data",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 14,
-  "model": "Dashboard.subcategories"
+  "pk": 14
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-radar",
+    "description": "Null",
     "sub_category": "Water Consumption Data",
-    "description": "Null",
-    "visible": true,
     "main_category": "Government Performance"
   },
-  "pk": 15,
-  "model": "Dashboard.subcategories"
+  "pk": 15
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "Number of Businesses in the City",
-    "description": "Null",
-    "visible": true,
     "main_category": "Economic Health"
   },
-  "pk": 16,
-  "model": "Dashboard.subcategories"
+  "pk": 16
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "Number of Entrepreneurs at Startup Incubator",
-    "description": "Null",
-    "visible": true,
     "main_category": "Economic Health"
   },
-  "pk": 17,
-  "model": "Dashboard.subcategories"
+  "pk": 17
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "City Budgetary Figures",
-    "description": "Null",
-    "visible": true,
     "main_category": "Economic Health"
   },
-  "pk": 18,
-  "model": "Dashboard.subcategories"
+  "pk": 18
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-polar",
+    "description": "Null",
     "sub_category": "Sales Tax Revenue by Month",
-    "description": "Null",
-    "visible": true,
     "main_category": "Economic Health"
   },
-  "pk": 19,
-  "model": "Dashboard.subcategories"
+  "pk": 19
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "Expenditure Data by Month",
-    "description": "Null",
-    "visible": true,
     "main_category": "Economic Health"
   },
-  "pk": 20,
-  "model": "Dashboard.subcategories"
+  "pk": 20
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Number of Employees by Department (Yearly?)",
-    "description": "Null",
-    "visible": true,
     "main_category": "Economic Health"
   },
-  "pk": 21,
-  "model": "Dashboard.subcategories"
+  "pk": 21
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-pie",
+    "description": "Null",
     "sub_category": "Literacy Statistics",
-    "description": "Null",
-    "visible": true,
     "main_category": "Civic Health"
   },
-  "pk": 22,
-  "model": "Dashboard.subcategories"
+  "pk": 22
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-doughnut",
+    "description": "Null",
     "sub_category": "Number of Rec Center/Sr. Center Programs",
-    "description": "Null",
-    "visible": true,
     "main_category": "Civic Health"
   },
-  "pk": 23,
-  "model": "Dashboard.subcategories"
+  "pk": 23
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-line",
+    "description": "Null",
     "sub_category": "Rec Center/Sr. Center Attendance",
-    "description": "Null",
-    "visible": true,
     "main_category": "Civic Health"
   },
-  "pk": 24,
-  "model": "Dashboard.subcategories"
+  "pk": 24
 },
 {
+  "model": "Dashboard.subcategories",
   "fields": {
+    "visible": true,
+    "chart_type": "chart-bar",
+    "description": "Null",
     "sub_category": "Various 311 Stats",
-    "description": "Null",
-    "visible": true,
     "main_category": "Civic Health"
   },
-  "pk": 25,
-  "model": "Dashboard.subcategories"
+  "pk": 25
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2015,
     "value": "25",
-    "category": 1,
     "month": "January",
-    "year": 2015
+    "category": 1
   },
-  "pk": 1,
-  "model": "Dashboard.publicsafety"
+  "pk": 1
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2015,
     "value": "180",
-    "category": 3,
     "month": "January",
-    "year": 2015
+    "category": 3
   },
-  "pk": 2,
-  "model": "Dashboard.publicsafety"
+  "pk": 2
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "12",
-    "category": 1,
     "month": "January",
-    "year": 2014
+    "category": 1
   },
-  "pk": 3,
-  "model": "Dashboard.publicsafety"
+  "pk": 3
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "6",
-    "category": 1,
     "month": "February",
-    "year": 2014
+    "category": 1
   },
-  "pk": 4,
-  "model": "Dashboard.publicsafety"
+  "pk": 4
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "8",
-    "category": 1,
     "month": "March",
-    "year": 2014
+    "category": 1
   },
-  "pk": 5,
-  "model": "Dashboard.publicsafety"
+  "pk": 5
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "9",
-    "category": 1,
     "month": "April",
-    "year": 2014
+    "category": 1
   },
-  "pk": 6,
-  "model": "Dashboard.publicsafety"
+  "pk": 6
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "7",
-    "category": 1,
     "month": "May",
-    "year": 2014
+    "category": 1
   },
-  "pk": 7,
-  "model": "Dashboard.publicsafety"
+  "pk": 7
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "3",
-    "category": 1,
     "month": "June",
-    "year": 2014
+    "category": 1
   },
-  "pk": 8,
-  "model": "Dashboard.publicsafety"
+  "pk": 8
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "7",
-    "category": 1,
     "month": "July",
-    "year": 2014
+    "category": 1
   },
-  "pk": 9,
-  "model": "Dashboard.publicsafety"
+  "pk": 9
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1",
-    "category": 1,
     "month": "August",
-    "year": 2014
+    "category": 1
   },
-  "pk": 10,
-  "model": "Dashboard.publicsafety"
+  "pk": 10
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "2",
-    "category": 1,
     "month": "September",
-    "year": 2014
+    "category": 1
   },
-  "pk": 11,
-  "model": "Dashboard.publicsafety"
+  "pk": 11
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "6",
-    "category": 1,
     "month": "October",
-    "year": 2014
+    "category": 1
   },
-  "pk": 12,
-  "model": "Dashboard.publicsafety"
+  "pk": 12
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "8",
-    "category": 1,
     "month": "November",
-    "year": 2014
+    "category": 1
   },
-  "pk": 13,
-  "model": "Dashboard.publicsafety"
+  "pk": 13
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1",
-    "category": 1,
     "month": "December",
-    "year": 2014
+    "category": 1
   },
-  "pk": 14,
-  "model": "Dashboard.publicsafety"
+  "pk": 14
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "125",
-    "category": 3,
     "month": "January",
-    "year": 2014
+    "category": 3
   },
-  "pk": 15,
-  "model": "Dashboard.publicsafety"
+  "pk": 15
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "130",
-    "category": 3,
     "month": "February",
-    "year": 2014
+    "category": 3
   },
-  "pk": 16,
-  "model": "Dashboard.publicsafety"
+  "pk": 16
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "190",
-    "category": 3,
     "month": "March",
-    "year": 2014
+    "category": 3
   },
-  "pk": 17,
-  "model": "Dashboard.publicsafety"
+  "pk": 17
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "186",
-    "category": 3,
     "month": "April",
-    "year": 2014
+    "category": 3
   },
-  "pk": 18,
-  "model": "Dashboard.publicsafety"
+  "pk": 18
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "145",
-    "category": 3,
     "month": "May",
-    "year": 2014
+    "category": 3
   },
-  "pk": 19,
-  "model": "Dashboard.publicsafety"
+  "pk": 19
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "120",
-    "category": 3,
     "month": "June",
-    "year": 2014
+    "category": 3
   },
-  "pk": 20,
-  "model": "Dashboard.publicsafety"
+  "pk": 20
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "145",
-    "category": 3,
     "month": "July",
-    "year": 2014
+    "category": 3
   },
-  "pk": 21,
-  "model": "Dashboard.publicsafety"
+  "pk": 21
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "187",
-    "category": 3,
     "month": "August",
-    "year": 2014
+    "category": 3
   },
-  "pk": 22,
-  "model": "Dashboard.publicsafety"
+  "pk": 22
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "192",
-    "category": 3,
     "month": "September",
-    "year": 2014
+    "category": 3
   },
-  "pk": 23,
-  "model": "Dashboard.publicsafety"
+  "pk": 23
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "166",
-    "category": 3,
     "month": "October",
-    "year": 2014
+    "category": 3
   },
-  "pk": 24,
-  "model": "Dashboard.publicsafety"
+  "pk": 24
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "178",
-    "category": 3,
     "month": "November",
-    "year": 2014
+    "category": 3
   },
-  "pk": 25,
-  "model": "Dashboard.publicsafety"
+  "pk": 25
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "205",
-    "category": 3,
     "month": "December",
-    "year": 2014
+    "category": 3
   },
-  "pk": 26,
-  "model": "Dashboard.publicsafety"
+  "pk": 26
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1027",
-    "category": 4,
     "month": "January",
-    "year": 2014
+    "category": 4
   },
-  "pk": 27,
-  "model": "Dashboard.publicsafety"
+  "pk": 27
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1000",
-    "category": 4,
     "month": "February",
-    "year": 2014
+    "category": 4
   },
-  "pk": 28,
-  "model": "Dashboard.publicsafety"
+  "pk": 28
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1018",
-    "category": 4,
     "month": "March",
-    "year": 2014
+    "category": 4
   },
-  "pk": 29,
-  "model": "Dashboard.publicsafety"
+  "pk": 29
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1546",
-    "category": 4,
     "month": "April",
-    "year": 2014
+    "category": 4
   },
-  "pk": 30,
-  "model": "Dashboard.publicsafety"
+  "pk": 30
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1815",
-    "category": 4,
     "month": "May",
-    "year": 2014
+    "category": 4
   },
-  "pk": 31,
-  "model": "Dashboard.publicsafety"
+  "pk": 31
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "2107",
-    "category": 4,
     "month": "June",
-    "year": 2014
+    "category": 4
   },
-  "pk": 32,
-  "model": "Dashboard.publicsafety"
+  "pk": 32
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1987",
-    "category": 4,
     "month": "July",
-    "year": 2014
+    "category": 4
   },
-  "pk": 33,
-  "model": "Dashboard.publicsafety"
+  "pk": 33
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1684",
-    "category": 4,
     "month": "August",
-    "year": 2014
+    "category": 4
   },
-  "pk": 34,
-  "model": "Dashboard.publicsafety"
+  "pk": 34
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1543",
-    "category": 4,
     "month": "September",
-    "year": 2014
+    "category": 4
   },
-  "pk": 35,
-  "model": "Dashboard.publicsafety"
+  "pk": 35
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1876",
-    "category": 4,
     "month": "October",
-    "year": 2014
+    "category": 4
   },
-  "pk": 36,
-  "model": "Dashboard.publicsafety"
+  "pk": 36
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1447",
-    "category": 4,
     "month": "November",
-    "year": 2014
+    "category": 4
   },
-  "pk": 37,
-  "model": "Dashboard.publicsafety"
+  "pk": 37
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1354",
-    "category": 4,
     "month": "December",
-    "year": 2014
+    "category": 4
   },
-  "pk": 38,
-  "model": "Dashboard.publicsafety"
+  "pk": 38
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "450",
-    "category": 5,
     "month": "January",
-    "year": 2014
+    "category": 5
   },
-  "pk": 39,
-  "model": "Dashboard.publicsafety"
+  "pk": 39
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "320",
-    "category": 5,
     "month": "February",
-    "year": 2014
+    "category": 5
   },
-  "pk": 40,
-  "model": "Dashboard.publicsafety"
+  "pk": 40
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "780",
-    "category": 5,
     "month": "March",
-    "year": 2014
+    "category": 5
   },
-  "pk": 41,
-  "model": "Dashboard.publicsafety"
+  "pk": 41
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "240",
-    "category": 5,
     "month": "April",
-    "year": 2014
+    "category": 5
   },
-  "pk": 42,
-  "model": "Dashboard.publicsafety"
+  "pk": 42
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "364",
-    "category": 5,
     "month": "May",
-    "year": 2014
+    "category": 5
   },
-  "pk": 43,
-  "model": "Dashboard.publicsafety"
+  "pk": 43
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "354",
-    "category": 5,
     "month": "June",
-    "year": 2014
+    "category": 5
   },
-  "pk": 44,
-  "model": "Dashboard.publicsafety"
+  "pk": 44
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "151",
-    "category": 5,
     "month": "July",
-    "year": 2014
+    "category": 5
   },
-  "pk": 45,
-  "model": "Dashboard.publicsafety"
+  "pk": 45
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "654",
-    "category": 5,
     "month": "August",
-    "year": 2014
+    "category": 5
   },
-  "pk": 46,
-  "model": "Dashboard.publicsafety"
+  "pk": 46
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "151",
-    "category": 5,
     "month": "September",
-    "year": 2014
+    "category": 5
   },
-  "pk": 47,
-  "model": "Dashboard.publicsafety"
+  "pk": 47
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "278",
-    "category": 5,
     "month": "October",
-    "year": 2014
+    "category": 5
   },
-  "pk": 48,
-  "model": "Dashboard.publicsafety"
+  "pk": 48
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "196",
-    "category": 5,
     "month": "November",
-    "year": 2014
+    "category": 5
   },
-  "pk": 49,
-  "model": "Dashboard.publicsafety"
+  "pk": 49
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "746",
-    "category": 5,
     "month": "December",
-    "year": 2014
+    "category": 5
   },
-  "pk": 50,
-  "model": "Dashboard.publicsafety"
+  "pk": 50
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1651",
-    "category": 6,
     "month": "January",
-    "year": 2014
+    "category": 6
   },
-  "pk": 51,
-  "model": "Dashboard.publicsafety"
+  "pk": 51
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1879",
-    "category": 6,
     "month": "February",
-    "year": 2014
+    "category": 6
   },
-  "pk": 52,
-  "model": "Dashboard.publicsafety"
+  "pk": 52
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1489",
-    "category": 6,
     "month": "March",
-    "year": 2014
+    "category": 6
   },
-  "pk": 53,
-  "model": "Dashboard.publicsafety"
+  "pk": 53
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1534",
-    "category": 6,
     "month": "April",
-    "year": 2014
+    "category": 6
   },
-  "pk": 54,
-  "model": "Dashboard.publicsafety"
+  "pk": 54
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1672",
-    "category": 6,
     "month": "May",
-    "year": 2014
+    "category": 6
   },
-  "pk": 55,
-  "model": "Dashboard.publicsafety"
+  "pk": 55
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1469",
-    "category": 6,
     "month": "June",
-    "year": 2014
+    "category": 6
   },
-  "pk": 56,
-  "model": "Dashboard.publicsafety"
+  "pk": 56
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1357",
-    "category": 6,
     "month": "July",
-    "year": 2014
+    "category": 6
   },
-  "pk": 57,
-  "model": "Dashboard.publicsafety"
+  "pk": 57
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1782",
-    "category": 6,
     "month": "August",
-    "year": 2014
+    "category": 6
   },
-  "pk": 58,
-  "model": "Dashboard.publicsafety"
+  "pk": 58
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1954",
-    "category": 6,
     "month": "September",
-    "year": 2014
+    "category": 6
   },
-  "pk": 59,
-  "model": "Dashboard.publicsafety"
+  "pk": 59
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1126",
-    "category": 6,
     "month": "October",
-    "year": 2014
+    "category": 6
   },
-  "pk": 60,
-  "model": "Dashboard.publicsafety"
+  "pk": 60
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1674",
-    "category": 6,
     "month": "November",
-    "year": 2014
+    "category": 6
   },
-  "pk": 61,
-  "model": "Dashboard.publicsafety"
+  "pk": 61
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2014,
     "value": "1876",
-    "category": 6,
     "month": "December",
-    "year": 2014
+    "category": 6
   },
-  "pk": 62,
-  "model": "Dashboard.publicsafety"
+  "pk": 62
 },
 {
+  "model": "Dashboard.publicsafety",
   "fields": {
+    "year": 2015,
     "value": "5000",
-    "category": 6,
     "month": "January",
-    "year": 2015
+    "category": 6
   },
-  "pk": 64,
-  "model": "Dashboard.publicsafety"
+  "pk": 64
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "387",
-    "category": 22,
     "month": "January",
-    "year": 2014
+    "category": 22
   },
-  "pk": 1,
-  "model": "Dashboard.civichealth"
+  "pk": 1
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "318",
-    "category": 22,
     "month": "February",
-    "year": 2014
+    "category": 22
   },
-  "pk": 2,
-  "model": "Dashboard.civichealth"
+  "pk": 2
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "399",
-    "category": 22,
     "month": "March",
-    "year": 2014
+    "category": 22
   },
-  "pk": 3,
-  "model": "Dashboard.civichealth"
+  "pk": 3
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "387",
-    "category": 22,
     "month": "April",
-    "year": 2014
+    "category": 22
   },
-  "pk": 4,
-  "model": "Dashboard.civichealth"
+  "pk": 4
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "346",
-    "category": 22,
     "month": "May",
-    "year": 2014
+    "category": 22
   },
-  "pk": 5,
-  "model": "Dashboard.civichealth"
+  "pk": 5
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "350",
-    "category": 22,
     "month": "June",
-    "year": 2014
+    "category": 22
   },
-  "pk": 6,
-  "model": "Dashboard.civichealth"
+  "pk": 6
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "393",
-    "category": 22,
     "month": "July",
-    "year": 2014
+    "category": 22
   },
-  "pk": 7,
-  "model": "Dashboard.civichealth"
+  "pk": 7
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "341",
-    "category": 22,
     "month": "August",
-    "year": 2014
+    "category": 22
   },
-  "pk": 8,
-  "model": "Dashboard.civichealth"
+  "pk": 8
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "353",
-    "category": 22,
     "month": "September",
-    "year": 2014
+    "category": 22
   },
-  "pk": 9,
-  "model": "Dashboard.civichealth"
+  "pk": 9
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "334",
-    "category": 22,
     "month": "October",
-    "year": 2014
+    "category": 22
   },
-  "pk": 10,
-  "model": "Dashboard.civichealth"
+  "pk": 10
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "380",
-    "category": 22,
     "month": "November",
-    "year": 2014
+    "category": 22
   },
-  "pk": 11,
-  "model": "Dashboard.civichealth"
+  "pk": 11
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "383",
-    "category": 22,
     "month": "December",
-    "year": 2014
+    "category": 22
   },
-  "pk": 12,
-  "model": "Dashboard.civichealth"
+  "pk": 12
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "20",
-    "category": 23,
     "month": "January",
-    "year": 2014
+    "category": 23
   },
-  "pk": 13,
-  "model": "Dashboard.civichealth"
+  "pk": 13
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "25",
-    "category": 23,
     "month": "February",
-    "year": 2014
+    "category": 23
   },
-  "pk": 14,
-  "model": "Dashboard.civichealth"
+  "pk": 14
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "21",
-    "category": 23,
     "month": "March",
-    "year": 2014
+    "category": 23
   },
-  "pk": 15,
-  "model": "Dashboard.civichealth"
+  "pk": 15
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "26",
-    "category": 23,
     "month": "April",
-    "year": 2014
+    "category": 23
   },
-  "pk": 16,
-  "model": "Dashboard.civichealth"
+  "pk": 16
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "24",
-    "category": 23,
     "month": "May",
-    "year": 2014
+    "category": 23
   },
-  "pk": 17,
-  "model": "Dashboard.civichealth"
+  "pk": 17
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "23",
-    "category": 23,
     "month": "June",
-    "year": 2014
+    "category": 23
   },
-  "pk": 18,
-  "model": "Dashboard.civichealth"
+  "pk": 18
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "22",
-    "category": 23,
     "month": "July",
-    "year": 2014
+    "category": 23
   },
-  "pk": 19,
-  "model": "Dashboard.civichealth"
+  "pk": 19
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "21",
-    "category": 23,
     "month": "August",
-    "year": 2014
+    "category": 23
   },
-  "pk": 20,
-  "model": "Dashboard.civichealth"
+  "pk": 20
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "19",
-    "category": 23,
     "month": "September",
-    "year": 2014
+    "category": 23
   },
-  "pk": 21,
-  "model": "Dashboard.civichealth"
+  "pk": 21
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "18",
-    "category": 23,
     "month": "October",
-    "year": 2014
+    "category": 23
   },
-  "pk": 22,
-  "model": "Dashboard.civichealth"
+  "pk": 22
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "26",
-    "category": 23,
     "month": "November",
-    "year": 2014
+    "category": 23
   },
-  "pk": 23,
-  "model": "Dashboard.civichealth"
+  "pk": 23
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 23,
     "month": "December",
-    "year": 2014
+    "category": 23
   },
-  "pk": 24,
-  "model": "Dashboard.civichealth"
+  "pk": 24
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "11.33",
-    "category": 24,
     "month": "January",
-    "year": 2014
+    "category": 24
   },
-  "pk": 25,
-  "model": "Dashboard.civichealth"
+  "pk": 25
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "12.59",
-    "category": 24,
     "month": "February",
-    "year": 2014
+    "category": 24
   },
-  "pk": 26,
-  "model": "Dashboard.civichealth"
+  "pk": 26
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "10.91",
-    "category": 24,
     "month": "March",
-    "year": 2014
+    "category": 24
   },
-  "pk": 27,
-  "model": "Dashboard.civichealth"
+  "pk": 27
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "14.65",
-    "category": 24,
     "month": "April",
-    "year": 2014
+    "category": 24
   },
-  "pk": 28,
-  "model": "Dashboard.civichealth"
+  "pk": 28
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "12.64",
-    "category": 24,
     "month": "May",
-    "year": 2014
+    "category": 24
   },
-  "pk": 29,
-  "model": "Dashboard.civichealth"
+  "pk": 29
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "15.27",
-    "category": 24,
     "month": "June",
-    "year": 2014
+    "category": 24
   },
-  "pk": 30,
-  "model": "Dashboard.civichealth"
+  "pk": 30
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "11.29",
-    "category": 24,
     "month": "July",
-    "year": 2014
+    "category": 24
   },
-  "pk": 31,
-  "model": "Dashboard.civichealth"
+  "pk": 31
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "12.43",
-    "category": 24,
     "month": "August",
-    "year": 2014
+    "category": 24
   },
-  "pk": 32,
-  "model": "Dashboard.civichealth"
+  "pk": 32
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "11.71",
-    "category": 24,
     "month": "September",
-    "year": 2014
+    "category": 24
   },
-  "pk": 33,
-  "model": "Dashboard.civichealth"
+  "pk": 33
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "10.86",
-    "category": 24,
     "month": "October",
-    "year": 2014
+    "category": 24
   },
-  "pk": 34,
-  "model": "Dashboard.civichealth"
+  "pk": 34
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "11.62",
-    "category": 24,
     "month": "November",
-    "year": 2014
+    "category": 24
   },
-  "pk": 35,
-  "model": "Dashboard.civichealth"
+  "pk": 35
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "13.88",
-    "category": 24,
     "month": "December",
-    "year": 2014
+    "category": 24
   },
-  "pk": 36,
-  "model": "Dashboard.civichealth"
+  "pk": 36
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "1.33",
-    "category": 25,
     "month": "January",
-    "year": 2014
+    "category": 25
   },
-  "pk": 37,
-  "model": "Dashboard.civichealth"
+  "pk": 37
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "2.59",
-    "category": 25,
     "month": "February",
-    "year": 2014
+    "category": 25
   },
-  "pk": 38,
-  "model": "Dashboard.civichealth"
+  "pk": 38
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "0.91",
-    "category": 25,
     "month": "March",
-    "year": 2014
+    "category": 25
   },
-  "pk": 39,
-  "model": "Dashboard.civichealth"
+  "pk": 39
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "4.65",
-    "category": 25,
     "month": "April",
-    "year": 2014
+    "category": 25
   },
-  "pk": 40,
-  "model": "Dashboard.civichealth"
+  "pk": 40
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "2.64",
-    "category": 25,
     "month": "May",
-    "year": 2014
+    "category": 25
   },
-  "pk": 41,
-  "model": "Dashboard.civichealth"
+  "pk": 41
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "5.27",
-    "category": 25,
     "month": "June",
-    "year": 2014
+    "category": 25
   },
-  "pk": 42,
-  "model": "Dashboard.civichealth"
+  "pk": 42
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "1.29",
-    "category": 25,
     "month": "July",
-    "year": 2014
+    "category": 25
   },
-  "pk": 43,
-  "model": "Dashboard.civichealth"
+  "pk": 43
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "2.43",
-    "category": 25,
     "month": "August",
-    "year": 2014
+    "category": 25
   },
-  "pk": 44,
-  "model": "Dashboard.civichealth"
+  "pk": 44
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "1.71",
-    "category": 25,
     "month": "September",
-    "year": 2014
+    "category": 25
   },
-  "pk": 45,
-  "model": "Dashboard.civichealth"
+  "pk": 45
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "0.86",
-    "category": 25,
     "month": "October",
-    "year": 2014
+    "category": 25
   },
-  "pk": 46,
-  "model": "Dashboard.civichealth"
+  "pk": 46
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "1.62",
-    "category": 25,
     "month": "November",
-    "year": 2014
+    "category": 25
   },
-  "pk": 47,
-  "model": "Dashboard.civichealth"
+  "pk": 47
 },
 {
+  "model": "Dashboard.civichealth",
   "fields": {
+    "year": 2014,
     "value": "3.88",
-    "category": 25,
     "month": "December",
-    "year": 2014
+    "category": 25
   },
-  "pk": 48,
-  "model": "Dashboard.civichealth"
+  "pk": 48
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "387",
-    "category": 16,
     "month": "January",
-    "year": 2014
+    "category": 16
   },
-  "pk": 1,
-  "model": "Dashboard.economichealth"
+  "pk": 1
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "318",
-    "category": 16,
     "month": "February",
-    "year": 2014
+    "category": 16
   },
-  "pk": 2,
-  "model": "Dashboard.economichealth"
+  "pk": 2
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "399",
-    "category": 16,
     "month": "March",
-    "year": 2014
+    "category": 16
   },
-  "pk": 3,
-  "model": "Dashboard.economichealth"
+  "pk": 3
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "387",
-    "category": 16,
     "month": "April",
-    "year": 2014
+    "category": 16
   },
-  "pk": 4,
-  "model": "Dashboard.economichealth"
+  "pk": 4
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "346",
-    "category": 16,
     "month": "May",
-    "year": 2014
+    "category": 16
   },
-  "pk": 5,
-  "model": "Dashboard.economichealth"
+  "pk": 5
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "350",
-    "category": 16,
     "month": "June",
-    "year": 2014
+    "category": 16
   },
-  "pk": 6,
-  "model": "Dashboard.economichealth"
+  "pk": 6
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "393",
-    "category": 16,
     "month": "July",
-    "year": 2014
+    "category": 16
   },
-  "pk": 7,
-  "model": "Dashboard.economichealth"
+  "pk": 7
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "341",
-    "category": 16,
     "month": "August",
-    "year": 2014
+    "category": 16
   },
-  "pk": 8,
-  "model": "Dashboard.economichealth"
+  "pk": 8
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "353",
-    "category": 16,
     "month": "September",
-    "year": 2014
+    "category": 16
   },
-  "pk": 9,
-  "model": "Dashboard.economichealth"
+  "pk": 9
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "334",
-    "category": 16,
     "month": "October",
-    "year": 2014
+    "category": 16
   },
-  "pk": 10,
-  "model": "Dashboard.economichealth"
+  "pk": 10
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "380",
-    "category": 16,
     "month": "November",
-    "year": 2014
+    "category": 16
   },
-  "pk": 11,
-  "model": "Dashboard.economichealth"
+  "pk": 11
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "383",
-    "category": 16,
     "month": "December",
-    "year": 2014
+    "category": 16
   },
-  "pk": 12,
-  "model": "Dashboard.economichealth"
+  "pk": 12
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "20",
-    "category": 17,
     "month": "January",
-    "year": 2014
+    "category": 17
   },
-  "pk": 13,
-  "model": "Dashboard.economichealth"
+  "pk": 13
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "25",
-    "category": 17,
     "month": "February",
-    "year": 2014
+    "category": 17
   },
-  "pk": 14,
-  "model": "Dashboard.economichealth"
+  "pk": 14
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "21",
-    "category": 17,
     "month": "March",
-    "year": 2014
+    "category": 17
   },
-  "pk": 15,
-  "model": "Dashboard.economichealth"
+  "pk": 15
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "26",
-    "category": 17,
     "month": "April",
-    "year": 2014
+    "category": 17
   },
-  "pk": 16,
-  "model": "Dashboard.economichealth"
+  "pk": 16
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "24",
-    "category": 17,
     "month": "May",
-    "year": 2014
+    "category": 17
   },
-  "pk": 17,
-  "model": "Dashboard.economichealth"
+  "pk": 17
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "23",
-    "category": 17,
     "month": "June",
-    "year": 2014
+    "category": 17
   },
-  "pk": 18,
-  "model": "Dashboard.economichealth"
+  "pk": 18
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "22",
-    "category": 17,
     "month": "July",
-    "year": 2014
+    "category": 17
   },
-  "pk": 19,
-  "model": "Dashboard.economichealth"
+  "pk": 19
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "21",
-    "category": 17,
     "month": "August",
-    "year": 2014
+    "category": 17
   },
-  "pk": 20,
-  "model": "Dashboard.economichealth"
+  "pk": 20
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "19",
-    "category": 17,
     "month": "September",
-    "year": 2014
+    "category": 17
   },
-  "pk": 21,
-  "model": "Dashboard.economichealth"
+  "pk": 21
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "18",
-    "category": 17,
     "month": "October",
-    "year": 2014
+    "category": 17
   },
-  "pk": 22,
-  "model": "Dashboard.economichealth"
+  "pk": 22
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "26",
-    "category": 17,
     "month": "November",
-    "year": 2014
+    "category": 17
   },
-  "pk": 23,
-  "model": "Dashboard.economichealth"
+  "pk": 23
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 17,
     "month": "December",
-    "year": 2014
+    "category": 17
   },
-  "pk": 24,
-  "model": "Dashboard.economichealth"
+  "pk": 24
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "11.33",
-    "category": 18,
     "month": "January",
-    "year": 2014
+    "category": 18
   },
-  "pk": 25,
-  "model": "Dashboard.economichealth"
+  "pk": 25
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "12.59",
-    "category": 18,
     "month": "February",
-    "year": 2014
+    "category": 18
   },
-  "pk": 26,
-  "model": "Dashboard.economichealth"
+  "pk": 26
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "10.91",
-    "category": 18,
     "month": "March",
-    "year": 2014
+    "category": 18
   },
-  "pk": 27,
-  "model": "Dashboard.economichealth"
+  "pk": 27
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "14.65",
-    "category": 18,
     "month": "April",
-    "year": 2014
+    "category": 18
   },
-  "pk": 28,
-  "model": "Dashboard.economichealth"
+  "pk": 28
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "12.64",
-    "category": 18,
     "month": "May",
-    "year": 2014
+    "category": 18
   },
-  "pk": 29,
-  "model": "Dashboard.economichealth"
+  "pk": 29
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "15.27",
-    "category": 18,
     "month": "June",
-    "year": 2014
+    "category": 18
   },
-  "pk": 30,
-  "model": "Dashboard.economichealth"
+  "pk": 30
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "11.29",
-    "category": 18,
     "month": "July",
-    "year": 2014
+    "category": 18
   },
-  "pk": 31,
-  "model": "Dashboard.economichealth"
+  "pk": 31
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "12.43",
-    "category": 18,
     "month": "August",
-    "year": 2014
+    "category": 18
   },
-  "pk": 32,
-  "model": "Dashboard.economichealth"
+  "pk": 32
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "11.71",
-    "category": 18,
     "month": "September",
-    "year": 2014
+    "category": 18
   },
-  "pk": 33,
-  "model": "Dashboard.economichealth"
+  "pk": 33
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "10.86",
-    "category": 18,
     "month": "October",
-    "year": 2014
+    "category": 18
   },
-  "pk": 34,
-  "model": "Dashboard.economichealth"
+  "pk": 34
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "11.62",
-    "category": 18,
     "month": "November",
-    "year": 2014
+    "category": 18
   },
-  "pk": 35,
-  "model": "Dashboard.economichealth"
+  "pk": 35
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "13.88",
-    "category": 18,
     "month": "December",
-    "year": 2014
+    "category": 18
   },
-  "pk": 36,
-  "model": "Dashboard.economichealth"
+  "pk": 36
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "1.33",
-    "category": 19,
     "month": "January",
-    "year": 2014
+    "category": 19
   },
-  "pk": 37,
-  "model": "Dashboard.economichealth"
+  "pk": 37
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.59",
-    "category": 19,
     "month": "February",
-    "year": 2014
+    "category": 19
   },
-  "pk": 38,
-  "model": "Dashboard.economichealth"
+  "pk": 38
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "0.91",
-    "category": 19,
     "month": "March",
-    "year": 2014
+    "category": 19
   },
-  "pk": 39,
-  "model": "Dashboard.economichealth"
+  "pk": 39
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "4.65",
-    "category": 19,
     "month": "April",
-    "year": 2014
+    "category": 19
   },
-  "pk": 40,
-  "model": "Dashboard.economichealth"
+  "pk": 40
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.64",
-    "category": 19,
     "month": "May",
-    "year": 2014
+    "category": 19
   },
-  "pk": 41,
-  "model": "Dashboard.economichealth"
+  "pk": 41
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "5.27",
-    "category": 19,
     "month": "June",
-    "year": 2014
+    "category": 19
   },
-  "pk": 42,
-  "model": "Dashboard.economichealth"
+  "pk": 42
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "1.29",
-    "category": 19,
     "month": "July",
-    "year": 2014
+    "category": 19
   },
-  "pk": 43,
-  "model": "Dashboard.economichealth"
+  "pk": 43
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.43",
-    "category": 19,
     "month": "August",
-    "year": 2014
+    "category": 19
   },
-  "pk": 44,
-  "model": "Dashboard.economichealth"
+  "pk": 44
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "1.71",
-    "category": 19,
     "month": "September",
-    "year": 2014
+    "category": 19
   },
-  "pk": 45,
-  "model": "Dashboard.economichealth"
+  "pk": 45
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "0.86",
-    "category": 19,
     "month": "October",
-    "year": 2014
+    "category": 19
   },
-  "pk": 46,
-  "model": "Dashboard.economichealth"
+  "pk": 46
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "1.62",
-    "category": 19,
     "month": "November",
-    "year": 2014
+    "category": 19
   },
-  "pk": 47,
-  "model": "Dashboard.economichealth"
+  "pk": 47
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "3.88",
-    "category": 19,
     "month": "December",
-    "year": 2014
+    "category": 19
   },
-  "pk": 48,
-  "model": "Dashboard.economichealth"
+  "pk": 48
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.33",
-    "category": 20,
     "month": "January",
-    "year": 2014
+    "category": 20
   },
-  "pk": 49,
-  "model": "Dashboard.economichealth"
+  "pk": 49
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "3.59",
-    "category": 20,
     "month": "February",
-    "year": 2014
+    "category": 20
   },
-  "pk": 50,
-  "model": "Dashboard.economichealth"
+  "pk": 50
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "1.91",
-    "category": 20,
     "month": "March",
-    "year": 2014
+    "category": 20
   },
-  "pk": 51,
-  "model": "Dashboard.economichealth"
+  "pk": 51
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "5.65",
-    "category": 20,
     "month": "April",
-    "year": 2014
+    "category": 20
   },
-  "pk": 52,
-  "model": "Dashboard.economichealth"
+  "pk": 52
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "3.64",
-    "category": 20,
     "month": "May",
-    "year": 2014
+    "category": 20
   },
-  "pk": 53,
-  "model": "Dashboard.economichealth"
+  "pk": 53
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "6.27",
-    "category": 20,
     "month": "June",
-    "year": 2014
+    "category": 20
   },
-  "pk": 54,
-  "model": "Dashboard.economichealth"
+  "pk": 54
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.29",
-    "category": 20,
     "month": "July",
-    "year": 2014
+    "category": 20
   },
-  "pk": 55,
-  "model": "Dashboard.economichealth"
+  "pk": 55
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "3.43",
-    "category": 20,
     "month": "August",
-    "year": 2014
+    "category": 20
   },
-  "pk": 56,
-  "model": "Dashboard.economichealth"
+  "pk": 56
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.71",
-    "category": 20,
     "month": "September",
-    "year": 2014
+    "category": 20
   },
-  "pk": 57,
-  "model": "Dashboard.economichealth"
+  "pk": 57
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "1.86",
-    "category": 20,
     "month": "October",
-    "year": 2014
+    "category": 20
   },
-  "pk": 58,
-  "model": "Dashboard.economichealth"
+  "pk": 58
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "2.62",
-    "category": 20,
     "month": "November",
-    "year": 2014
+    "category": 20
   },
-  "pk": 59,
-  "model": "Dashboard.economichealth"
+  "pk": 59
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "4.88",
-    "category": 20,
     "month": "December",
-    "year": 2014
+    "category": 20
   },
-  "pk": 60,
-  "model": "Dashboard.economichealth"
+  "pk": 60
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "50",
-    "category": 21,
     "month": "January",
-    "year": 2014
+    "category": 21
   },
-  "pk": 61,
-  "model": "Dashboard.economichealth"
+  "pk": 61
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "29",
-    "category": 21,
     "month": "February",
-    "year": 2014
+    "category": 21
   },
-  "pk": 62,
-  "model": "Dashboard.economichealth"
+  "pk": 62
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "41",
-    "category": 21,
     "month": "March",
-    "year": 2014
+    "category": 21
   },
-  "pk": 63,
-  "model": "Dashboard.economichealth"
+  "pk": 63
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 21,
     "month": "April",
-    "year": 2014
+    "category": 21
   },
-  "pk": 64,
-  "model": "Dashboard.economichealth"
+  "pk": 64
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "40",
-    "category": 21,
     "month": "May",
-    "year": 2014
+    "category": 21
   },
-  "pk": 65,
-  "model": "Dashboard.economichealth"
+  "pk": 65
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "37",
-    "category": 21,
     "month": "June",
-    "year": 2014
+    "category": 21
   },
-  "pk": 66,
-  "model": "Dashboard.economichealth"
+  "pk": 66
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "44",
-    "category": 21,
     "month": "July",
-    "year": 2014
+    "category": 21
   },
-  "pk": 67,
-  "model": "Dashboard.economichealth"
+  "pk": 67
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "48",
-    "category": 21,
     "month": "August",
-    "year": 2014
+    "category": 21
   },
-  "pk": 68,
-  "model": "Dashboard.economichealth"
+  "pk": 68
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 21,
     "month": "September",
-    "year": 2014
+    "category": 21
   },
-  "pk": 69,
-  "model": "Dashboard.economichealth"
+  "pk": 69
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "45",
-    "category": 21,
     "month": "October",
-    "year": 2014
+    "category": 21
   },
-  "pk": 70,
-  "model": "Dashboard.economichealth"
+  "pk": 70
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "45",
-    "category": 21,
     "month": "November",
-    "year": 2014
+    "category": 21
   },
-  "pk": 71,
-  "model": "Dashboard.economichealth"
+  "pk": 71
 },
 {
+  "model": "Dashboard.economichealth",
   "fields": {
+    "year": 2014,
     "value": "58",
-    "category": 21,
     "month": "December",
-    "year": 2014
+    "category": 21
   },
-  "pk": 72,
-  "model": "Dashboard.economichealth"
+  "pk": 72
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "387",
-    "category": 7,
     "month": "January",
-    "year": 2014
+    "category": 7
   },
-  "pk": 1,
-  "model": "Dashboard.governmentperformance"
+  "pk": 1
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "318",
-    "category": 7,
     "month": "February",
-    "year": 2014
+    "category": 7
   },
-  "pk": 2,
-  "model": "Dashboard.governmentperformance"
+  "pk": 2
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "399",
-    "category": 7,
     "month": "March",
-    "year": 2014
+    "category": 7
   },
-  "pk": 3,
-  "model": "Dashboard.governmentperformance"
+  "pk": 3
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "387",
-    "category": 7,
     "month": "April",
-    "year": 2014
+    "category": 7
   },
-  "pk": 4,
-  "model": "Dashboard.governmentperformance"
+  "pk": 4
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "346",
-    "category": 7,
     "month": "May",
-    "year": 2014
+    "category": 7
   },
-  "pk": 5,
-  "model": "Dashboard.governmentperformance"
+  "pk": 5
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "350",
-    "category": 7,
     "month": "June",
-    "year": 2014
+    "category": 7
   },
-  "pk": 6,
-  "model": "Dashboard.governmentperformance"
+  "pk": 6
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "393",
-    "category": 7,
     "month": "July",
-    "year": 2014
+    "category": 7
   },
-  "pk": 7,
-  "model": "Dashboard.governmentperformance"
+  "pk": 7
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "341",
-    "category": 7,
     "month": "August",
-    "year": 2014
+    "category": 7
   },
-  "pk": 8,
-  "model": "Dashboard.governmentperformance"
+  "pk": 8
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "353",
-    "category": 7,
     "month": "September",
-    "year": 2014
+    "category": 7
   },
-  "pk": 9,
-  "model": "Dashboard.governmentperformance"
+  "pk": 9
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "334",
-    "category": 7,
     "month": "October",
-    "year": 2014
+    "category": 7
   },
-  "pk": 10,
-  "model": "Dashboard.governmentperformance"
+  "pk": 10
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "380",
-    "category": 7,
     "month": "November",
-    "year": 2014
+    "category": 7
   },
-  "pk": 11,
-  "model": "Dashboard.governmentperformance"
+  "pk": 11
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "383",
-    "category": 7,
     "month": "December",
-    "year": 2014
+    "category": 7
   },
-  "pk": 12,
-  "model": "Dashboard.governmentperformance"
+  "pk": 12
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "20",
-    "category": 8,
     "month": "January",
-    "year": 2014
+    "category": 8
   },
-  "pk": 13,
-  "model": "Dashboard.governmentperformance"
+  "pk": 13
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "25",
-    "category": 8,
     "month": "February",
-    "year": 2014
+    "category": 8
   },
-  "pk": 14,
-  "model": "Dashboard.governmentperformance"
+  "pk": 14
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "30",
-    "category": 8,
     "month": "March",
-    "year": 2014
+    "category": 8
   },
-  "pk": 15,
-  "model": "Dashboard.governmentperformance"
+  "pk": 15
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "35",
-    "category": 8,
     "month": "April",
-    "year": 2014
+    "category": 8
   },
-  "pk": 16,
-  "model": "Dashboard.governmentperformance"
+  "pk": 16
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "40",
-    "category": 8,
     "month": "May",
-    "year": 2014
+    "category": 8
   },
-  "pk": 17,
-  "model": "Dashboard.governmentperformance"
+  "pk": 17
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "45",
-    "category": 8,
     "month": "June",
-    "year": 2014
+    "category": 8
   },
-  "pk": 18,
-  "model": "Dashboard.governmentperformance"
+  "pk": 18
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "50",
-    "category": 8,
     "month": "July",
-    "year": 2014
+    "category": 8
   },
-  "pk": 19,
-  "model": "Dashboard.governmentperformance"
+  "pk": 19
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "55",
-    "category": 8,
     "month": "August",
-    "year": 2014
+    "category": 8
   },
-  "pk": 20,
-  "model": "Dashboard.governmentperformance"
+  "pk": 20
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "60",
-    "category": 8,
     "month": "September",
-    "year": 2014
+    "category": 8
   },
-  "pk": 21,
-  "model": "Dashboard.governmentperformance"
+  "pk": 21
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "65",
-    "category": 8,
     "month": "October",
-    "year": 2014
+    "category": 8
   },
-  "pk": 22,
-  "model": "Dashboard.governmentperformance"
+  "pk": 22
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "70",
-    "category": 8,
     "month": "November",
-    "year": 2014
+    "category": 8
   },
-  "pk": 23,
-  "model": "Dashboard.governmentperformance"
+  "pk": 23
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "75",
-    "category": 8,
     "month": "December",
-    "year": 2014
+    "category": 8
   },
-  "pk": 24,
-  "model": "Dashboard.governmentperformance"
+  "pk": 24
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "91",
-    "category": 9,
     "month": "January",
-    "year": 2014
+    "category": 9
   },
-  "pk": 25,
-  "model": "Dashboard.governmentperformance"
+  "pk": 25
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "118",
-    "category": 9,
     "month": "February",
-    "year": 2014
+    "category": 9
   },
-  "pk": 26,
-  "model": "Dashboard.governmentperformance"
+  "pk": 26
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "103",
-    "category": 9,
     "month": "March",
-    "year": 2014
+    "category": 9
   },
-  "pk": 27,
-  "model": "Dashboard.governmentperformance"
+  "pk": 27
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "122",
-    "category": 9,
     "month": "April",
-    "year": 2014
+    "category": 9
   },
-  "pk": 28,
-  "model": "Dashboard.governmentperformance"
+  "pk": 28
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "120",
-    "category": 9,
     "month": "May",
-    "year": 2014
+    "category": 9
   },
-  "pk": 29,
-  "model": "Dashboard.governmentperformance"
+  "pk": 29
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "98",
-    "category": 9,
     "month": "June",
-    "year": 2014
+    "category": 9
   },
-  "pk": 30,
-  "model": "Dashboard.governmentperformance"
+  "pk": 30
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "107",
-    "category": 9,
     "month": "July",
-    "year": 2014
+    "category": 9
   },
-  "pk": 31,
-  "model": "Dashboard.governmentperformance"
+  "pk": 31
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "98",
-    "category": 9,
     "month": "August",
-    "year": 2014
+    "category": 9
   },
-  "pk": 32,
-  "model": "Dashboard.governmentperformance"
+  "pk": 32
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "101",
-    "category": 9,
     "month": "September",
-    "year": 2014
+    "category": 9
   },
-  "pk": 33,
-  "model": "Dashboard.governmentperformance"
+  "pk": 33
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "106",
-    "category": 9,
     "month": "October",
-    "year": 2014
+    "category": 9
   },
-  "pk": 34,
-  "model": "Dashboard.governmentperformance"
+  "pk": 34
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "99",
-    "category": 9,
     "month": "November",
-    "year": 2014
+    "category": 9
   },
-  "pk": 35,
-  "model": "Dashboard.governmentperformance"
+  "pk": 35
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "108",
-    "category": 9,
     "month": "December",
-    "year": 2014
+    "category": 9
   },
-  "pk": 36,
-  "model": "Dashboard.governmentperformance"
+  "pk": 36
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "105",
-    "category": 10,
     "month": "January",
-    "year": 2014
+    "category": 10
   },
-  "pk": 37,
-  "model": "Dashboard.governmentperformance"
+  "pk": 37
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "110",
-    "category": 10,
     "month": "February",
-    "year": 2014
+    "category": 10
   },
-  "pk": 38,
-  "model": "Dashboard.governmentperformance"
+  "pk": 38
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "125",
-    "category": 10,
     "month": "March",
-    "year": 2014
+    "category": 10
   },
-  "pk": 39,
-  "model": "Dashboard.governmentperformance"
+  "pk": 39
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "94",
-    "category": 10,
     "month": "April",
-    "year": 2014
+    "category": 10
   },
-  "pk": 40,
-  "model": "Dashboard.governmentperformance"
+  "pk": 40
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "101",
-    "category": 10,
     "month": "May",
-    "year": 2014
+    "category": 10
   },
-  "pk": 41,
-  "model": "Dashboard.governmentperformance"
+  "pk": 41
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "115",
-    "category": 10,
     "month": "June",
-    "year": 2014
+    "category": 10
   },
-  "pk": 42,
-  "model": "Dashboard.governmentperformance"
+  "pk": 42
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "111",
-    "category": 10,
     "month": "July",
-    "year": 2014
+    "category": 10
   },
-  "pk": 43,
-  "model": "Dashboard.governmentperformance"
+  "pk": 43
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "93",
-    "category": 10,
     "month": "August",
-    "year": 2014
+    "category": 10
   },
-  "pk": 44,
-  "model": "Dashboard.governmentperformance"
+  "pk": 44
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "129",
-    "category": 10,
     "month": "September",
-    "year": 2014
+    "category": 10
   },
-  "pk": 45,
-  "model": "Dashboard.governmentperformance"
+  "pk": 45
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "104",
-    "category": 10,
     "month": "October",
-    "year": 2014
+    "category": 10
   },
-  "pk": 46,
-  "model": "Dashboard.governmentperformance"
+  "pk": 46
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "113",
-    "category": 10,
     "month": "November",
-    "year": 2014
+    "category": 10
   },
-  "pk": 47,
-  "model": "Dashboard.governmentperformance"
+  "pk": 47
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "111",
-    "category": 10,
     "month": "December",
-    "year": 2014
+    "category": 10
   },
-  "pk": 48,
-  "model": "Dashboard.governmentperformance"
+  "pk": 48
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "23",
-    "category": 11,
     "month": "January",
-    "year": 2014
+    "category": 11
   },
-  "pk": 49,
-  "model": "Dashboard.governmentperformance"
+  "pk": 49
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "46",
-    "category": 11,
     "month": "February",
-    "year": 2014
+    "category": 11
   },
-  "pk": 50,
-  "model": "Dashboard.governmentperformance"
+  "pk": 50
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "60",
-    "category": 11,
     "month": "March",
-    "year": 2014
+    "category": 11
   },
-  "pk": 51,
-  "model": "Dashboard.governmentperformance"
+  "pk": 51
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "74",
-    "category": 11,
     "month": "April",
-    "year": 2014
+    "category": 11
   },
-  "pk": 52,
-  "model": "Dashboard.governmentperformance"
+  "pk": 52
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "19",
-    "category": 11,
     "month": "May",
-    "year": 2014
+    "category": 11
   },
-  "pk": 53,
-  "model": "Dashboard.governmentperformance"
+  "pk": 53
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "41",
-    "category": 11,
     "month": "June",
-    "year": 2014
+    "category": 11
   },
-  "pk": 54,
-  "model": "Dashboard.governmentperformance"
+  "pk": 54
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "64",
-    "category": 11,
     "month": "July",
-    "year": 2014
+    "category": 11
   },
-  "pk": 55,
-  "model": "Dashboard.governmentperformance"
+  "pk": 55
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "16",
-    "category": 11,
     "month": "August",
-    "year": 2014
+    "category": 11
   },
-  "pk": 56,
-  "model": "Dashboard.governmentperformance"
+  "pk": 56
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "11",
-    "category": 11,
     "month": "September",
-    "year": 2014
+    "category": 11
   },
-  "pk": 57,
-  "model": "Dashboard.governmentperformance"
+  "pk": 57
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "87",
-    "category": 11,
     "month": "October",
-    "year": 2014
+    "category": 11
   },
-  "pk": 58,
-  "model": "Dashboard.governmentperformance"
+  "pk": 58
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "52",
-    "category": 11,
     "month": "November",
-    "year": 2014
+    "category": 11
   },
-  "pk": 59,
-  "model": "Dashboard.governmentperformance"
+  "pk": 59
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "8",
-    "category": 11,
     "month": "December",
-    "year": 2014
+    "category": 11
   },
-  "pk": 60,
-  "model": "Dashboard.governmentperformance"
+  "pk": 60
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "50",
-    "category": 12,
     "month": "January",
-    "year": 2014
+    "category": 12
   },
-  "pk": 61,
-  "model": "Dashboard.governmentperformance"
+  "pk": 61
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "29",
-    "category": 12,
     "month": "February",
-    "year": 2014
+    "category": 12
   },
-  "pk": 62,
-  "model": "Dashboard.governmentperformance"
+  "pk": 62
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "41",
-    "category": 12,
     "month": "March",
-    "year": 2014
+    "category": 12
   },
-  "pk": 63,
-  "model": "Dashboard.governmentperformance"
+  "pk": 63
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 12,
     "month": "April",
-    "year": 2014
+    "category": 12
   },
-  "pk": 64,
-  "model": "Dashboard.governmentperformance"
+  "pk": 64
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "40",
-    "category": 12,
     "month": "May",
-    "year": 2014
+    "category": 12
   },
-  "pk": 65,
-  "model": "Dashboard.governmentperformance"
+  "pk": 65
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "37",
-    "category": 12,
     "month": "June",
-    "year": 2014
+    "category": 12
   },
-  "pk": 66,
-  "model": "Dashboard.governmentperformance"
+  "pk": 66
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "44",
-    "category": 12,
     "month": "July",
-    "year": 2014
+    "category": 12
   },
-  "pk": 67,
-  "model": "Dashboard.governmentperformance"
+  "pk": 67
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "48",
-    "category": 12,
     "month": "August",
-    "year": 2014
+    "category": 12
   },
-  "pk": 68,
-  "model": "Dashboard.governmentperformance"
+  "pk": 68
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 12,
     "month": "September",
-    "year": 2014
+    "category": 12
   },
-  "pk": 69,
-  "model": "Dashboard.governmentperformance"
+  "pk": 69
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "45",
-    "category": 12,
     "month": "October",
-    "year": 2014
+    "category": 12
   },
-  "pk": 70,
-  "model": "Dashboard.governmentperformance"
+  "pk": 70
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "45",
-    "category": 12,
     "month": "November",
-    "year": 2014
+    "category": 12
   },
-  "pk": 71,
-  "model": "Dashboard.governmentperformance"
+  "pk": 71
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "58",
-    "category": 12,
     "month": "December",
-    "year": 2014
+    "category": 12
   },
-  "pk": 72,
-  "model": "Dashboard.governmentperformance"
+  "pk": 72
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "25",
-    "category": 13,
     "month": "January",
-    "year": 2014
+    "category": 13
   },
-  "pk": 73,
-  "model": "Dashboard.governmentperformance"
+  "pk": 73
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "27",
-    "category": 13,
     "month": "February",
-    "year": 2014
+    "category": 13
   },
-  "pk": 74,
-  "model": "Dashboard.governmentperformance"
+  "pk": 74
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 13,
     "month": "March",
-    "year": 2014
+    "category": 13
   },
-  "pk": 75,
-  "model": "Dashboard.governmentperformance"
+  "pk": 75
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "42",
-    "category": 13,
     "month": "April",
-    "year": 2014
+    "category": 13
   },
-  "pk": 76,
-  "model": "Dashboard.governmentperformance"
+  "pk": 76
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "56",
-    "category": 13,
     "month": "May",
-    "year": 2014
+    "category": 13
   },
-  "pk": 77,
-  "model": "Dashboard.governmentperformance"
+  "pk": 77
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "75",
-    "category": 13,
     "month": "June",
-    "year": 2014
+    "category": 13
   },
-  "pk": 78,
-  "model": "Dashboard.governmentperformance"
+  "pk": 78
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "77",
-    "category": 13,
     "month": "July",
-    "year": 2014
+    "category": 13
   },
-  "pk": 79,
-  "model": "Dashboard.governmentperformance"
+  "pk": 79
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "45",
-    "category": 13,
     "month": "August",
-    "year": 2014
+    "category": 13
   },
-  "pk": 80,
-  "model": "Dashboard.governmentperformance"
+  "pk": 80
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "56",
-    "category": 13,
     "month": "September",
-    "year": 2014
+    "category": 13
   },
-  "pk": 81,
-  "model": "Dashboard.governmentperformance"
+  "pk": 81
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "31",
-    "category": 13,
     "month": "October",
-    "year": 2014
+    "category": 13
   },
-  "pk": 82,
-  "model": "Dashboard.governmentperformance"
+  "pk": 82
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "21",
-    "category": 13,
     "month": "November",
-    "year": 2014
+    "category": 13
   },
-  "pk": 83,
-  "model": "Dashboard.governmentperformance"
+  "pk": 83
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "15",
-    "category": 13,
     "month": "December",
-    "year": 2014
+    "category": 13
   },
-  "pk": 84,
-  "model": "Dashboard.governmentperformance"
+  "pk": 84
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "91",
-    "category": 14,
     "month": "January",
-    "year": 2014
+    "category": 14
   },
-  "pk": 85,
-  "model": "Dashboard.governmentperformance"
+  "pk": 85
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "118",
-    "category": 14,
     "month": "February",
-    "year": 2014
+    "category": 14
   },
-  "pk": 86,
-  "model": "Dashboard.governmentperformance"
+  "pk": 86
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "103",
-    "category": 14,
     "month": "March",
-    "year": 2014
+    "category": 14
   },
-  "pk": 87,
-  "model": "Dashboard.governmentperformance"
+  "pk": 87
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "122",
-    "category": 14,
     "month": "April",
-    "year": 2014
+    "category": 14
   },
-  "pk": 88,
-  "model": "Dashboard.governmentperformance"
+  "pk": 88
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "120",
-    "category": 14,
     "month": "May",
-    "year": 2014
+    "category": 14
   },
-  "pk": 89,
-  "model": "Dashboard.governmentperformance"
+  "pk": 89
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "98",
-    "category": 14,
     "month": "June",
-    "year": 2014
+    "category": 14
   },
-  "pk": 90,
-  "model": "Dashboard.governmentperformance"
+  "pk": 90
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "107",
-    "category": 14,
     "month": "July",
-    "year": 2014
+    "category": 14
   },
-  "pk": 91,
-  "model": "Dashboard.governmentperformance"
+  "pk": 91
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "98",
-    "category": 14,
     "month": "August",
-    "year": 2014
+    "category": 14
   },
-  "pk": 92,
-  "model": "Dashboard.governmentperformance"
+  "pk": 92
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "101",
-    "category": 14,
     "month": "September",
-    "year": 2014
+    "category": 14
   },
-  "pk": 93,
-  "model": "Dashboard.governmentperformance"
+  "pk": 93
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "106",
-    "category": 14,
     "month": "October",
-    "year": 2014
+    "category": 14
   },
-  "pk": 94,
-  "model": "Dashboard.governmentperformance"
+  "pk": 94
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "99",
-    "category": 14,
     "month": "November",
-    "year": 2014
+    "category": 14
   },
-  "pk": 95,
-  "model": "Dashboard.governmentperformance"
+  "pk": 95
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "108",
-    "category": 14,
     "month": "December",
-    "year": 2014
+    "category": 14
   },
-  "pk": 96,
-  "model": "Dashboard.governmentperformance"
+  "pk": 96
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "11.33",
-    "category": 15,
     "month": "January",
-    "year": 2014
+    "category": 15
   },
-  "pk": 97,
-  "model": "Dashboard.governmentperformance"
+  "pk": 97
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "12.59",
-    "category": 15,
     "month": "February",
-    "year": 2014
+    "category": 15
   },
-  "pk": 98,
-  "model": "Dashboard.governmentperformance"
+  "pk": 98
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "10.91",
-    "category": 15,
     "month": "March",
-    "year": 2014
+    "category": 15
   },
-  "pk": 99,
-  "model": "Dashboard.governmentperformance"
+  "pk": 99
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "14.65",
-    "category": 15,
     "month": "April",
-    "year": 2014
+    "category": 15
   },
-  "pk": 100,
-  "model": "Dashboard.governmentperformance"
+  "pk": 100
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "12.64",
-    "category": 15,
     "month": "May",
-    "year": 2014
+    "category": 15
   },
-  "pk": 101,
-  "model": "Dashboard.governmentperformance"
+  "pk": 101
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "15.27",
-    "category": 15,
     "month": "June",
-    "year": 2014
+    "category": 15
   },
-  "pk": 102,
-  "model": "Dashboard.governmentperformance"
+  "pk": 102
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "11.29",
-    "category": 15,
     "month": "July",
-    "year": 2014
+    "category": 15
   },
-  "pk": 103,
-  "model": "Dashboard.governmentperformance"
+  "pk": 103
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "12.43",
-    "category": 15,
     "month": "August",
-    "year": 2014
+    "category": 15
   },
-  "pk": 104,
-  "model": "Dashboard.governmentperformance"
+  "pk": 104
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "11.71",
-    "category": 15,
     "month": "September",
-    "year": 2014
+    "category": 15
   },
-  "pk": 105,
-  "model": "Dashboard.governmentperformance"
+  "pk": 105
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "10.86",
-    "category": 15,
     "month": "October",
-    "year": 2014
+    "category": 15
   },
-  "pk": 106,
-  "model": "Dashboard.governmentperformance"
+  "pk": 106
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "11.62",
-    "category": 15,
     "month": "November",
-    "year": 2014
+    "category": 15
   },
-  "pk": 107,
-  "model": "Dashboard.governmentperformance"
+  "pk": 107
 },
 {
+  "model": "Dashboard.governmentperformance",
   "fields": {
+    "year": 2014,
     "value": "13.88",
-    "category": 15,
     "month": "December",
-    "year": 2014
+    "category": 15
   },
-  "pk": 108,
-  "model": "Dashboard.governmentperformance"
-},
-{
-  "fields": {
-    "codename": "add_logentry",
-    "name": "Can add log entry",
-    "content_type": 1
-  },
-  "pk": 1,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_logentry",
-    "name": "Can change log entry",
-    "content_type": 1
-  },
-  "pk": 2,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_logentry",
-    "name": "Can delete log entry",
-    "content_type": 1
-  },
-  "pk": 3,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_permission",
-    "name": "Can add permission",
-    "content_type": 2
-  },
-  "pk": 4,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_permission",
-    "name": "Can change permission",
-    "content_type": 2
-  },
-  "pk": 5,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_permission",
-    "name": "Can delete permission",
-    "content_type": 2
-  },
-  "pk": 6,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_group",
-    "name": "Can add group",
-    "content_type": 3
-  },
-  "pk": 7,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_group",
-    "name": "Can change group",
-    "content_type": 3
-  },
-  "pk": 8,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_group",
-    "name": "Can delete group",
-    "content_type": 3
-  },
-  "pk": 9,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_user",
-    "name": "Can add user",
-    "content_type": 4
-  },
-  "pk": 10,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_user",
-    "name": "Can change user",
-    "content_type": 4
-  },
-  "pk": 11,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_user",
-    "name": "Can delete user",
-    "content_type": 4
-  },
-  "pk": 12,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_contenttype",
-    "name": "Can add content type",
-    "content_type": 5
-  },
-  "pk": 13,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_contenttype",
-    "name": "Can change content type",
-    "content_type": 5
-  },
-  "pk": 14,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_contenttype",
-    "name": "Can delete content type",
-    "content_type": 5
-  },
-  "pk": 15,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_session",
-    "name": "Can add session",
-    "content_type": 6
-  },
-  "pk": 16,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_session",
-    "name": "Can change session",
-    "content_type": 6
-  },
-  "pk": 17,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_session",
-    "name": "Can delete session",
-    "content_type": 6
-  },
-  "pk": 18,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_apiaccess",
-    "name": "Can add api access",
-    "content_type": 7
-  },
-  "pk": 19,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_apiaccess",
-    "name": "Can change api access",
-    "content_type": 7
-  },
-  "pk": 20,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_apiaccess",
-    "name": "Can delete api access",
-    "content_type": 7
-  },
-  "pk": 21,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_apikey",
-    "name": "Can add api key",
-    "content_type": 8
-  },
-  "pk": 22,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_apikey",
-    "name": "Can change api key",
-    "content_type": 8
-  },
-  "pk": 23,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_apikey",
-    "name": "Can delete api key",
-    "content_type": 8
-  },
-  "pk": 24,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_subcategories",
-    "name": "Can add sub categories",
-    "content_type": 9
-  },
-  "pk": 25,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_subcategories",
-    "name": "Can change sub categories",
-    "content_type": 9
-  },
-  "pk": 26,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_subcategories",
-    "name": "Can delete sub categories",
-    "content_type": 9
-  },
-  "pk": 27,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_publicsafety",
-    "name": "Can add public safety",
-    "content_type": 10
-  },
-  "pk": 28,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_publicsafety",
-    "name": "Can change public safety",
-    "content_type": 10
-  },
-  "pk": 29,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_publicsafety",
-    "name": "Can delete public safety",
-    "content_type": 10
-  },
-  "pk": 30,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_civichealth",
-    "name": "Can add civic health",
-    "content_type": 11
-  },
-  "pk": 31,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_civichealth",
-    "name": "Can change civic health",
-    "content_type": 11
-  },
-  "pk": 32,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_civichealth",
-    "name": "Can delete civic health",
-    "content_type": 11
-  },
-  "pk": 33,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_economichealth",
-    "name": "Can add economic health",
-    "content_type": 12
-  },
-  "pk": 34,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_economichealth",
-    "name": "Can change economic health",
-    "content_type": 12
-  },
-  "pk": 35,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_economichealth",
-    "name": "Can delete economic health",
-    "content_type": 12
-  },
-  "pk": 36,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_governmentperformance",
-    "name": "Can add government performance",
-    "content_type": 13
-  },
-  "pk": 37,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_governmentperformance",
-    "name": "Can change government performance",
-    "content_type": 13
-  },
-  "pk": 38,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_governmentperformance",
-    "name": "Can delete government performance",
-    "content_type": 13
-  },
-  "pk": 39,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "add_safety",
-    "name": "Can add safety",
-    "content_type": 14
-  },
-  "pk": 40,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "change_safety",
-    "name": "Can change safety",
-    "content_type": 14
-  },
-  "pk": 41,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "codename": "delete_safety",
-    "name": "Can delete safety",
-    "content_type": 14
-  },
-  "pk": 42,
-  "model": "auth.permission"
-},
-{
-  "fields": {
-    "permissions": [
-      31,
-      32,
-      33,
-      34,
-      35,
-      36,
-      37,
-      38,
-      39,
-      28,
-      29,
-      30
-    ],
-    "name": "Data Entry"
-  },
-  "pk": 1,
-  "model": "auth.group"
-},
-{
-  "fields": {
-    "email": "",
-    "user_permissions": [],
-    "is_superuser": true,
-    "is_staff": true,
-    "last_name": "",
-    "first_name": "",
-    "date_joined": "2015-02-23T19:28:53.901Z",
-    "is_active": true,
-    "username": "admin",
-    "password": "pbkdf2_sha256$12000$CeCRfwAZGlCu$XVieLBBuTE7RNVzJiGxGTimn8wpB8104nUoLpU0/3js=",
-    "last_login": "2015-02-23T20:04:02.455Z",
-    "groups": []
-  },
-  "pk": 1,
-  "model": "auth.user"
-},
-{
-  "fields": {
-    "email": "",
-    "user_permissions": [],
-    "is_superuser": true,
-    "is_staff": true,
-    "last_name": "",
-    "first_name": "",
-    "date_joined": "2015-02-23T20:10:26Z",
-    "is_active": true,
-    "username": "todd",
-    "password": "pbkdf2_sha256$15000$g4VUznyKwvkI$+hR3mXzumbH/ZbaSe++/y8sx38bAFX0ky1XdlH/lxsQ=",
-    "last_login": "2015-03-31T21:01:23.913Z",
-    "groups": []
-  },
-  "pk": 2,
-  "model": "auth.user"
-},
-{
-  "fields": {
-    "email": "",
-    "user_permissions": [],
-    "is_superuser": true,
-    "is_staff": true,
-    "last_name": "",
-    "first_name": "",
-    "date_joined": "2015-02-23T20:10:54Z",
-    "is_active": true,
-    "username": "colton",
-    "password": "pbkdf2_sha256$15000$0WVPVdAJFhGj$vHWzc0h3d4v1N+oac+DIgDoNToT+iHWB7bz5YmGbDNo=",
-    "last_login": "2015-03-24T00:51:44.044Z",
-    "groups": []
-  },
-  "pk": 3,
-  "model": "auth.user"
-},
-{
-  "fields": {
-    "email": "",
-    "user_permissions": [],
-    "is_superuser": true,
-    "is_staff": true,
-    "last_name": "",
-    "first_name": "",
-    "date_joined": "2015-02-23T20:11:39Z",
-    "is_active": true,
-    "username": "ikani",
-    "password": "pbkdf2_sha256$15000$Z3GoL0IPosFQ$rdJgHUiv2TDtSVSun4wUXuvmJjxuHxOwh1P94Fsdm4s=",
-    "last_login": "2015-03-31T17:58:09.814Z",
-    "groups": []
-  },
-  "pk": 4,
-  "model": "auth.user"
-},
-{
-  "fields": {
-    "email": "",
-    "user_permissions": [],
-    "is_superuser": true,
-    "is_staff": true,
-    "last_name": "",
-    "first_name": "",
-    "date_joined": "2015-02-23T20:12:10Z",
-    "is_active": true,
-    "username": "samkeller",
-    "password": "pbkdf2_sha256$12000$DMszuShM2s8G$JhqTBFcbYAymIDsdOswfteqbBhUkJ2iGmiVPpDvBcow=",
-    "last_login": "2015-03-05T14:03:52.259Z",
-    "groups": []
-  },
-  "pk": 5,
-  "model": "auth.user"
-},
-{
-  "fields": {
-    "object_id": "2",
-    "action_flag": 1,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "todd",
-    "action_time": "2015-02-23T20:10:27.018Z",
-    "change_message": ""
-  },
-  "pk": 1,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "2",
-    "action_flag": 2,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "todd",
-    "action_time": "2015-02-23T20:10:44.473Z",
-    "change_message": "Changed is_staff and is_superuser."
-  },
-  "pk": 2,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "3",
-    "action_flag": 1,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "colton",
-    "action_time": "2015-02-23T20:10:54.437Z",
-    "change_message": ""
-  },
-  "pk": 3,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "3",
-    "action_flag": 2,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "colton",
-    "action_time": "2015-02-23T20:11:05.021Z",
-    "change_message": "Changed is_staff and is_superuser."
-  },
-  "pk": 4,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "4",
-    "action_flag": 1,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "ikani",
-    "action_time": "2015-02-23T20:11:39.048Z",
-    "change_message": ""
-  },
-  "pk": 5,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "4",
-    "action_flag": 2,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "ikani",
-    "action_time": "2015-02-23T20:11:48.465Z",
-    "change_message": "Changed is_staff and is_superuser."
-  },
-  "pk": 6,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "5",
-    "action_flag": 1,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "samkeller",
-    "action_time": "2015-02-23T20:12:10.070Z",
-    "change_message": ""
-  },
-  "pk": 7,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "5",
-    "action_flag": 2,
-    "user": 1,
-    "content_type": 4,
-    "object_repr": "samkeller",
-    "action_time": "2015-02-23T20:12:31.206Z",
-    "change_message": "Changed is_staff and is_superuser."
-  },
-  "pk": 8,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "None",
-    "action_flag": 1,
-    "user": 3,
-    "content_type": 11,
-    "object_repr": "Water Consumption Data **Government Performance**  - March, 2015",
-    "action_time": "2015-02-26T00:49:14.686Z",
-    "change_message": ""
-  },
-  "pk": 9,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "1",
-    "action_flag": 2,
-    "user": 2,
-    "content_type": 9,
-    "object_repr": "Violent Crimes **Public Safety** ",
-    "action_time": "2015-03-04T20:43:27.820Z",
-    "change_message": "Changed chart_type."
-  },
-  "pk": 10,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "3",
-    "action_flag": 2,
-    "user": 2,
-    "content_type": 9,
-    "object_repr": "Non-Violent Crimes **Public Safety** ",
-    "action_time": "2015-03-04T20:43:44.311Z",
-    "change_message": "Changed chart_type."
-  },
-  "pk": 11,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "4",
-    "action_flag": 2,
-    "user": 2,
-    "content_type": 9,
-    "object_repr": "Traffic Violations by Category **Public Safety** ",
-    "action_time": "2015-03-04T20:44:13.314Z",
-    "change_message": "Changed chart_type."
-  },
-  "pk": 12,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "5",
-    "action_flag": 2,
-    "user": 2,
-    "content_type": 9,
-    "object_repr": "Emergency Response Times by Category **Public Safety** ",
-    "action_time": "2015-03-04T20:44:22.339Z",
-    "change_message": "Changed chart_type."
-  },
-  "pk": 13,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "6",
-    "action_flag": 2,
-    "user": 2,
-    "content_type": 9,
-    "object_repr": "Number of Fire/EMS Calls **Public Safety** ",
-    "action_time": "2015-03-04T20:44:41.617Z",
-    "change_message": "Changed chart_type."
-  },
-  "pk": 14,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "1",
-    "action_flag": 1,
-    "user": 3,
-    "content_type": 3,
-    "object_repr": "Data Entry",
-    "action_time": "2015-03-10T17:53:40.609Z",
-    "change_message": ""
-  },
-  "pk": 15,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "63",
-    "action_flag": 2,
-    "user": 3,
-    "content_type": 10,
-    "object_repr": "Number of Fire/EMS Calls **Public Safety**  - January, 2014",
-    "action_time": "2015-03-10T17:57:53.884Z",
-    "change_message": "No fields changed."
-  },
-  "pk": 16,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "None",
-    "action_flag": 1,
-    "user": 3,
-    "content_type": 10,
-    "object_repr": "Number of Fire/EMS Calls **Public Safety**  - January, 2015",
-    "action_time": "2015-03-10T17:58:31.134Z",
-    "change_message": ""
-  },
-  "pk": 17,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "48",
-    "action_flag": 2,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Various 311 Stats **Civic Health**  - December, 2014",
-    "action_time": "2015-03-17T02:21:42.651Z",
-    "change_message": "No fields changed."
-  },
-  "pk": 18,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "None",
-    "action_flag": 1,
-    "user": 3,
-    "content_type": 10,
-    "object_repr": "Emergency Response Times by Category **Public Safety**  - January, 2014",
-    "action_time": "2015-03-24T00:15:07.332Z",
-    "change_message": ""
-  },
-  "pk": 19,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "65",
-    "action_flag": 3,
-    "user": 3,
-    "content_type": 10,
-    "object_repr": "Emergency Response Times by Category **Public Safety**  - January, 2014",
-    "action_time": "2015-03-24T00:15:42.817Z",
-    "change_message": ""
-  },
-  "pk": 20,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "None",
-    "action_flag": 1,
-    "user": 3,
-    "content_type": 10,
-    "object_repr": "Emergency Response Times by Category **Public Safety**  - January, 2015",
-    "action_time": "2015-03-24T00:23:16.311Z",
-    "change_message": ""
-  },
-  "pk": 21,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "65",
-    "action_flag": 3,
-    "user": 3,
-    "content_type": 10,
-    "object_repr": "Emergency Response Times by Category **Public Safety**  - January, 2015",
-    "action_time": "2015-03-24T00:23:38.829Z",
-    "change_message": ""
-  },
-  "pk": 22,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "72",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - December, 2014",
-    "action_time": "2015-03-31T03:11:38.930Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 23,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "71",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - November, 2014",
-    "action_time": "2015-03-31T03:11:38.932Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 24,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "70",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - October, 2014",
-    "action_time": "2015-03-31T03:11:38.934Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 25,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "69",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - September, 2014",
-    "action_time": "2015-03-31T03:11:38.936Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 26,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "68",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - August, 2014",
-    "action_time": "2015-03-31T03:11:38.938Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 27,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "67",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - July, 2014",
-    "action_time": "2015-03-31T03:11:38.940Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 28,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "66",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - June, 2014",
-    "action_time": "2015-03-31T03:11:38.942Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 29,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "65",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - May, 2014",
-    "action_time": "2015-03-31T03:11:38.944Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 30,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "64",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - April, 2014",
-    "action_time": "2015-03-31T03:11:38.946Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 31,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "63",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - March, 2014",
-    "action_time": "2015-03-31T03:11:38.948Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 32,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "62",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - February, 2014",
-    "action_time": "2015-03-31T03:11:38.950Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 33,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "61",
-    "action_flag": 1,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - January, 2014",
-    "action_time": "2015-03-31T03:11:38.952Z",
-    "change_message": "new through import_export"
-  },
-  "pk": 34,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "61",
-    "action_flag": 2,
-    "user": 4,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - January, 2014",
-    "action_time": "2015-03-31T03:11:38.954Z",
-    "change_message": "update through import_export"
-  },
-  "pk": 35,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "63",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 10,
-    "object_repr": "Number of Fire/EMS Calls **Public Safety**  - January, 2014",
-    "action_time": "2015-03-31T21:01:54.381Z",
-    "change_message": ""
-  },
-  "pk": 36,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "72",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - December, 2014",
-    "action_time": "2015-03-31T21:03:23.700Z",
-    "change_message": ""
-  },
-  "pk": 37,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "71",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - November, 2014",
-    "action_time": "2015-03-31T21:03:23.704Z",
-    "change_message": ""
-  },
-  "pk": 38,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "70",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - October, 2014",
-    "action_time": "2015-03-31T21:03:23.706Z",
-    "change_message": ""
-  },
-  "pk": 39,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "69",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - September, 2014",
-    "action_time": "2015-03-31T21:03:23.708Z",
-    "change_message": ""
-  },
-  "pk": 40,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "68",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - August, 2014",
-    "action_time": "2015-03-31T21:03:23.710Z",
-    "change_message": ""
-  },
-  "pk": 41,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "67",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - July, 2014",
-    "action_time": "2015-03-31T21:03:23.712Z",
-    "change_message": ""
-  },
-  "pk": 42,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "66",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - June, 2014",
-    "action_time": "2015-03-31T21:03:23.714Z",
-    "change_message": ""
-  },
-  "pk": 43,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "65",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - May, 2014",
-    "action_time": "2015-03-31T21:03:23.715Z",
-    "change_message": ""
-  },
-  "pk": 44,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "64",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - April, 2014",
-    "action_time": "2015-03-31T21:03:23.717Z",
-    "change_message": ""
-  },
-  "pk": 45,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "63",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - March, 2014",
-    "action_time": "2015-03-31T21:03:23.719Z",
-    "change_message": ""
-  },
-  "pk": 46,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "62",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - February, 2014",
-    "action_time": "2015-03-31T21:03:23.720Z",
-    "change_message": ""
-  },
-  "pk": 47,
-  "model": "admin.logentry"
-},
-{
-  "fields": {
-    "object_id": "61",
-    "action_flag": 3,
-    "user": 2,
-    "content_type": 11,
-    "object_repr": "Literacy Statistics **Civic Health**  - January, 2014",
-    "action_time": "2015-03-31T21:03:23.722Z",
-    "change_message": ""
-  },
-  "pk": 48,
-  "model": "admin.logentry"
+  "pk": 108
 }
 ]
