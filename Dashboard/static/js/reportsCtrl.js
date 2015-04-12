@@ -2,11 +2,6 @@
  * Created by Sam Keller on 1/15/2015.
  */
 
-/*
- * Moved stuff from safety.js here. It makes more sense to put it here than to have a
- * different file for each category page.
- */
-
 var app = angular.module("graphapp", ["chart.js", "ui.bootstrap"]);
 
 app.controller('BaseGraphController', function($scope) {
@@ -39,6 +34,8 @@ app.controller('GraphController', function($scope, $modal) {
     $scope.options = {};
     $scope.colours = Chart.defaults.global.colours;
 
+    $scope.moredata = [];
+
     $scope.open = function (size) {
         var modalInstance = $modal.open({
             templateUrl: 'modalContent.html',
@@ -67,6 +64,14 @@ app.controller('GraphController', function($scope, $modal) {
                     return $scope.description;
                 }
             }
+        });
+
+        modalInstance.opened.then(function () {
+            $scope.moreData = Object.create(detailedGraphData.prototype);
+                $scope.moreData.load($scope.category, $scope.title, $scope.limit, function () {
+                //$scope.$apply();
+                //console.log('test2');
+            });
         });
 
         modalInstance.result.then(function (){
@@ -144,15 +149,16 @@ app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, data, labe
     $scope.title = title;
     $scope.description = description;
 
-    $scope.$apply();
+    //$scope.$apply();
 
-    $scope.requestData = function() {
-        $scope.dataCollection = Object.create(detailedGraphData.prototype);
-        $scope.dataCollection.load($scope.category, $scope.limit ,function () {
-            //$scope.$apply();
-        });
-        //$scope.dataCollection.forEach
-    };
+    //$scope.requestData = function() {
+    //    $scope.dataCollection = Object.create(detailedGraphData.prototype);
+    //    $scope.dataCollection.load($scope.category, $scope.title, $scope.limit, function () {
+    //        //$scope.$apply();
+    //        console.log('test2');
+    //    });
+    //    //$scope.dataCollection.forEach
+    //};
 
     $scope.ok = function () {
         $modalInstance.close();
