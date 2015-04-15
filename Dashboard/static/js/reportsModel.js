@@ -2,6 +2,8 @@
  * Created by Sam Keller on 1/17/2015.
  */
 
+var testVar = "testing deployment bug.";
+
 // Only safety has been updated so far for the changes in displaying the graphs.
 function graphData(){
 
