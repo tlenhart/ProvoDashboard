@@ -30,6 +30,8 @@ app.controller('GraphController', function($scope, $modal) {
     $scope.series = ['2014'];
     $scope.data = [];
     $scope.values = [];
+    $scope.allLabels = [];
+    $scope.allValues = [];
     $scope.type = '';
     $scope.options = {};
     $scope.colours = Chart.defaults.global.colours;
@@ -43,12 +45,20 @@ app.controller('GraphController', function($scope, $modal) {
             size: size,
             resolve: {
                 data: function () {
-                    return $scope.data;
+                    var tempData = [];
+                    if ($scope.chartType === "chart-line" || $scope.chartType === "chart-bar" || $scope.chartType === "chart-radar") {
+                        tempData[0] = $scope.allValues;
+                    }
+                    else {
+                        tempData = $scope.allValues;
+                    }
+                    return tempData;
                 },
                 labels: function () {
-                    return $scope.labels;
+                    return $scope.allLabels;
                 },
                 series: function () {
+                    // We should switch this here to showing stuff side-by-side (All of the February data right next to each other for example.)
                     return $scope.series;
                 },
                 category: function () {
@@ -67,11 +77,12 @@ app.controller('GraphController', function($scope, $modal) {
         });
 
         modalInstance.opened.then(function () {
-            $scope.moreData = Object.create(detailedGraphData.prototype);
-                $scope.moreData.load($scope.category, $scope.title, $scope.limit, function () {
-                //$scope.$apply();
-                //console.log('test2');
-            });
+            //$scope.moreData = Object.create(detailedGraphData.prototype);
+            //    $scope.moreData.load($scope.category, $scope.title, $scope.limit, function () {
+            //    //$scope.$apply();
+            //    //console.log('test2');
+            //});
+            // Changing to where all data is loaded initially and just part of it is shown until the modal is displayed.
         });
 
         modalInstance.result.then(function (){
@@ -88,11 +99,23 @@ app.controller('GraphController', function($scope, $modal) {
         $scope.chartType = data.chartType;
         //$scope.colours = ;
 
+        /*
+         * Limit Data to the last 12 data points.
+         * All data is shown when a graph is clicked on.
+         */
         data.dataPoints.forEach(function(datum){
-            $scope.labels.push(datum.month);
-            //$scope.series = ['2014']; // Should be set to something dynamic/adjustable. Going to have to decide how to do this.
-            $scope.values.push(datum.value);
+            $scope.allLabels.push(datum.month.slice(0,3) + " " + datum.year);
+            $scope.allValues.push(datum.value);
         });
+
+        if ($scope.allLabels.length <= 12) {
+            $scope.labels = $scope.allLabels;
+            $scope.values = $scope.allValues;
+        }
+        else {
+            $scope.labels = $scope.allLabels.slice($scope.allLabels.length - 12, $scope.allLabels.length);
+            $scope.values = $scope.allValues.slice($scope.allValues.length - 12, $scope.allValues.length);
+        }
 
         $scope.charts = ['Line', 'Bar', 'Radar', 'Doughnut', 'Pie', 'PolarArea', 'Base'];
         if ($scope.chartType === "chart-line") {
