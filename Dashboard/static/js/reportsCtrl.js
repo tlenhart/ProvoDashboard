@@ -3,6 +3,7 @@
  */
 
 var app = angular.module("graphapp", ["chart.js", "ui.bootstrap"]);
+var testVar = "testing deployment";
 
 app.controller('BaseGraphController', function($scope) {
     $scope.category = '';
