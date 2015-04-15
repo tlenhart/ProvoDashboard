@@ -2,7 +2,7 @@
  * Created by Sam Keller on 1/17/2015.
  */
 
-var testVar = "deployment bug";
+var testVar = "deployment bug.";
 console.log(testVar);
 
 // Only safety has been updated so far for the changes in displaying the graphs.
