@@ -18,13 +18,13 @@ Chart.defaults.global.colours = [
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(62,191,51,0.8)"
     },
-    { // red
-      fillColor: "rgba(247,70,74,0.2)",
-      strokeColor: "rgba(247,70,74,1)",
-      pointColor: "rgba(247,70,74,1)",
+    { // red 229,104,100
+      fillColor: "rgba(229,104,100,0.2)",
+      strokeColor: "rgba(229,104,100,1)",
+      pointColor: "rgba(229,104,100,1)",
       pointStrokeColor: "#fff",
       pointHighlightFill: "#fff",
-      pointHighlightStroke: "rgba(247,70,74,0.8)"
+      pointHighlightStroke: "rgba(229,104,100,0.8)"
     },
     { // green
       fillColor: "rgba(70,191,189,0.2)",
@@ -34,13 +34,13 @@ Chart.defaults.global.colours = [
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(70,191,189,0.8)"
     },
-    { // blue
-      fillColor: "rgba(151,187,205,0.2)",
-      strokeColor: "rgba(151,187,205,1)",
-      pointColor: "rgba(151,187,205,1)",
+    { // blue 4,163,225
+      fillColor: "rgba(4,163,225,0.2)",
+      strokeColor: "rgba(4,163,225,1)",
+      pointColor: "rgba(4,163,225,1)",
       pointStrokeColor: "#fff",
       pointHighlightFill: "#fff",
-      pointHighlightStroke: "rgba(151,187,205,0.8)"
+      pointHighlightStroke: "rgba(4,163,225,0.8)"
     },
     { // light grey
       fillColor: "rgba(220,220,220,0.2)",
@@ -50,13 +50,13 @@ Chart.defaults.global.colours = [
       pointHighlightFill: "#fff",
       pointHighlightStroke: "rgba(220,220,220,0.8)"
     },
-    { // yellow
-      fillColor: "rgba(253,180,92,0.2)",
-      strokeColor: "rgba(253,180,92,1)",
-      pointColor: "rgba(253,180,92,1)",
+    { // yellow 255,174,19
+      fillColor: "rgba(255,174,19,0.2)",
+      strokeColor: "rgba(255,174,19,1)",
+      pointColor: "rgba(255,174,19,1)",
       pointStrokeColor: "#fff",
       pointHighlightFill: "#fff",
-      pointHighlightStroke: "rgba(253,180,92,0.8)"
+      pointHighlightStroke: "rgba(255,174,19,0.8)"
     },
     { // grey
       fillColor: "rgba(148,159,177,0.2)",
