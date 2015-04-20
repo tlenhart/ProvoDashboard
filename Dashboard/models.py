@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # #
-#   Not sure if I have set this up properly (the models)
+# Not sure if I have set this up properly (the models)
 #   Might (or will) need to change so that the databases are set up properly.
 #   The fields in each class are columns in the database. I think I have this wrong.
 #
@@ -58,6 +58,9 @@ class SubCategories(models.Model):
     chart_type = models.CharField(max_length=25, null=True, default="Base", choices=GRAPHCHOICE)
     visible = models.BooleanField(default=True)
 
+    class Meta:
+        verbose_name_plural = "Subcategories"
+
     def __str__(self):
         return "{0} **{1}** ".format(self.sub_category, self.main_category)
 
@@ -71,6 +74,7 @@ class PublicSafety(models.Model):
 
     class Meta:
         unique_together = ["category", "month", "year"]
+        verbose_name_plural = "Public Safety"
 
     def __str__(self):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
@@ -85,6 +89,7 @@ class CivicHealth(models.Model):
 
     class Meta:
         unique_together = ["category", "month", "year"]
+        verbose_name_plural = "Civic Health"
 
     def __str__(self):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
@@ -99,6 +104,7 @@ class EconomicHealth(models.Model):
 
     class Meta:
         unique_together = ["category", "month", "year"]
+        verbose_name_plural = "Economic Health"
 
     def __str__(self):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
@@ -113,6 +119,7 @@ class GovernmentPerformance(models.Model):
 
     class Meta:
         unique_together = ["category", "month", "year"]
+        verbose_name_plural = "Government Performance"
 
     def __str__(self):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
@@ -127,6 +134,7 @@ class Safety(models.Model):
 
     class Meta:
         unique_together = ["category", "month", "year"]
+        verbose_name_plural = "Public Safety"
 
     def __str__(self):
         return "{0} - {1}, {2}".format(self.category, self.month, self.year)
