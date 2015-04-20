@@ -7,12 +7,13 @@ from Dashboard.models import CivicHealth, EconomicHealth, GovernmentPerformance,
 # Not callable directly with a url as it is not in urls.py
 class CategoryResource(ModelResource):
     class Meta:
-        queryset = SubCategories.objects.filter(visible=True)
+        queryset = SubCategories.objects.all()
         resource_name = 'category'
         filtering = {
             'description': ALL,
             'sub_category': ALL,
         }
+
 
 class CivicResource(ModelResource):
     category = fields.ForeignKey(CategoryResource, 'category', full=True)
@@ -27,6 +28,11 @@ class CivicResource(ModelResource):
             'year': ALL,
         }
 
+    # Limits the returned subcategories to just the subcategories marked as visible.
+    def get_object_list(self, request):
+        return super(CivicResource, self).get_object_list(request).filter(category__visible=True)
+
+
 class EconomicResource(ModelResource):
     category = fields.ForeignKey(CategoryResource, 'category', full=True)
 
@@ -40,6 +46,10 @@ class EconomicResource(ModelResource):
             'year': ALL,
         }
 
+    def get_object_list(self, request):
+        return super(EconomicResource, self).get_object_list(request).filter(category__visible=True)
+
+
 class GovernmentResource(ModelResource):
     category = fields.ForeignKey(CategoryResource, 'category', full=True)
 
@@ -52,6 +62,9 @@ class GovernmentResource(ModelResource):
             'month': ALL,
             'year': ALL,
         }
+
+    def get_object_list(self, request):
+        return super(GovernmentResource, self).get_object_list(request).filter(category__visible=True)
 
 
 class SafetyResource(ModelResource):
@@ -67,14 +80,12 @@ class SafetyResource(ModelResource):
             'year': ALL,
         }
 
+    def get_object_list(self, request):
+        return super(SafetyResource, self).get_object_list(request).filter(category__visible=True)
+
         # To filter on an individual subcategory call (For example Violent Crimes):
-        #   /api/safety/?category__sub_category=Violent%20Crimes
+        # /api/safety/?category__sub_category=Violent%20Crimes
 
-
-# class SafetyResource(ModelResource):
-#     class Meta:
-#         queryset = Safety.objects.all()
-#         resource_name = 'safety'
 
 """
 class EconomicResource(ModelResource):
