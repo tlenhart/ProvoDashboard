@@ -117,7 +117,7 @@ app.controller('GraphController', function($scope, $modal) {
             $scope.values = $scope.allValues.slice($scope.allValues.length - 12, $scope.allValues.length);
         }
 
-        $scope.charts = ['Line', 'Bar', 'Radar', 'Doughnut', 'Pie', 'PolarArea', 'Base'];
+        //$scope.charts = ['Line', 'Bar', 'Radar', 'Doughnut', 'Pie', 'PolarArea', 'Base'];
         if ($scope.chartType === "chart-line") {
             $scope.type = 'Line';
             $scope.data[0] = $scope.values;
@@ -173,6 +173,10 @@ app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, data, labe
     $scope.description = description;
 
     //$scope.$apply();
+
+    // All data is initially requested when the page is first loaded. JavaScript is used to limit the data that is shown initially.
+    // When the modal is opened, all of the data is shown. This is done instead of having an additional query to the database (which might
+    //  actually be the better option.
 
     //$scope.requestData = function() {
     //    $scope.dataCollection = Object.create(detailedGraphData.prototype);

@@ -2,16 +2,10 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # #
-# Not sure if I have set this up properly (the models)
-#   Might (or will) need to change so that the databases are set up properly.
-#   The fields in each class are columns in the database. I think I have this wrong.
+#   The fields in each class are columns in the database.
 #
 #   Anything that is a DecimalField requires a max_digits and a decimal_places.
 #   These may need to be adjusted based on how we want the numbers to be saved/stored.
-#
-#   No keys currently exist in the tables that point to other tables...
-#   For example, community = models.ForeignKey(Community)
-#
 ##
 
 # Create your models here.
