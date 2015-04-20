@@ -2,6 +2,22 @@
 
 // Override chart colors
 Chart.defaults.global.colours = [
+    { // Green 2 (Provo1)
+      fillColor: "rgba(117,190,29,0.2)",
+      strokeColor: "rgba(117,190,29,1)",
+      pointColor: "rgba(117,190,29,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(117,190,29,0.8)"
+    },
+    { // Green 3 (Provo2)
+      fillColor: "rgba(62,191,51,0.2)",
+      strokeColor: "rgba(62,191,51,1)",
+      pointColor: "rgba(62,191,51,1)",
+      pointStrokeColor: "#fff",
+      pointHighlightFill: "#fff",
+      pointHighlightStroke: "rgba(62,191,51,0.8)"
+    },
     { // red
       fillColor: "rgba(247,70,74,0.2)",
       strokeColor: "rgba(247,70,74,1)",
