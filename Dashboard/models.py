@@ -43,12 +43,19 @@ GRAPHCHOICE = (
     ("chart-radar", "Radar")
 )
 
+MAINCATEGORIES = (
+    ("Civic Health", "Civic Health"),
+    ("Economic Health", "Economic Health"),
+    ("Government Performance", "Government Performance"),
+    ("Public Safety", "Public Safety")
+)
+
 
 class SubCategories(models.Model):
     id = models.IntegerField(primary_key=True, auto_created=True, editable=False)
     sub_category = models.CharField(max_length=300, default="Please Add A Category")
     description = models.CharField(max_length=1000, null=False)
-    main_category = models.CharField(max_length=300, null=True)
+    main_category = models.CharField(max_length=300, null=False, choices=MAINCATEGORIES)
     chart_type = models.CharField(max_length=25, null=True, default="Base", choices=GRAPHCHOICE)
     visible = models.BooleanField(default=True)
 
