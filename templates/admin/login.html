@@ -24,7 +24,8 @@
         </a>
         <fieldset>
           <legend>
-            {{ site_header|default:_('Django administration') }} - {{ title }}
+              {{ _('Provo Dashboard Administration') }} - {{ title }}
+{#            {{ site_header|default:_('Django administration') }} - {{ title }}#}
           </legend>
 
           {% if form.errors or form.non_field_errors %}
