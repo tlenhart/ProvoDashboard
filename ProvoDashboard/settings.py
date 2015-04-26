@@ -50,9 +50,8 @@ INSTALLED_APPS = (
     'tastypie',
     'Dashboard',
     'import_export',
-    #'pytest_django',
-    #'pytest',
-    #'factory',
+    'pytest_django',
+    'pytest',
     #'debug_toolbar',
 )
 
